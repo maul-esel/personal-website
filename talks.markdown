@@ -30,19 +30,19 @@ layout: default
   {%- assign paper = site.data.publications[id] -%}
   {%- if paper -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.png" />
+      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.svg" />
       <a class="pub-publisher" href="{{ paper.publisher_link }}">Paper</a>
     </span>
   {%- endif -%}
   {%- if talk.slides -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/presentation.png" />
+      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />
       <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
     </span>
   {%- endif -%}
   {%- if talk.recording -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.png" />
+      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.svg" />
       <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
     </span>
   {%- endif -%}

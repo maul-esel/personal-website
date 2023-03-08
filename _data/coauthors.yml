@@ -1,0 +1,72 @@
+afarzan:
+  firstname: Azadeh
+  lastname: Farzan
+  website: https://www.cs.toronto.edu/~azadeh/
+  orcid: 0000-0001-9005-2653
+ahabermaier:
+  firstname: Axel
+  lastname: Habermaier
+  website: https://de.linkedin.com/in/axel-habermaier
+apodelski:
+  firstname: Andreas
+  lastname: Podelski
+  website: https://swt.informatik.uni-freiburg.de/staff/podelski
+  orcid: 0000-0003-2540-9489
+beberhardinger:
+  firstname: Benedikt
+  lastname: Eberhardinger
+  website: https://de.linkedin.com/in/benedikt-eberhardinger-22380888
+  orcid: 0000-0002-5562-9514
+cschaetzle:
+  firstname: Claus
+  lastname: Schätzle
+ddietsch:
+  firstname: Daniel
+  lastname: Dietsch
+  website: https://swt.informatik.uni-freiburg.de/staff/dietsch
+  orcid: 0000-0002-8947-5373
+fschuessele:
+  firstname: Frank
+  lastname: Schüssele
+  website: https://swt.informatik.uni-freiburg.de/staff/schuessele
+  orcid: 0000-0002-5656-306X
+hponsar:
+  firstname: Hella
+  lastname: Ponsar
+  website: https://www.uni-augsburg.de/en/fakultaet/fai/isse/prof/swtse/team/ponsar/
+  orcid: 0000-0001-6376-9683
+jhoenicke:
+  firstname: Jochen
+  lastname: Hoenicke
+  orcid: 0000-0002-6314-1041
+lfichtner:
+  firstname: Leonard
+  lastname: Fichtner
+mbarth:
+  firstname: Max
+  lastname: Barth
+  orcid: 0009-0002-7716-3898
+mebbinghaus:
+  firstname: Marcel
+  lastname: Ebbinghaus
+mheizmann:
+  firstname: Matthias
+  lastname: Heizmann
+  website: https://swt.informatik.uni-freiburg.de/staff/heizmann
+  orcid: 0000-0003-4252-3558
+mnaouar:
+  firstname: Mehdi
+  lastname: Naouar
+plenzen:
+  firstname: Philip
+  lastname: Lenzen
+tschindler:
+  firstname: Tanja
+  lastname: Schindler
+  orcid: 0000-0002-7462-8445
+wreif:
+  firstname: Wolfgang
+  lastname: Reif
+  website: https://www.uni-augsburg.de/en/fakultaet/fai/isse/prof/swtse/team/reif/
+  orcid: 0000-0002-4086-0043
+

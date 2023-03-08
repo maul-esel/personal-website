@@ -1,0 +1,33 @@
+- name: Dynamic POR for Verification of Concurrent Programs with Loops
+  type: BSc Thesis
+  year: ongoing
+- name: Selecting Preference Orders
+  type: MSc Project
+  year: ongoing
+- name: Computing Representative Automata for Maximal Causality Reduction
+  type: MSc Thesis
+  year: 2022
+- name: Statement Abstraction for POR
+  type: MEd Project
+  year: 2022
+- name: Owicki-Gries Correctness Proofs from Petri Net Unfoldings
+  type: MSc Thesis
+  year: 2021
+- name: Trace Abstraction Refinement with Repeated Lipton Reduction
+  type: MSc Project
+  year: 2021
+- name: Tight integration of Partial Order Reduction into Trace Abstraction Refinement
+  type: BSc Thesis
+  year: 2021
+- name: Owicki-Gries Correctness Proof Scheme
+  type: MSc Project
+  year: 2021
+- name: "Clinical Guidelines Verification with ULTIMATE: A Case-Study Approach"
+  type: MSc Thesis
+  year: 2020
+- name: Trace Abstraction with Maximal Causality Reduction
+  type: MSc Thesis
+  year: 2020
+- name: Large Block Encoding for Concurrent Programs
+  type: BSc Thesis
+  year: 2019

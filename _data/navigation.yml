@@ -1,0 +1,10 @@
+- item: Home
+  link: /
+#- item: Curriculum Vitae
+#  link: /cv
+- item: Publications
+  link: /publications
+- item: Talks
+  link: /talks
+- item: Teaching
+  link: /teaching

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/default.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+    </div>
+    <a id="pictureofme" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/images/dominik.jpg"/>
+    </a>
+    <div id="navigation">
+      {% for item in site.data.navigation %}
+        <a class="nav-item" href="{{ site.baseurl }}{{ item.link }}">
+          {{ item.item }}
+        </a>
+      {% endfor %}
+    </div>
+  </body>
+</html>

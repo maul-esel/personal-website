@@ -1,0 +1,306 @@
+---
+---
+
+body {
+  background-color: #EAEAEA;
+  font-family: sans-serif;
+  color: #565656;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#wrapper {
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  padding: 2%;
+}
+
+#pictureofme {
+  display: block;
+
+  width: 8%;
+  height: 0;
+  padding-bottom: 8%;
+
+  position: absolute;
+  right: 1%;
+  top: 1%;
+
+  border: solid #565656 1px;
+  
+
+  overflow: clip;
+  border-radius: 100%;
+  
+  img {
+    width: 150%;
+  }
+}
+
+#navigation {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.75em;
+  margin-bottom: 1em;
+
+  background-color: #565656;
+
+  color: white;
+  font-weight: bold;
+  
+  &:hover, &:focus {
+    background-color: #757575;
+    text-decoration: none;
+  }
+}
+
+.pub-folder img, .pub-unfolder img {
+  width: 1em;
+}
+.pub-folder {
+  display: none;
+}
+.publication:target {
+  .pub-folder { display: initial; }
+  .pub-unfolder { display: none; }
+}
+
+figure > pre {
+  border: solid #565656 1px;
+  padding: 0.5em;
+  background-color: #EAEAEA;
+}
+figcaption {
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+
+.pub-bibtex {
+  display: none;
+}
+.publication:target .pub-bibtex {
+  display: initial;
+}
+
+
+.pub-list {
+  list-style-type: none;
+  padding-left: 0;
+  
+  li {
+    border-bottom: solid #565656 2px;
+    margin-bottom: 0;
+    padding: 0.25em 0.5em;
+    
+    &:last-child {
+      border: none;
+    }
+    
+    &:target {
+      background-color: #FFA50033;
+    }
+  }
+}
+
+.project-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.75em;
+}
+
+.project-type {
+  display: inline-block;
+  font-weight: bold;
+  width: 7em;
+  background-color: orange;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  text-align: center;
+  margin-right: 1em;
+}
+.project-year {
+  float: right;
+}
+
+.year-tag {
+  display: inline-block;
+  font-weight: bold;
+  background-color: lightblue;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  float: right;
+  margin-left: 2px;
+  margin-top: -0.3em;
+}
+
+// Venue tag
+.pub-venue {
+  float: right;
+  font-weight: bold;
+}
+.pub-workshop {
+  background-color: orange;
+  padding: 0.3em 0.3em 0.3em 0.6em;
+ // border-radius: 0.5em 0 0 0.5em;
+}
+.colocation-link {
+  background-color: lightgray;
+  padding: 0.32em;
+  margin-right: 0;
+}
+.pub-colocation {
+  padding: 0.3em 0.6em 0.3em 0.3em;
+  background-color: lightblue;
+  //border-radius: 0 0.5em 0.5em 0;
+}
+.pub-conference {
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  background-color: orange;
+  //border-radius: 0.5em;
+}
+
+.talk-date {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.pub-title, .talk-title {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.pub-authorline > span {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 90%;
+  &:first-child {
+    margin-right: 1%;
+  }
+}
+.author, .author-self {
+  white-space: nowrap;
+  
+  .author-orcid img {
+    width: 1em;
+    margin-right: .25em;
+    margin-bottom: -.1em;
+  }
+}
+.author-self {
+  font-weight: bold;
+}
+.pub-additional-icon {
+  height: 1.5em;
+  vertical-align: -30%;
+}
+.pub-additional {
+  margin-right: 1%;
+}
+
+
+
+
+#banner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  font-size: 110%;
+  
+  border-top: solid #565656 2px;
+  border-bottom: solid #565656 2px;
+  
+  position: relative;
+
+  & > img {
+    display: block;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-info {
+    display: block;
+    width: 42.5%;
+    height: 100%;
+    position: absolute;
+    left: 55%;
+    top: 0;
+    
+    .mail {
+      height: 1.3em;
+      margin-bottom: -.4em;
+    }
+  }
+  
+  
+  &::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 50%; height: 100%;
+      background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+    }
+}
+
+#badges {
+  width: 100%;
+  margin-top: 1%;
+  display: flex;
+  
+  &:nth-element(.badge) {
+  }
+}
+
+.badge {
+  flex-basis: 90%;
+  padding: .5%;
+  margin-right: .5%;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  background-color: #565656;
+  color: white;
+
+  font-weight: bold;
+  height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+  img {
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 100%;
+    width: 1.8em;
+    margin: 0 .6em -.6em .4em;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: #757575;
+  }
+}

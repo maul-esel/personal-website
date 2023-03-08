@@ -1,0 +1,121 @@
+svcomp23taipan:
+  title: Ultimate Taipan and Race Detection in Ultimate
+  date: 2023-04-24
+  conference: ETAPS
+  conference_link: https://etaps.org/2023/
+  workshop: SV-COMP
+  workshop_link: sv-comp.sosy-lab.org/2023/
+  location: Paris, France
+  summary: I will be presenting our paper on data race detection (by reduction to reachability) in the Ultimate program analysis framework.
+
+popl23:
+  title: Stratified Commutativity in Verification Algorithms for Concurrent Programs
+  date: 2023-01-18
+  conference: POPL
+  conference_link: https://popl23.sigplan.org/
+  location: virtual
+  summary: I presented our paper on how _abstract_ commutativity and the _stratified combination_ of commutativity relations can be used in algorithmic verification.
+  slides: https://www.researchgate.net/publication/369010015_Stratified_Commutativity_in_Verification_Algorithms_for_Concurrent_Programs
+  recording: https://nc.informatik.uni-freiburg.de/index.php/s/ARLPZjBWPxQiGqA
+
+fmcad22:
+  title: Commutativity in Concurrent Program Verification
+  date: 2022-10-20
+  conference: FMCAD
+  conference_link: https://fmcad.org/FMCAD22/
+  location: Trento, Italy
+  summary: I gave a short talk and presented a poster summarizing my PhD research, as part of the FMCAD student forum.
+  poster: https://www.researchgate.net/publication/364390057_Commutativity_in_Concurrent_Program_Verification
+  slides: https://www.researchgate.net/publication/364389767_Commutativity_in_Concurrent_Program_Verification
+
+avm22:
+  title: Commutativity in Concurrent Program Verification
+  date: 2022-09-14
+  conference: AVM
+  conference_link: https://avm.sosy-lab.org/2022/program.php
+  location: Frauenchiemsee, Germany
+  summary: I gave a 30min talk summarizing my PhD research.
+  slides: https://www.researchgate.net/publication/364060616_Commutativity_in_Concurrent_Program_Verification
+
+pldi22:
+  title: Sound Sequentialization for Concurrent Program Verification
+  date: 2022-06-16
+  conference: PLDI
+  conference_link: https://pldi22.sigplan.org/
+  location: San Diego, USA
+  summary: I presented our paper on how commutativity can be used to simplify proofs _and_ increase proof checking efficiency in an abstraction-refinement based verification algorithm.
+  recording: https://www.youtube.com/watch?v=YquiEPKUG3o
+  slides: https://www.researchgate.net/publication/361388625_Sound_Sequentialization_for_Concurrent_Program_Verification
+
+commute22:
+  title: Extending Commutativity via Safe Abstraction
+  date: 2022-06-14
+  conference: PLDI
+  conference_link: https://pldi22.sigplan.org/
+  workshop: Commute
+  workshop_link: https://pldi22.sigplan.org/home/cora-2022
+  location: San Diego, USA
+  summary: I presented ongoing work on how "safe" abstraction can change and extend the commutativity available to verification algorithms.
+  slides: https://www.researchgate.net/publication/361388828_Extending_Commutativity_via_Safe_Abstraction
+
+svcomp22:
+  title: Ultimate GemCutter and the Axes of Generalization
+  date: 2022-04-07
+  conference: ETAPS
+  conference_link: https://etaps.org/2022/
+  workshop: SV-COMP
+  workshop_link: https://sv-comp.sosy-lab.org/2022/
+  location: Munich, Germany
+  summary: I presented the software model checker _Ultimate GemCutter_, which combines the verification algorithm _trace abstraction refinement_ with commutativity-based reasoning, in the form of _partial order reduction_ algorithms.
+  slides: https://www.researchgate.net/publication/359866190_Ultimate_GemCutter_and_the_Axes_of_Generalization
+
+vmcai21:
+  title:  Verification of Concurrent Programs Using Petri Net Unfoldings
+  date: 2021-01-17
+  conference: VMCAI
+  conference_link: https://popl21.sigplan.org/home/VMCAI-2021
+  location: virtual
+  summary: I presented our paper on a variation of the _trace abstraction refinement_ verification algorithm targeted at concurrent programs, and based on (bounded) Petri nets.
+  recording: https://www.youtube.com/watch?v=Sa2WO7A1zYU&t=2844s
+  slides: https://www.researchgate.net/publication/349098625_Verification_of_Concurrent_Programs_Using_Petri_Net_Unfoldings
+
+movep20:
+  title: Partial Order Reduction for Trace Abstraction Refinement
+  date: 2020-06-25
+  conference: MOVEP
+  conference_link: http://projects-verimag.imag.fr/movep2020/
+  location: virtual
+  summary: I presented ongoing work and plans for future work as part of my PhD thesis.
+  slides: https://www.researchgate.net/publication/342442889_Partial_Order_Reduction_for_Trace_Abstraction_Refinement
+  recording: https://nc.informatik.uni-freiburg.de/index.php/s/2Ya7ZHoFTripFki
+
+wadt20:
+  title: K and KIV – Towards Deductive Verification for Arbitrary Programming Languages
+  date: 2020-04-29
+  conference: ETAPS
+  conference_link: https://etaps.org/2020/
+  workshop: WADT
+  workshop_link: https://wadt2020.github.io/
+  location: virtual
+  summary: I presented our paper on an implementation of a language-independent program verification calculus into the interactive proof assistant KIV, and the development on a KIV frontend based on the K semantic framework.
+  slides: https://www.researchgate.net/publication/341050241_K_and_KIV_Towards_Deductive_Verification_for_Arbitrary_Programming_Languages
+
+avm19:
+  title: Automated Control Flow Reconstruction from Assembler Programs Using Trace Abstraction Refinement
+  date: 2019-09-10
+  conference: AVM
+  conference_link: https://avm19.fit.vutbr.cz/
+  location: virtual
+  summary: I presented the results of my Master thesis.
+  slides: https://www.researchgate.net/publication/335704073_Automated_Control_Flow_Reconstruction_from_Assembler_Programs
+
+saso16:
+  title: Optimising Runtime Safety Analysis Efficiency for Self-Organising Systems
+  date: 2016-09-12
+  conference: SASO
+  conference_link: https://saso2016.informatik.uni-augsburg.de/program.html
+  workshop: QA4SASO
+  workshop_link: https://saso2016.informatik.uni-augsburg.de/workshops.html#workshop4
+  location: Augsburg, Germany
+  summary: I presented our paper on how heuristics can speed up safety analyis (i.e., analysis of robustness in the presence of hardware faults), particularly for self-organising systems.
+

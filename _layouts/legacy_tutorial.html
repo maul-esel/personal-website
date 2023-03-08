@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+
+		<link rel='stylesheet' type='text/css' href='/style/legacy/default.css'/>
+	{% for css in page.css_files %}
+		<link rel='stylesheet' type='text/css' href='/style/legacy/{{ css }}.css'/>
+	{% endfor %}
+	</head>
+	<body>
+		<div id='nav-top'>
+			<!-- { % include navigation.html % } -->
+		</div>
+		<div id='content'>
+<!-- -->
+
+
+
+<div id='post'>
+	<h1>{{ page.title }}</h1>
+	<hr/>
+
+	<div id='post-content'>
+<!--  -->
+<div id='tutorial'>
+	<div id='tutorial-data'>	
+		<table id='requirements' border='1' rules='rows' frame='void' cellpadding='10px'>
+			<tr>
+				<td><b>Required version:</b></td>
+				<td>
+					{% for version in page.ahk_versions %}
+						{% for field in version %}
+							{% if forloop.first %}
+								{% assign name = field %}
+							{% elsif forloop.last %}
+								{% assign recommended = field %}
+							{% endif %}
+						{% endfor %}
+						{% if recommended %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if forloop.last != true %},{% endif %}
+					{% endfor %}
+				</td>
+			</tr>
+			<tr>
+				<td><b>Required OS:</b></td>
+				<td>{{ page.required_os }}</td>
+			</tr>
+			<tr>
+				<td><b>Skills:</b></td>
+				<td>{{ page.skills }}</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id='tutorial-content'>
+		{{ content }}
+	</div>
+</div>
+<!-- -->
+	</div>
+</div>
+
+
+
+
+<!-- -->
+		</div>
+		<hr/>
+		<div id='nav-bottom'>
+			<!-- { % include navigation.html % } -->
+		</div>
+	</body>
+</html>
+
+
+

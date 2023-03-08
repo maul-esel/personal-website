@@ -1,0 +1,65 @@
+---
+permalink: /style/legacy/syntax.css
+---
+
+
+.highlight {
+	padding: 5px;
+	background-color: #222222
+}
+
+pre.highlight {
+  background-color: #DEDEDE;
+}
+
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs, .highlight .c-Singleline {
+	color: green
+}
+
+.highlight .err {
+	background-color: lightred
+}
+
+.highlight .nb {
+	color: blue;
+}
+
+.highlight .nf {
+	color: darkviolet;
+}
+
+.highlight .sb, .highlight .se {
+	color: red
+}
+
+.highlight .mf, .highlight .mi, .highlight .mh {
+	color: red
+}
+
+.highlight .nl {
+	color: cyan
+}
+
+.highlight .nv {
+	color: darkorange
+}
+
+.highlight .k {
+	font-weight: bold;
+	color: darkblue
+}
+
+.highlight .p {
+	font-weight: bold
+}
+
+.highlight .s {
+	font-style: italic;
+	color: #333;
+}
+
+.highlight .o {
+	font-weight: bold;
+	color: red
+}
+

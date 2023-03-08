@@ -26,6 +26,7 @@ a:hover {
   margin: auto;
   background-color: white;
   padding: 2%;
+  margin-bottom: 2.5em;
 }
 
 #pictureofme {
@@ -73,6 +74,27 @@ a:hover {
   }
 }
 
+.pub-folder, .pub-unfolder {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-unfolder {
+  border-top: 0.6em solid transparent;
+  border-bottom: 0.6em solid transparent;
+  border-left: 0.86em solid darkblue;
+}
+
+.pub-folder {
+  border-left: 0.6em solid transparent;
+  border-right: 0.6em solid transparent;
+  border-top: 0.86em solid darkblue;
+  margin-bottom: 0.1em;
+}
+
 .pub-folder img, .pub-unfolder img {
   width: 1em;
 }
@@ -80,7 +102,7 @@ a:hover {
   display: none;
 }
 .publication:target {
-  .pub-folder { display: initial; }
+  .pub-folder { display: inline-block; }
   .pub-unfolder { display: none; }
 }
 
@@ -303,4 +325,17 @@ li {
     text-decoration: none;
     background-color: #757575;
   }
+}
+
+
+html {
+  position:relative;
+  min-height: 100%;
+}
+#footer {
+  text-align: right;
+  position: absolute;
+  right: 1em;
+  left: 1em;
+  bottom: 0.2em;
 }

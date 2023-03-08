@@ -11,8 +11,8 @@ title: Publications
 {% for pub in site.publications reversed %}
   <li class="publication" id="pub-{{ pub.pub_id }}">
     <p>
-      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}"><img src="{{ site.baseurl }}/images/expand.png"/></a>
-      <a class="pub-folder" href="#/"><img src="{{ site.baseurl }}/images/collapse.png"/></a>
+      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}"></a>
+      <a class="pub-folder" href="#/"></a>
       <span class="pub-title">{{ pub.title }}</span>
       {%- if pub.workshop or pub.conference -%}
         <span class="pub-venue">
@@ -52,19 +52,19 @@ title: Publications
  
     <p>
       <span class="pub-additional">
-        <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.png" />
+        <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.svg" />
         <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
       </span>
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/presentation.png" />
+          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />
           <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
         </span>
       {%- endif -%}
       {%- if talk and talk.recording -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.png" />
+          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.svg" />
           <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
         </span>
       {%- endif -%}
@@ -76,7 +76,7 @@ title: Publications
       {%- endif %}
       {%- if pub.artifact -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/archive.png" />
+          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/archive.svg" />
           <a class="pub-poster" href="{{ pub.artifact }}">Artifact</a>
         </span>
       {%- endif %}

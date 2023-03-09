@@ -7,7 +7,7 @@ title: Talks
 {% for talkitem in site.data.talks -%}
   {%- assign id = talkitem[0] -%}
   {%- assign talk = talkitem[1] -%}
-  <li>
+  <li id="talk-{{id}}">
     <p>
       <span class="talk-date">{{ talk.date | date: '%d %B %Y' }}:</span> <span class="talk-title">{{ talk.title }}</span>
       {%- if talk.workshop or talk.conference -%}

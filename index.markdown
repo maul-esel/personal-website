@@ -32,7 +32,7 @@ and increasing verification efficiency.
 
 {% for talkitem in site.data.talks limit: 4 -%}
 - {% assign talk = talkitem[1] -%}
-  **{{ talk.date | date_to_string }}:** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
+  **[{{ talk.date | date_to_string }}]({{ site.baseurl }}/talks#talk-{{talkitem[0]}}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
 {% endfor %}
 
 ## Selected Publications

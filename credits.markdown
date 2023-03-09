@@ -1,9 +1,7 @@
 ---
-layout: default
+title: Credits
 ---
 
-
-# Credits
 - <a href="https://iconscout.com/icons/dblp" target="_blank">Dblp Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://iconscout.com/icons/google" target="_blank">Google Logo Icon</a> by <a href="https://iconscout.com/contributors/jagathish" target="_blank">Jagathish Saravanan</a>
 - <a href="https://iconscout.com/icons/orcid" target="_blank">Orcid Logo Icon</a> on <a href="https://iconscout.com">IconScout</a>

@@ -3,10 +3,25 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/default.css" />
+    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.svg" />
   </head>
   <body>
-  <div id="wrapper">
+    <div id="wrapper">
     {{ content }}
-  </div>
+    </div>
+    <a id="pictureofme" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/images/dominik.jpg"/>
+    </a>
+    <div id="navigation">
+      {% for item in site.data.navigation %}
+        <a class="nav-item" href="{{ site.baseurl }}{{ item.link }}">
+          {{ item.item }}
+        </a>
+      {% endfor %}
+    </div>
+
+    <div id="footer">
+      <a href="{{ site.baseurl }}/credits">Credits</a>
+    </div>
   </body>
 </html>

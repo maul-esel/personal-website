@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Talks
 ---
-
-# Talks
 
 <ul class="pub-list">
 {% for talkitem in site.data.talks -%}

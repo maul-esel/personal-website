@@ -32,7 +32,7 @@ avm22:
   title: Commutativity in Concurrent Program Verification
   date: 2022-09-14
   conference: AVM
-  conference_link: https://avm.sosy-lab.org/2022/program.php
+  conference_link: https://avm.sosy-lab.org/2022/
   location: Frauenchiemsee, Germany
   summary: I gave a 30min talk summarizing my PhD research.
   slides: https://www.researchgate.net/publication/364060616_Commutativity_in_Concurrent_Program_Verification

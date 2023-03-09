@@ -20,6 +20,14 @@ theme: minima
 collections:
   publications:
     output: false
+  research:
+    output: false
+    order:
+      - commutativity.markdown
+      - belief-change.markdown
+      - cfg-reconstruction.markdown
+      - k2kiv.markdown
+      - safety-sos.markdown
 
 defaults:
   -

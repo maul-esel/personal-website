@@ -11,6 +11,20 @@ title: Dominik Klumpp
     <img class="mail" src="{{ site.baseurl }}/images/mail.png" />
     
     <p>
+      <b>Current Research:</b>
+      <ul>
+      {% assign current_research = site.research | where: "current", true %}
+      {% for topic in current_research %}
+        <li>
+          <a href="{{ site.baseurl }}/research#{{ topic.topic_id }}">
+            {{ topic.title }}{% if topic.title_note %} ({{ topic.title_note }}){% endif %}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </p>
+
+    <p>
     I work at the <a href="https://swt.informatik.uni-freiburg.de/">Chair for Software Engineering</a>.<br/>
     My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.
     </p>

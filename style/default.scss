@@ -327,6 +327,14 @@ li {
   }
 }
 
+h2:target {
+  border-bottom: solid orange 0.2em;
+
+  & + p {
+    background: linear-gradient(#FFA50033, #FFFFFFFF);
+  }
+}
+
 
 html {
   position:relative;

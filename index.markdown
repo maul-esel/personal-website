@@ -42,14 +42,5 @@ which has scored top rankings in the _International Competition on Software Veri
 
 ## Selected Publications
 
-{% for pub in site.publications reversed -%}
-  {% if pub.selected %}- {% if pub.workshop or pub.conference -%}
-        <span class="pub-venue">
-          {% if pub.workshop -%}
-            <a class="pub-workshop" href="{{ pub.workshop_link }}">{{ pub.workshop }}</a><span class="colocation-link">@</span><a class="pub-colocation" href="{{ pub.conference_link }}">{{ pub.conference }}</a>
-          {%- elsif pub.conference -%}
-            <a class="pub-conference" href="{{ pub.conference_link }}">{{ pub.conference }}</a>
-          {%- endif -%}<br/>
-        </span>
-      {% endif %} [{{ pub.title }}]({{ site.baseurl }}/publications/#pub-{{ pub.pub_id }}) {% endif %}
-{% endfor %}
+{% assign selected_pubs = site.publications | reverse | where: "selected", true | map: "pub_id" %}
+{% include publist-short.markdown publications=selected_pubs %}

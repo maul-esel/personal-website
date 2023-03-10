@@ -11,6 +11,12 @@ conference_link: https://popl21.sigplan.org/home/VMCAI-2021
 publisher:      Springer
 publisher_link: https://link.springer.com/chapter/10.1007/978-3-030-67067-2_9
 
+abstract: >-
+  Given a verification problem for a concurrent program (with a fixed number of threads) over infinite data domains,
+  we can construct a model checking problem for an abstraction of the concurrent program through a Petri net
+  (a problem which can be solved using McMillan’s unfoldings technique).
+  We present a method of abstraction refinement which translates Floyd/Hoare-style proofs for sample traces into additional synchronization constraints for the Petri net. 
+
 bibtex: |-
   @inproceedings{vmcai21:petriNetUnfoldings,
     author    = {Daniel Dietsch and Matthias Heizmann and Dominik Klumpp and Mehdi Naouar and Andreas Podelski and Claus Sch{\"{a}}tzle},

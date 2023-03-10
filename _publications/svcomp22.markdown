@@ -15,6 +15,12 @@ publisher_link: https://link.springer.com/chapter/10.1007/978-3-030-99527-0_35
 
 artifact: https://doi.org/10.5281/zenodo.5956945
 
+abstract: >-
+  Ultimate GemCutter verifies concurrent programs using the CEGAR paradigm, by generalizing from spurious counterexample traces to larger sets of correct traces.
+  We integrate classical CEGAR generalization with orthogonal generalization across interleavings.
+  Thereby, we are able to prove correctness of programs otherwise out-of-reach for interpolation-based verification.
+  The competition results show significant advantages over other concurrency approaches in the Ultimate family.
+
 bibtex: |-
   @inproceedings{tacas22:ultimateGemCutter,
     author    = {Dominik Klumpp and Daniel Dietsch and Matthias Heizmann and Frank Sch{\"{u}}ssele and Marcel Ebbinghaus and Azadeh Farzan and Andreas Podelski},

@@ -11,6 +11,15 @@ conference_link: http://projects-verimag.imag.fr/movep2020/
 publisher:      MOVEP
 publisher_link: http://projects-verimag.imag.fr/movep2020/wp-content/uploads/sites/8/2020/06/MOVEP2020_paper_28.pdf
 
+abstract: >-
+  It is well-known that concurrent programs suffer from the state explosion problem:
+  Due to the non-deterministic scheduling of different threads, the number of reachable program states grows exponentially in the number of threads.
+  Accordingly, the runtime of static analyses or verification algorithms also grows exponentially in the number of threads.
+  In this research, we focus on improving the efficiency of _Trace Abstraction Refinement_ (TAR), a Software Model Checking technique, when applied to concurrent programs.
+  We achieve this by integrating it with _Partial Order Reduction_ (POR), a technique from the field of (finite-state) model checking
+  that combats the state explosion problem.
+  This work is done in collaboration with Azadeh Farzan and Andreas Podelski.
+
 bibtex: |-
   @inproceedings{movep20:POR4TAR,
     author       = {Dominik Klumpp},

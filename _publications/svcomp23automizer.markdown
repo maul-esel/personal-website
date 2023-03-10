@@ -12,6 +12,11 @@ workshop_link:   https://sv-comp.sosy-lab.org/2023/
 
 publisher: Springer
 
+abstract: >-
+  The verification approach of Ultimate Automizer utilizes SMT formulas.
+  This paper presents techniques to keep the size of the formulas small.
+  We focus especially on a normal form, called CommuHash normal form that was easy to implement and had a significant impact on the runtime of our tool.
+
 artifact: https://doi.org/10.5281/zenodo.7480181
 ---
 

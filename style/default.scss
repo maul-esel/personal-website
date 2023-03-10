@@ -117,10 +117,10 @@ figcaption {
 }
 
 
-.pub-bibtex {
+.pub-extra {
   display: none;
 }
-.publication:target .pub-bibtex {
+.publication:target .pub-extra {
   display: initial;
 }
 

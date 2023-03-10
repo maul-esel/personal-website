@@ -78,12 +78,21 @@ title: Publications
       {%- endif %}
     </p>
     
-    {% if pub.bibtex %}
-      <figure class="pub-bibtex">
-        <figcaption>Cite as (BibTeX):</figcaption>
-        <pre>{{ pub.bibtex }}</pre>
-       </figure>
-    {% endif %}
+    <div class="pub-extra">
+      {% if pub.abstract %}
+        <figure class="pub-abstract">
+          <figcaption>Abstract:</figcaption>
+          {{ pub.abstract | markdownify }}
+        </figure>
+      {% endif %}
+
+      {% if pub.bibtex %}
+        <figure class="pub-bibtex">
+          <figcaption>Cite as (BibTeX):</figcaption>
+          <pre>{{ pub.bibtex }}</pre>
+         </figure>
+      {% endif %}
+    </div>
   </li>
 {% endfor %}
 </ul>

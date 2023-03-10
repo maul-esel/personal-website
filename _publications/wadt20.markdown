@@ -17,6 +17,16 @@ publisher_link: https://link.springer.com/chapter/10.1007/978-3-030-73785-6_6
 
 poster: https://www.researchgate.net/publication/329715177_K2KIV_Interactive_Program_Verification_for_Arbitrary_Programming_Languages
 
+abstract: >-
+  Deductive program verification is a powerful tool to gain confidence in the correctness of software.
+  However, its application to real programs faces a major hurdle:
+  Each programming language requires development of dedicated verification tool support.
+  In this work, we aim to advance deductive software verification to arbitrary programming languages.
+  We developed a tool that derives algebraic specifications for the deductive proof assistant KIV
+  from the syntax and operational semantics of a programming language specified in the 𝕂 semantic framework.
+  We adapt and implement the generic One-Path Reachability calculus and provide instant tool support for deductive proofs.
+  Through a sophisticated automation approach, we drastically reduce the manual proof steps.
+
 bibtex: |-
   @inproceedings{wadt20:KandKIV,
     author    = {Dominik Klumpp and Philip Lenzen},

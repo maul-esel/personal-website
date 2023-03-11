@@ -43,7 +43,7 @@ a:hover {
   border: solid #565656 1px;
   
 
-  overflow: clip;
+  overflow: hidden;
   border-radius: 100%;
   
   img {
@@ -110,6 +110,7 @@ figure > pre {
   border: solid #565656 1px;
   padding: 0.5em;
   background-color: #EAEAEA;
+  overflow: scroll;
 }
 figcaption {
   font-weight: bold;

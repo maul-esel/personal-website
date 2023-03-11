@@ -7,7 +7,7 @@ title: Dominik Klumpp
   <img src="images/dominik.jpg"/>
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
-    <h3>PhD Student, University of Freiburg</h3>
+    <h3>PhD Candidate, University of Freiburg</h3>
     <img class="mail" src="{{ site.baseurl }}/images/mail.png" />
     
     <p>

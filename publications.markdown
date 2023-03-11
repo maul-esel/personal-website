@@ -3,6 +3,8 @@ permalink: /publications/
 title: Publications
 ---
 
+[full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }
+
 <ul class="pub-list">
 {% for pub in site.publications reversed %}
   <li class="publication" id="pub-{{ pub.pub_id }}">
@@ -97,14 +99,9 @@ title: Publications
 
 <!-- plans:
 
-  youtube / video icon in front of recording
-  acm / article icon in front of publisher link
   link scholar
   A-Z icon after "Authors" if order is alphabetical
-  provide bibtex entry for each publication
-  generate full bibliography as separate page
-  include abstract
   include "type" of publication
   add presentation for QA4SASO to research gate & link
-
+  add theses
 -->

@@ -1,0 +1,9 @@
+---
+layout: null
+---
+{%- for pub in site.publications reversed -%}
+{%- if pub.bibtex -%}
+{{ pub.bibtex }}
+
+{% endif -%}
+{%- endfor -%}

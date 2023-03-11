@@ -8,7 +8,7 @@
   icon: article.svg
 - item: Talks
   link: /talks
-  icon: speaker.svg
+  icon: talk.svg
 - item: Teaching
   link: /teaching
-  icon: teacher.svg
+  icon: teaching.svg

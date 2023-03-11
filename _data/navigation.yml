@@ -1,10 +1,14 @@
 - item: Home
   link: /
+  icon: home.svg
 #- item: Curriculum Vitae
 #  link: /cv
 - item: Publications
   link: /publications
+  icon: article.svg
 - item: Talks
   link: /talks
+  icon: speaker.svg
 - item: Teaching
   link: /teaching
+  icon: teacher.svg

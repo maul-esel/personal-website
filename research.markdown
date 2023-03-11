@@ -4,14 +4,15 @@ layout: default
 ---
 
 {% for topic in site.research %}
-  <h2 id="{{ topic.topic_id }}">{{ topic.title }}{% if topic.title_note %} ({{ topic.title_note }}){% endif %}</h2>
+
+## {{ topic.title }}{% if topic.title_note %} ({{ topic.title_note }}){% endif %} {#{{ topic.topic_id }}}
   
-  {{ topic.content }}
+{{ topic.content }}
   
-  {% if topic.publications %}
+{% if topic.publications %}
 ### Related Publications:
-    {% include publist-short.markdown publications=topic.publications %}
-  {% endif %}
+{% include publist-short.markdown publications=topic.publications %}
+{% endif %}
   
-  ---
+---
 {% endfor %}

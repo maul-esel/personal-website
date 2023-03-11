@@ -22,7 +22,6 @@ title: Publications
     </p>
     <p class="pub-authorline">
       <span>Authors:</span>
-      <span>
       {% for auth in pub.authors -%}
         {%- if auth == 'me' -%}
           <span class="author-self">Dominik Klumpp</span>
@@ -43,7 +42,6 @@ title: Publications
         {%- endif -%}
         {%- unless forloop.last %}, {% endunless -%}
       {%- endfor %}
-      </span>
     </p>
  
     <p>

@@ -383,14 +383,12 @@ li {
 
 // Author information
 // --------------------------------------------------------
-.pub-authorline > span {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 90%;
-  &:first-child {
-    margin-right: 1%;
-  }
+.pub-authorline {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  clear: right;
 }
+
 .author, .author-self {
   white-space: nowrap;
 
@@ -404,7 +402,10 @@ li {
   font-weight: bold;
 }
 
-
+figure {
+  width: 100%;
+  margin-left: 0;
+}
 figure > pre {
   border: solid $primary 1px;
   padding: 0.5em;

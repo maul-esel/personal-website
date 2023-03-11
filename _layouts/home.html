@@ -17,7 +17,7 @@
       {% for item in site.data.navigation %}
         <a class="nav-item" title="{{ item.item }}" href="{{ site.baseurl }}{{ item.link }}">
           <img class="nav-icon" src="{{ site.baseurl }}/images/{{ item.icon }}" />
-          {{ item.item }}
+          <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
     </div>

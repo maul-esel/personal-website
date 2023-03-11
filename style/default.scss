@@ -10,6 +10,16 @@ $secondary-alternate: #EAEAEA;
 $link-color: darkblue;
 $highlight-color: orange;
 
+// ********************************************************
+//  Responsive design
+// ********************************************************
+
+@mixin phone {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
 
 // ********************************************************
 //  Main document structure
@@ -19,12 +29,15 @@ html {
   // This allows for proper positioning of #footer
   position: relative;
   min-height: 100%;
+  padding: 0;
 }
 
 body {
   background-color: $secondary-alternate;
   font-family: sans-serif;
   color: $primary;
+  padding: 0;
+  margin: 0;
 }
 
 #wrapper {
@@ -35,6 +48,13 @@ body {
   padding: 2%;
 
   background-color: $secondary;
+
+  @include phone {
+    display: block;
+    width: 96%;
+    margin: 0;
+    padding-bottom: 30vw;
+  }
 }
 
 #footer {
@@ -44,6 +64,8 @@ body {
   bottom: 0.2em;
 
   text-align: right;
+
+  @include phone { bottom: 22vw; }
 }
 
 
@@ -149,6 +171,8 @@ li {
   img {
     width: 150%;
   }
+
+  @include phone { display: none; }
 }
 
 #navigation {
@@ -157,6 +181,22 @@ li {
   position: fixed;
   right: 0;
   top: 30vh;
+
+  @include phone {
+    width: 100%;
+    top: initial;
+    bottom: 0;
+
+    text-align: center;
+
+    background-color: $secondary-alternate;
+    border-top: solid $primary 1px;
+
+    padding: 0;
+    padding-top: 0.2em;
+
+    z-index: 1000;
+  }
 }
 
 .nav-item {
@@ -166,13 +206,27 @@ li {
   padding: 0.75em;
   margin-bottom: 1em;
 
-  img {
-    height: 1.1em;
-    background-color: white;
-    padding: 0.2em;
-    border-radius: 100%;
-    margin-bottom: -0.4em;
-    margin-right: 0.5em;
+  img { display: none; }
+
+  @include phone {
+    text-overflow: hidden;
+    text-align: center;
+    display: inline-block;
+
+    margin: 0;
+
+    img {
+      display: initial;
+
+      width: 12vw;
+      height: 12vw;
+      padding: 0.2em;
+      margin-bottom: -0.4em;
+
+      background-color: white;
+    }
+
+    .nav-label  { display: none; }
   }
 }
 
@@ -186,7 +240,7 @@ li {
   padding: 0;
   margin: 0;
 
-  font-size: 110%;
+  font-size: 1.1em;
 
   border-top: solid $primary 2px;
   border-bottom: solid $primary 2px;
@@ -201,6 +255,8 @@ li {
     left: 10%;
     margin: 0;
     padding: 0;
+
+    @include phone { display: none; }
   }
 
   #main-info {
@@ -215,6 +271,11 @@ li {
       height: 1.3em;
       margin-bottom: -.4em;
     }
+
+    @include phone {
+      position: initial;
+      width: 100%;
+    }
   }
 
   &::after {
@@ -225,6 +286,8 @@ li {
     width: 50%;
     height: 100%;
     background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+
+    @include phone { display: none; }
   }
 }
 
@@ -254,6 +317,14 @@ li {
     border: solid $secondary 1px {
       radius: 100%;
     }
+  }
+
+  @include phone {
+    text-align: center;
+    height: initial;
+
+    img { margin: initial; margin-bottom: -.2em; margin-top: .1em; min-width: 5vw; }
+    .badge-label { display: none; }
   }
 }
 

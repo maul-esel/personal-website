@@ -18,7 +18,10 @@ title: Dominik Klumpp
 </div>
 <div id="badges">
 {% for badge in site.data.badges %}
-  <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}"><img src="{{ site.baseurl }}/images/{{ badge.icon }}" />{{ badge.name }}</a>
+  <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
+    <img src="{{ site.baseurl }}/images/{{ badge.icon }}" />
+    <span class="badge-label">{{ badge.name }}</span>
+  </a>
 {% endfor %}
 </div>
 

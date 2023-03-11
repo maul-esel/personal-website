@@ -65,7 +65,7 @@ body {
 
   text-align: right;
 
-  @include phone { bottom: 22vw; }
+  @include phone { bottom: 18vw; }
 }
 
 
@@ -213,15 +213,16 @@ li {
     text-align: center;
     display: inline-block;
 
+    padding: 0.3em;
     margin: 0;
 
     img {
       display: initial;
 
-      width: 12vw;
-      height: 12vw;
+      width: 10vw;
+      height: 10vw;
       padding: 0.2em;
-      margin-bottom: -0.4em;
+      margin-bottom: -0.2em;
 
       background-color: white;
     }
@@ -438,23 +439,48 @@ figcaption {
 }
 
 
-.year-tag {
-  @include tag(lightblue);
-
-  float: right;
-  margin-left: 2px;
-}
-
-
 
 
 // ********************************************************
 //  Teaching page
 // ********************************************************
 
+.year-tag {
+  @include tag(lightblue);
+
+  float: right;
+  margin-left: 2px;
+
+  @include phone { float: initial; margin: 0; margin-top: 0.5em; }
+}
+
+.lecture-title, .seminar-title, .project-title {
+  @include phone {
+    &::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+}
+
+.lecture-list, .seminar-list {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.project-title {
+  font-style: italic;
+  break-after: region column;
+}
+
 .project-list {
   list-style-type: none;
   padding-left: 0;
+
+  @include phone {
+    list-style-type: disc;
+    padding-left: 1em;
+  }
 }
 
 .project-type {
@@ -462,13 +488,21 @@ figcaption {
 
   width: 7em;
   margin-right: 1em;
+  float: left;
+
+  @include phone {
+    float: initial;
+    margin-right: 0;
+    margin-top: 0.5em;
+  }
 }
 
 .project-year {
   @include tag(lightblue);
   float: right;
-}
 
+  @include phone { float: initial; }
+}
 
 
 

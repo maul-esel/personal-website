@@ -12,3 +12,4 @@ title: Credits
 - <a href="https://iconscout.com/icons/presentation-board" target="_blank">Presentation board Icon</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://iconscout.com/icons/video-camera" target="_blank">Video Camera Icon</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://www.flaticon.com/de/kostenlose-icons/poster" target="_blank">Poster Icons erstellt von Pixel perfect - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/resume-and-cv" title="resume and cv icons">Resume and cv icons created by feen - Flaticon</a>

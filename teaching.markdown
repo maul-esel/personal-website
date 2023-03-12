@@ -1,12 +1,14 @@
 ---
 title: Teaching
+permalink: /teaching/
 ---
 
 ## Lectures
 
 I co-organise several lectures offered by the Chair for Software Engineering.
 
-* **Cyber-Physical Systems I: Discrete Models**
+{: .lecture-list}
+* <span class="lecture-title">**Cyber-Physical Systems I: Discrete Models**</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2022-23/cps-dm">WS22/23</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2021-22/cps-dm">WS21/22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2020-21/cps-dm">WS20/21</a>
@@ -17,7 +19,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   We discuss different modeling formalisms,
   specifications in the form of linear-time properties,
   and the automata-theoretic approach to linear-time (LTL) model checking.
-* **Cyber-Physical Systems II: Program Verification**
+* <span class="lecture-title">**Cyber-Physical Systems II: Program Verification**</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/program-verification">SS22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2021/program-verification">SS21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2020/program-verification">SS20</a>
@@ -26,7 +28,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   In this lecture, we develop the syntax and formal semantics of a simple imperative programming language.
   We use this language to introduce students to a variety of different approaches to program verification,
   from Hoare logic, over predicate transformers and symbolic execution, all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
-* **Theoretical Computer Science** (dt: Theoretische Informatik)
+* <span class="lecture-title">**Theoretical Computer Science** (dt: Theoretische Informatik)</span>
   <span class="year-tag">SS23</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/info3">SS22</a>
 
@@ -38,15 +40,16 @@ I co-organise several lectures offered by the Chair for Software Engineering.
 
 I frequently supervise students in the different seminars offered by the Chair for Software Engineering.
 
-* **Classical Articles of Program Analysis** (dt: _Klassische Artikel der Programmanalyse_, BSc Proseminar)
+{: .seminar-list}
+* <span class="seminar-title">**Classical Articles of Program Analysis** (dt: _Klassische Artikel der Programmanalyse_, BSc Proseminar)</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2021-22/pskapa">WS21/22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2020-21/pskapa">WS20/21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2019-20/pskapa">WS19/20</a>
-* **Automata Theory** (dt: _Automatentheorie_, BSc Proseminar / Seminar)
+* <span class="seminar-title">**Automata Theory** (dt: _Automatentheorie_, BSc Proseminar / Seminar)</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2022-23/ps-automata-theory">WS22/23</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2021/automata-theory">SS21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2020/AutomataTheory">SS20</a>
-* **Advanced Topics in Program Analysis** (MSc seminar)
+* <span class="seminar-title">**Advanced Topics in Program Analysis** (MSc seminar)</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2020-21/AdvancedTopicsInProgramAnalysis">WS20/21</a>
 
 In our seminars, students are given source material on their assigned topic (either a research paper, or a book chapter).
@@ -65,6 +68,10 @@ You can find a list of possible topic areas [in the Ultimate wiki](https://githu
 
 <ul class="project-list">
 {%- for project in site.data.projects -%}
-  <li><span class="project-type">{{ project.type }}</span> <em>{{ project.name }}</em> <span class="project-year">{{ project.year }}</span></li>
+  <li>
+    <span class="project-title">{{ project.name }}</span>
+    <span class="project-type">{{ project.type }}</span><!--
+    --><span class="project-year">{{ project.year }}</span>
+  </li>
 {%- endfor -%}
 </ul>

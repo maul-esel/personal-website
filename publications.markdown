@@ -1,7 +1,9 @@
 ---
-permalink: /publications/
 title: Publications
+permalink: /publications/
 ---
+
+[full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }
 
 <ul class="pub-list">
 {% for pub in site.publications reversed %}
@@ -22,7 +24,6 @@ title: Publications
     </p>
     <p class="pub-authorline">
       <span>Authors:</span>
-      <span>
       {% for auth in pub.authors -%}
         {%- if auth == 'me' -%}
           <span class="author-self">Dominik Klumpp</span>
@@ -43,7 +44,6 @@ title: Publications
         {%- endif -%}
         {%- unless forloop.last %}, {% endunless -%}
       {%- endfor %}
-      </span>
     </p>
  
     <p>
@@ -52,6 +52,7 @@ title: Publications
         <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
       </span>
       {%- assign talk = site.data.talks[pub.pub_id] -%}
+      {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
           <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />
@@ -99,14 +100,9 @@ title: Publications
 
 <!-- plans:
 
-  youtube / video icon in front of recording
-  acm / article icon in front of publisher link
   link scholar
   A-Z icon after "Authors" if order is alphabetical
-  provide bibtex entry for each publication
-  generate full bibliography as separate page
-  include abstract
   include "type" of publication
   add presentation for QA4SASO to research gate & link
-
+  add theses
 -->

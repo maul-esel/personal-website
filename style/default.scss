@@ -1,37 +1,160 @@
 ---
 ---
 
+$primary: #565656;
+$primary-highlight: #757575;
+
+$secondary: white;
+$secondary-alternate: #EAEAEA;
+
+$link-color: darkblue;
+$highlight-color: orange;
+
+// ********************************************************
+//  Responsive design
+// ********************************************************
+
+@mixin phone {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+
+// ********************************************************
+//  Main document structure
+// ********************************************************
+
+html {
+  // This allows for proper positioning of #footer
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+}
+
 body {
-  background-color: #EAEAEA;
+  background-color: $secondary-alternate;
   font-family: sans-serif;
-  color: #565656;
-}
-
-a {
-  color: darkblue;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.highlight {
-  color: orange;
-  font-weight: bold;
-  font-style: italic;
+  color: $primary;
+  padding: 0;
+  margin: 0;
 }
 
 #wrapper {
   width: 70%;
-  margin: auto;
-  background-color: white;
+  margin: auto {
+    bottom: 2.5em;
+  }
   padding: 2%;
-  margin-bottom: 2.5em;
+
+  background-color: $secondary;
+
+  @include phone {
+    display: block;
+    width: 96%;
+    margin: 0;
+    padding-bottom: 30vw;
+  }
 }
+
+#footer {
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  bottom: 0.2em;
+
+  text-align: right;
+
+  @include phone { bottom: 18vw; }
+}
+
+
+// ********************************************************
+//  Reusable design elements
+// ********************************************************
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+li {
+  margin-bottom: 0.75em;
+}
+
+.highlight {
+  color: $highlight-color;
+  font-weight: bold;
+  font-style: italic;
+}
+
+%button {
+  font-weight: bold;
+
+  background-color: $primary;
+  color: $secondary;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:hover, &:focus {
+    background-color: $primary-highlight;
+    text-decoration: none;
+  }
+}
+
+@mixin tag($color) {
+  display: inline-block;
+
+  font-weight: bold;
+  text-align: center;
+
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  margin-top: -0.3em;
+
+  background-color: $color;
+}
+
+%folder, %unfolder {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+%folder {
+  margin-bottom: 0.1em;
+  border: {
+    top:   0.86em solid $link-color;
+    left:  0.6em  solid transparent;
+    right: 0.6em  solid transparent;
+  }
+}
+
+%unfolder {
+  border: {
+    left:   0.86em solid $link-color;
+    top:    0.6em  solid transparent;
+    bottom: 0.6em  solid transparent;
+  }
+}
+
+
+// ********************************************************
+//  Navigation sidebar
+// ********************************************************
 
 #pictureofme {
   display: block;
 
+  // By setting height to 0 and padding-bottom to same percentage as width,
+  // the element gets a square shape.
   width: 8%;
   height: 0;
   padding-bottom: 8%;
@@ -40,217 +163,89 @@ a:hover {
   right: 1%;
   top: 1%;
 
-  border: solid #565656 1px;
-  
+  border: solid $primary 1px {
+    radius: 100%;
+  }
 
-  overflow: clip;
-  border-radius: 100%;
-  
+  overflow: hidden;
   img {
     width: 150%;
   }
+
+  @include phone { display: none; }
 }
 
 #navigation {
   width: 10%;
+
   position: fixed;
   right: 0;
   top: 30vh;
+
+  @include phone {
+    width: 100%;
+    top: initial;
+    bottom: 0;
+
+    text-align: center;
+
+    background-color: $secondary-alternate;
+    border-top: solid $primary 1px;
+
+    padding: 0;
+    padding-top: 0.2em;
+
+    z-index: 1000;
+  }
 }
 
 .nav-item {
+  @extend %button;
+
   display: block;
   padding: 0.75em;
   margin-bottom: 1em;
 
-  background-color: #565656;
+  img { display: none; }
 
-  color: white;
-  font-weight: bold;
-  
-  &:hover, &:focus {
-    background-color: #757575;
-    text-decoration: none;
-  }
-}
+  @include phone {
+    text-overflow: hidden;
+    text-align: center;
+    display: inline-block;
 
-.pub-folder, .pub-unfolder {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-}
+    padding: 0.3em;
+    margin: 0;
 
-.pub-unfolder {
-  border-top: 0.6em solid transparent;
-  border-bottom: 0.6em solid transparent;
-  border-left: 0.86em solid darkblue;
-}
+    img {
+      display: initial;
 
-.pub-folder {
-  border-left: 0.6em solid transparent;
-  border-right: 0.6em solid transparent;
-  border-top: 0.86em solid darkblue;
-  margin-bottom: 0.1em;
-}
+      width: 10vw;
+      height: 10vw;
+      padding: 0.2em;
+      margin-bottom: -0.2em;
 
-.pub-folder img, .pub-unfolder img {
-  width: 1em;
-}
-.pub-folder {
-  display: none;
-}
-.publication:target {
-  .pub-folder { display: inline-block; }
-  .pub-unfolder { display: none; }
-}
-
-figure > pre {
-  border: solid #565656 1px;
-  padding: 0.5em;
-  background-color: #EAEAEA;
-}
-figcaption {
-  font-weight: bold;
-  margin-bottom: -0.5em;
-}
-
-
-.pub-extra {
-  display: none;
-}
-.publication:target .pub-extra {
-  display: initial;
-}
-
-
-.pub-list {
-  list-style-type: none;
-  padding-left: 0;
-  
-  li {
-    border-bottom: solid #565656 2px;
-    margin-bottom: 0;
-    padding: 0.25em 0.5em;
-    
-    &:last-child {
-      border: none;
+      background-color: white;
     }
-    
-    &:target {
-      background-color: #FFA50033;
-    }
+
+    .nav-label  { display: none; }
   }
 }
 
-.project-list {
-  list-style-type: none;
-  padding-left: 0;
-}
 
-li {
-  margin-bottom: 0.75em;
-}
-
-.project-type {
-  display: inline-block;
-  font-weight: bold;
-  width: 7em;
-  background-color: orange;
-  padding: 0.3em 0.6em 0.3em 0.6em;
-  text-align: center;
-  margin-right: 1em;
-}
-.project-year {
-  float: right;
-}
-
-.year-tag {
-  display: inline-block;
-  font-weight: bold;
-  background-color: lightblue;
-  padding: 0.3em 0.6em 0.3em 0.6em;
-  float: right;
-  margin-left: 2px;
-  margin-top: -0.3em;
-}
-
-// Venue tag
-.pub-venue {
-  float: right;
-  font-weight: bold;
-}
-.pub-workshop {
-  background-color: orange;
-  padding: 0.3em 0.3em 0.3em 0.6em;
- // border-radius: 0.5em 0 0 0.5em;
-}
-.colocation-link {
-  background-color: lightgray;
-  padding: 0.32em;
-  margin-right: 0;
-}
-.pub-colocation {
-  padding: 0.3em 0.6em 0.3em 0.3em;
-  background-color: lightblue;
-  //border-radius: 0 0.5em 0.5em 0;
-}
-.pub-conference {
-  padding: 0.3em 0.6em 0.3em 0.6em;
-  background-color: orange;
-  //border-radius: 0.5em;
-}
-
-.talk-date {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.pub-title, .talk-title {
-  font-size: 1.3em;
-  font-style: italic;
-}
-.pub-authorline > span {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 90%;
-  &:first-child {
-    margin-right: 1%;
-  }
-}
-.author, .author-self {
-  white-space: nowrap;
-  
-  .author-orcid img {
-    width: 1em;
-    margin-right: .25em;
-    margin-bottom: -.1em;
-  }
-}
-.author-self {
-  font-weight: bold;
-}
-.pub-additional-icon {
-  height: 1.5em;
-  vertical-align: -30%;
-}
-.pub-additional {
-  margin-right: 1%;
-}
-
-
-
+// ********************************************************
+//  Home page styling
+// ********************************************************
 
 #banner {
   width: 100%;
   padding: 0;
   margin: 0;
-  
-  font-size: 110%;
-  
-  border-top: solid #565656 2px;
-  border-bottom: solid #565656 2px;
-  
+
+  font-size: 1.1em;
+
+  border-top: solid $primary 2px;
+  border-bottom: solid $primary 2px;
+
   position: relative;
 
   & > img {
@@ -261,6 +256,8 @@ li {
     left: 10%;
     margin: 0;
     padding: 0;
+
+    @include phone { display: none; }
   }
 
   #main-info {
@@ -270,60 +267,65 @@ li {
     position: absolute;
     left: 55%;
     top: 0;
-    
+
     .mail {
       height: 1.3em;
       margin-bottom: -.4em;
     }
-  }
-  
-  
-  &::after {
-      content: '';
-      position: absolute;
-      left: 0; top: 0;
-      width: 50%; height: 100%;
-      background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+
+    @include phone {
+      position: initial;
+      width: 100%;
     }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+
+    @include phone { display: none; }
+  }
 }
 
 #badges {
   width: 100%;
   margin-top: 1%;
   display: flex;
-  
-  &:nth-element(.badge) {
-  }
 }
 
 .badge {
+  @extend %button;
+
   flex-basis: 90%;
+  height: 2em;
   padding: .5%;
+
   margin-right: .5%;
   &:last-child {
     margin-right: 0;
   }
 
-  background-color: #565656;
-  color: white;
-
-  font-weight: bold;
-  height: 2em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  
   img {
-    background-color: white;
-    border: solid white 1px;
-    border-radius: 100%;
     width: 1.8em;
     margin: 0 .6em -.6em .4em;
+
+    background-color: $secondary;
+    border: solid $secondary 1px {
+      radius: 100%;
+    }
   }
 
-  &:hover, &:focus {
-    text-decoration: none;
-    background-color: #757575;
+  @include phone {
+    text-align: center;
+    height: initial;
+
+    img { margin: initial; margin-bottom: -.2em; margin-top: .1em; min-width: 5vw; }
+    .badge-label { display: none; }
   }
 }
 
@@ -336,14 +338,190 @@ h2:target {
 }
 
 
-html {
-  position:relative;
-  min-height: 100%;
+// ********************************************************
+//  Publication list
+// ********************************************************
+
+.pub-additional-icon {
+  height: 1.5em;
+  vertical-align: -30%;
 }
-#footer {
-  text-align: right;
-  position: absolute;
-  right: 1em;
-  left: 1em;
-  bottom: 0.2em;
+
+.pub-additional {
+  margin-right: 1%;
 }
+
+// Buttons to expand / collapse publications
+// --------------------------------------------------------
+.pub-unfolder {
+  @extend %unfolder;
+}
+.pub-folder {
+  @extend %folder;
+  display: none;
+}
+.pub-extra {
+  display: none;
+}
+.publication:target {
+  .pub-folder { display: inline-block; }
+  .pub-unfolder { display: none; }
+  .pub-extra { display: initial; }
+}
+
+// Venue tag
+// --------------------------------------------------------
+.pub-venue {
+  float: right;
+}
+.pub-workshop {
+  @include tag($highlight-color);
+  padding-right: 0.3em;
+}
+.colocation-link {
+  @include tag(lightgray);
+  padding: 0.32em;
+}
+.pub-colocation {
+  @include tag(lightblue);
+  padding-left: 0.3em;
+}
+.pub-conference {
+  @include tag($highlight-color);
+}
+
+// Author information
+// --------------------------------------------------------
+.pub-authorline {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  clear: right;
+}
+
+.author, .author-self {
+  white-space: nowrap;
+
+  .author-orcid img {
+    width: 1em;
+    margin-right: .25em;
+    margin-bottom: -.1em;
+  }
+}
+.author-self {
+  font-weight: bold;
+}
+
+figure {
+  width: 100%;
+  margin-left: 0;
+}
+figure > pre {
+  border: solid $primary 1px;
+  padding: 0.5em;
+  background-color: $secondary-alternate;
+  overflow: scroll;
+}
+figcaption {
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+
+.pub-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    border-bottom: solid $primary 2px;
+    margin-bottom: 0;
+    padding: 0.25em 0.5em;
+
+    &:last-child {
+      border: none;
+    }
+
+    &:target {
+      background-color: change-color($highlight-color, $alpha: 0.2);
+    }
+  }
+}
+
+
+
+
+// ********************************************************
+//  Teaching page
+// ********************************************************
+
+.year-tag {
+  @include tag(lightblue);
+
+  float: right;
+  margin-left: 2px;
+
+  @include phone { float: initial; margin: 0; margin-top: 0.5em; }
+}
+
+.lecture-title, .seminar-title, .project-title {
+  @include phone {
+    &::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+}
+
+.lecture-list, .seminar-list {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.project-title {
+  font-style: italic;
+  break-after: region column;
+}
+
+.project-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  @include phone {
+    list-style-type: disc;
+    padding-left: 1em;
+  }
+}
+
+.project-type {
+  @include tag($highlight-color);
+
+  width: 7em;
+  margin-right: 1em;
+  float: left;
+
+  @include phone {
+    float: initial;
+    margin-right: 0;
+    margin-top: 0.5em;
+  }
+}
+
+.project-year {
+  @include tag(lightblue);
+  float: right;
+
+  @include phone { float: initial; }
+}
+
+
+
+
+.talk-date {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.pub-title, .talk-title {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+

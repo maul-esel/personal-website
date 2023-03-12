@@ -7,7 +7,7 @@ title: Dominik Klumpp
   <img src="images/dominik.jpg"/>
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
-    <h3>PhD Student, University of Freiburg</h3>
+    <h3>PhD Candidate, University of Freiburg</h3>
     <img class="mail" src="{{ site.baseurl }}/images/mail.png" />
     
     <p>
@@ -32,7 +32,10 @@ title: Dominik Klumpp
 </div>
 <div id="badges">
 {% for badge in site.data.badges %}
-  <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}"><img src="{{ site.baseurl }}/images/{{ badge.icon }}" />{{ badge.name }}</a>
+  <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
+    <img src="{{ site.baseurl }}/images/{{ badge.icon }}" />
+    <span class="badge-label">{{ badge.name }}</span>
+  </a>
 {% endfor %}
 </div>
 

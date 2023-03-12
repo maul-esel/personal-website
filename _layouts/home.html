@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{{ page.title }}</title>
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/default.css" />
     <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.svg" />
     <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.png" />
@@ -15,8 +18,9 @@
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}
-        <a class="nav-item" href="{{ site.baseurl }}{{ item.link }}">
-          {{ item.item }}
+        <a class="nav-item" title="{{ item.item }}" href="{{ site.baseurl }}{{ item.link }}">
+          <img class="nav-icon" src="{{ site.baseurl }}/images/{{ item.icon }}" />
+          <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
     </div>

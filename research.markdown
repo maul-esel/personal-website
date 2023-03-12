@@ -1,6 +1,6 @@
 ---
 title: Research
-layout: default
+permalink: /research/
 ---
 
 {% for topic in site.research %}

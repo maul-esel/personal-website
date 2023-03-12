@@ -52,6 +52,7 @@ title: Publications
         <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
       </span>
       {%- assign talk = site.data.talks[pub.pub_id] -%}
+      {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
           <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />

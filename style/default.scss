@@ -514,6 +514,14 @@ figcaption {
 .pub-title, .talk-title {
   font-size: 1.3em;
   font-style: italic;
-}
 
+  @include phone {
+    & + .pub-venue {
+      float: initial;
+      display: block;
+      margin: 0;
+      margin-top: 0.75em;
+    }
+  }
+}
 

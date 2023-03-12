@@ -14,3 +14,4 @@ permalink: /credits/
 - <a href="https://iconscout.com/icons/video-camera" target="_blank">Video Camera Icon</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://www.flaticon.com/de/kostenlose-icons/poster" target="_blank">Poster Icons erstellt von Pixel perfect - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/resume-and-cv" title="resume and cv icons">Resume and cv icons created by feen - Flaticon</a>
+- <a href="https://iconscout.com/icons/list" target="_blank">List Icon</a> by <a href="https://iconscout.com/contributors/amit-jakhu">Amit Jakhu</a> on <a href="https://iconscout.com">IconScout</a>

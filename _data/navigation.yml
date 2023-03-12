@@ -3,6 +3,7 @@
   icon: home.svg
 - item: Research
   link: /research
+  icon: topics.svg
 - item: Publications
   link: /publications
   icon: article.svg

@@ -1,7 +1,7 @@
 - item: Home
   link: /
   icon: home.svg
-- item: Research
+- item: Research Topics
   link: /research
   icon: topics.svg
 - item: Publications

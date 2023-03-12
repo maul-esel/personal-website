@@ -1,5 +1,6 @@
 ---
 title: Curriculum Vitae
+permalink: /cv/
 ---
 
 [Download PDF]({{ site.baseurl }}/resources/cv.pdf)

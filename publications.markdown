@@ -1,6 +1,6 @@
 ---
-permalink: /publications/
 title: Publications
+permalink: /publications/
 ---
 
 [full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }

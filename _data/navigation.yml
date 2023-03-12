@@ -1,9 +1,6 @@
 - item: Home
   link: /
   icon: home.svg
-- item: Curriculum Vitae
-  link: /cv
-  icon: cv.png
 - item: Publications
   link: /publications
   icon: article.svg
@@ -13,3 +10,6 @@
 - item: Teaching
   link: /teaching
   icon: teaching.svg
+- item: Curriculum Vitae
+  link: /cv
+  icon: cv.png

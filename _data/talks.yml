@@ -16,7 +16,7 @@ popl23:
   location: virtual
   summary: I presented our paper on how _abstract_ commutativity and the _stratified combination_ of commutativity relations can be used in algorithmic verification.
   slides: https://www.researchgate.net/publication/369010015_Stratified_Commutativity_in_Verification_Algorithms_for_Concurrent_Programs
-  recording: https://nc.informatik.uni-freiburg.de/index.php/s/ARLPZjBWPxQiGqA
+  recording: https://youtube.com/watch?v=64jcmculty0
 
 fmcad22:
   title: Commutativity in Concurrent Program Verification

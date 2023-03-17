@@ -3,6 +3,7 @@ layout: legacy_tutorial
 title: COM interface tutorial
 categories: ['tutorials', 'AutoHotkey', 'AutoHotkey_L', 'IronAHK', 'COM']
 permalink: '/tutorials/COM-Interfaces.html'
+sitemap: false
 
 ahk_versions: [['AutoHotkey', false], ['AutoHotkey_L', true], ['AutoHotkey v2', true]]
 required_os: 'None'

@@ -26,11 +26,11 @@ permalink: /talks/
   <p>{{ talk.summary | markdownify }}</p>
 
   <p>
-  {%- assign paper = site.data.publications[id] -%}
-  {%- if paper -%}
+  {%- assign pub = site.publications | find_exp: "pub", "pub.pub_id == id" %}
+  {%- if pub -%}
     <span class="pub-additional">
       <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.svg" />
-      <a class="pub-publisher" href="{{ paper.publisher_link }}">Paper</a>
+      <a class="pub-publisher" href="{{ site.baseurl }}/publications/#pub-{{ id }}">Paper</a>
     </span>
   {%- endif -%}
   {%- if talk.slides -%}

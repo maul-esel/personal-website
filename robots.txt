@@ -1,18 +1,14 @@
 # robots.txt for dominik-klumpp.net
 
+# Allow crawling entire webiste
 User-agent: *
-#
-# Do not crawl github pages for old projects
-Disallow: /COM-Classes/
-Disallow: /FormsFramework/
-Disallow: /ahkbook/
-#
-# Do not crawl legacy website content
-Disallow: /tutorials/
-#
+Allow: /
+
 # Sitemap location
+User-agent: *
 Sitemap: https://dominik-klumpp.net/sitemap.xml
-#
+
 # Preferred URL
+User-agent: *
 Host: dominik-klumpp.net
 

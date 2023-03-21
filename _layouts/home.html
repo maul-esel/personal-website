@@ -5,28 +5,28 @@
 
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/default.css" />
-    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.svg" />
-    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="{{ '/style/default.css' | absolute_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.svg' | absolute_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | absolute_url }}" />
   </head>
   <body>
     <div id="wrapper">
     {{ content }}
     </div>
-    <a id="pictureofme" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/images/dominik.jpg"/>
+    <a id="pictureofme" href="{{ '/' | absolute_url }}/">
+      <img src="{{ '/images/dominik.jpg' | absolute_url }}"/>
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}
-        <a class="nav-item" title="{{ item.item }}" href="{{ site.baseurl }}{{ item.link }}">
-          <img class="nav-icon" src="{{ site.baseurl }}/images/{{ item.icon }}" />
+        <a class="nav-item" title="{{ item.item }}" href="{{ item.link | absolute_url }}">
+          <img class="nav-icon" src="{{ '/images/' | append: item.icon | absolute_url }}" />
           <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
     </div>
 
     <div id="footer">
-      <a href="{{ site.baseurl }}/credits">Credits</a>
+      <a href="{{ '/credits' | absolute_url }}">Credits</a>
     </div>
   </body>
 </html>

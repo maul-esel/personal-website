@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,8 +15,8 @@
     <div id="wrapper">
     {{ content }}
     </div>
-    <a id="pictureofme" href="{{ '/' | absolute_url }}/">
-      <img src="{{ '/images/dominik.jpg' | absolute_url }}"/>
+    <a id="pictureofme" href="{{ '' | absolute_url }}/">
+      <img alt="" src="{{ '/images/dominik.jpg' | absolute_url }}"/>
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}

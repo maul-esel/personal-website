@@ -4,11 +4,11 @@ title: Dominik Klumpp
 ---
 
 <div id="banner">
-  <img src="images/dominik.jpg"/>
+  <img alt="" src="images/dominik.jpg"/>
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>
-    <img class="mail" src="{{ '/images/mail.png' | absolute_url }}" />
+    <img alt="email address: firstname dot lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail.png' | absolute_url }}" />
     
     <p>
     I work at the <a href="https://swt.informatik.uni-freiburg.de/">Chair for Software Engineering</a>.<br/>
@@ -19,7 +19,7 @@ title: Dominik Klumpp
 <div id="badges">
 {% for badge in site.data.badges %}
   <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
-    <img src="{{ '/images/' | append: badge.icon | absolute_url }}" />
+    <img src="{{ '/images/' | append: badge.icon | absolute_url }}" alt="" />
     <span class="badge-label">{{ badge.name }}</span>
   </a>
 {% endfor %}

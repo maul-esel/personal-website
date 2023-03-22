@@ -32,7 +32,7 @@ permalink: /publications/
           <span class="author">
             {%- if author.orcid -%}
               <a class="author-orcid" href="https://orcid.org/{{author.orcid}}">
-                <img src="{{ '/images/orcid.svg' | absolute_url }}"/>
+                <img alt="" src="{{ '/images/orcid.svg' | absolute_url }}"/>
               </a>
             {%- endif -%}
             {%- if author.website -%}
@@ -48,32 +48,32 @@ permalink: /publications/
  
     <p>
       <span class="pub-additional">
-        <img class="pub-additional-icon" src="{{ '/images/article.svg' | absolute_url }}" />
+        <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | absolute_url }}" />
         <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
       </span>
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ '/images/slides.svg' | absolute_url }}" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/slides.svg' | absolute_url }}" />
           <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
         </span>
       {%- endif -%}
       {%- if talk and talk.recording -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ '/images/video.svg' | absolute_url }}" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/video.svg' | absolute_url }}" />
           <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
         </span>
       {%- endif -%}
       {%- if pub.poster -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ '/images/poster.png' | absolute_url }}" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/poster.png' | absolute_url }}" />
           <a class="pub-poster" href="{{ pub.poster }}">Poster</a>
         </span>
       {%- endif %}
       {%- if pub.artifact -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ '/images/archive.svg' | absolute_url }}" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/archive.svg' | absolute_url }}" />
           <a class="pub-poster" href="{{ pub.artifact }}">Artifact</a>
         </span>
       {%- endif %}

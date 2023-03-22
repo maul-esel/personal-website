@@ -21,7 +21,7 @@
     <div id="navigation">
       {% for item in site.data.navigation %}
         <a class="nav-item" title="{{ item.item }}" href="{{ item.link | absolute_url }}">
-          <img class="nav-icon" src="{{ '/images/' | append: item.icon | absolute_url }}" />
+          <img alt="{{ item.item }}" class="nav-icon" src="{{ '/images/' | append: item.icon | absolute_url }}" />
           <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}

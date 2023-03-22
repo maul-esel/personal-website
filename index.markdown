@@ -10,7 +10,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 ---
 
 <div id="banner">
-  <img alt="" src="images/dominik.jpg"/>
+  <img alt="" src="images/dominik.jpg" width="530" height="380"/>
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>

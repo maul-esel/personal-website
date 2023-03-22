@@ -169,7 +169,7 @@ li {
 
   overflow: hidden;
   img {
-    width: 150%;
+    width: 100%;
   }
 
   @include phone { display: none; }

@@ -24,7 +24,7 @@
     {{ content }}
     </div>
     <a aria-label="back to home" id="pictureofme" href="{{ site.url }}/">
-      <img alt="" src="{{ '/images/dominik.jpg' | absolute_url }}"/>
+      {% include image.html file="dominik_quadratic.jpg" alt="" width=150 srcset="500w: small, 1000w: medium, 3000w: " sizes="8vw" %}
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}

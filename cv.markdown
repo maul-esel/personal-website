@@ -1,6 +1,8 @@
 ---
 title: Curriculum Vitae
 permalink: /cv/
+
+description: Dominik Klumpp's CV
 ---
 
 [Download PDF]({{ '/resources/cv.pdf' | absolute_url }})

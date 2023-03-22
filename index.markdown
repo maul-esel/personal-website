@@ -1,6 +1,12 @@
 ---
 layout: home
 title: Dominik Klumpp
+
+description: >-
+  Dominik Klumpp is a PhD candidate in computer science at the University of Freiburg, Germany.
+  His main research focus is on algorithmic verification of concurrent programs,
+  using the concepts of commutativity and partial order reduction.
+keywords: Dominik Klumpp, computer science, programming languages, formal methods, verification, commutativity, partial order reduction
 ---
 
 <div id="banner">

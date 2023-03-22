@@ -10,6 +10,14 @@
     <link rel="stylesheet" type="text/css" href="{{ '/style/default.css' | absolute_url }}" />
     <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.svg' | absolute_url }}" />
     <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | absolute_url }}" />
+
+    <meta name="author" content="Dominik Klumpp" />
+    {% if page.description -%}
+      <meta name="description" content="{{ page.description }}" />
+    {%- endif %}
+    {% if page.keywords -%}
+      <meta name="keywords" content="{{ page.keywords }}" />
+    {%- endif %}
   </head>
   <body>
     <div id="wrapper">

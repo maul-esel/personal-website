@@ -1,6 +1,11 @@
 ---
 title: Publications
 permalink: /publications/
+
+description: >-
+  Publications by Dominik Klumpp,
+  along with additional material such as slides, talk recordings, posters etc.
+keywords: Dominik Klumpp, publications, papers, articles, bibliography, references
 ---
 
 [full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }

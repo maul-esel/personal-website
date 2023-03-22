@@ -3,6 +3,7 @@
 # Allow crawling entire webiste
 User-agent: *
 Allow: /
+Disallow: /credits/
 
 # Sitemap location
 User-agent: *

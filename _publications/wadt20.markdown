@@ -31,7 +31,7 @@ bibtex: |-
   @inproceedings{wadt20:KandKIV,
     author    = {Dominik Klumpp and Philip Lenzen},
     editor    = {Markus Roggenbach},
-    title     = {{\textdollar}{\textbackslash}mathbb \{K\}{\textdollar} and {KIV}:
+    title     = {{$\mathbb{K}$} and {KIV}:
                  Towards Deductive Verification for Arbitrary Programming Languages},
     booktitle = {Recent Trends in Algebraic Development Techniques - 25th International Workshop,
                  {WADT} 2020, Virtual Event, April 29, 2020, Revised Selected Papers},

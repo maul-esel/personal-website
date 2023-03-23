@@ -14,8 +14,8 @@ keywords: Dominik Klumpp, publications, papers, articles, bibliography, referenc
 {% for pub in site.publications reversed %}
   <li class="publication" id="pub-{{ pub.pub_id }}">
     <p>
-      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}"></a>
-      <a class="pub-folder" href="#/"></a>
+      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}" aria-label="show details for publication"></a>
+      <a class="pub-folder" href="#/" aria-label="collapse detailed view"></a>
       <span class="pub-title">{{ pub.title }}</span>
       {%- if pub.workshop or pub.conference -%}
         <span class="pub-venue">
@@ -36,7 +36,7 @@ keywords: Dominik Klumpp, publications, papers, articles, bibliography, referenc
           {%- assign author = site.data.coauthors[auth] -%}
           <span class="author">
             {%- if author.orcid -%}
-              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}">
+              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}" aria-label="ORCID profile for {{ author.firstname }} {{ author.lastname }}">
                 <img alt="" src="{{ '/images/orcid.svg' | relative_url }}"/>
               </a>
             {%- endif -%}

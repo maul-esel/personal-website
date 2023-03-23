@@ -1,4 +1,4 @@
-<img src="{{ include.file | prepend: '/images/' | absolute_url }}"
+<img src="{{ include.file | prepend: '/images/' | relative_url }}"
   {%- if include.height %} height="{{ include.height }}" {%- endif %}
   {%- if  include.width %} width="{{ include.width }}"  {%- endif %}
   {%- if include.alt %} alt="{{ include.alt }}" {%- endif %}
@@ -7,9 +7,9 @@
     {%- assign pair = src | split: ': ' -%}
     {%- if pair[1] -%}
       {%- assign ext = include.file | slice: -4, 4 -%}
-      {%- assign href = include.file | remove: ext | append: '-' | append: pair[1] | append: ext | prepend: '/images/' | absolute_url -%}
+      {%- assign href = include.file | remove: ext | append: '-' | append: pair[1] | append: ext | prepend: '/images/' | relative_url -%}
     {%- else -%}
-      {%- assign href = include.file | prepend: '/images/' | absolute_url -%}
+      {%- assign href = include.file | prepend: '/images/' | relative_url -%}
     {%- endif -%}
     {{ href }} {{ pair[0] }}
     {%- unless forloop.last %}, {% endunless -%}

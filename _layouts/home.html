@@ -7,9 +7,9 @@
 
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ '/style/default.css' | absolute_url }}" />
-    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.svg' | absolute_url }}" />
-    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | absolute_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/style/default.css' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.svg' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | relative_url }}" />
 
     <meta name="author" content="Dominik Klumpp" />
     {% if page.description -%}
@@ -23,20 +23,20 @@
     <div id="wrapper">
     {{ content }}
     </div>
-    <a aria-label="back to home" id="pictureofme" href="{{ site.url }}/">
+    <a aria-label="back to home" id="pictureofme" href="{{ '' | relative_url }}/">
       {% include image.html file="dominik_quadratic.jpg" alt="" width=150 height=150 srcset="150w: tiny, 500w: small, 1000w: medium, 3000w: " sizes="8vw" %}
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}
-        <a class="nav-item" title="{{ item.item }}" href="{{ item.link | absolute_url }}">
-          <img alt="{{ item.item }}" class="nav-icon" src="{{ '/images/' | append: item.icon | absolute_url }}" />
+        <a class="nav-item" title="{{ item.item }}" href="{{ item.link | relative_url }}">
+          <img alt="{{ item.item }}" class="nav-icon" src="{{ '/images/' | append: item.icon | relative_url }}" />
           <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
     </div>
 
     <div id="footer">
-      <a href="{{ '/credits' | absolute_url }}">Credits</a>
+      <a href="{{ '/credits' | relative_url }}">Credits</a>
     </div>
   </body>
 </html>

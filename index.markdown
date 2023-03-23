@@ -14,7 +14,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>
-    <img alt="email address: firstname dot lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail.png' | absolute_url }}" />
+    <img alt="email address: firstname dot lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail.png' | relative_url }}" />
     
     <p>
     I work at the <a href="https://swt.informatik.uni-freiburg.de/">Chair for Software Engineering</a>.<br/>
@@ -25,7 +25,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 <div id="badges">
 {% for badge in site.data.badges %}
   <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
-    <img src="{{ '/images/' | append: badge.icon | absolute_url }}" width="28" height="28" alt="" />
+    <img src="{{ '/images/' | append: badge.icon | relative_url }}" width="28" height="28" alt="" />
     <span class="badge-label">{{ badge.name }}</span>
   </a>
 {% endfor %}
@@ -46,7 +46,7 @@ which has scored top rankings in the _International Competition on Software Veri
 
 {% for talkitem in site.data.talks limit: 4 -%}
 - {% assign talk = talkitem[1] -%}
-  **[{{ talk.date | date_to_string }}]({{ '/talks#talk-' | append: talkitem[0] | absolute_url }}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
+  **[{{ talk.date | date_to_string }}]({{ '/talks#talk-' | append: talkitem[0] | relative_url }}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
 {% endfor %}
 
 ## Selected Publications

@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Dominik Klumpp
+title: Dominik Klumpp | Personal Homepage
+omit_title_suffix: true
 
 description: >-
   Dominik Klumpp is a PhD candidate in computer science at the University of Freiburg, Germany.

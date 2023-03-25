@@ -8,8 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>{{ page.title }}</title>
-    <meta name="title" content="{{ page.title }}">
+    {%- if page.title and page.omit_title_suffix != true -%}
+      {% assign title = page.title | append: ' | Dominik Klumpp' %}
+    {%- elsif page.title -%}
+      {% assign title = page.title %}
+    {%- else -%}
+      {% assign title = 'Dominik Klumpp' %}
+    {%- endif -%}
+    <title>{{ title }}</title>
+    <meta name="title" content="{{ title }}">
     <meta name="author" content="Dominik Klumpp" />
     {% if page.description -%}
       <meta name="description" content="{{ page.description }}" />
@@ -20,7 +27,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ title }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ '/images/dominik-medium.jpg' | absolute_url }}">
     {% if page.description -%}
@@ -30,7 +37,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ page.url | absolute_url }}">
-    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:title" content="{{ title }}">
     <meta property="twitter:image" content="{{ '/images/dominik-medium.jpg' | absolute_url }}">
     {% if page.description -%}
       <meta property="twitter:description" content="{{ page.description }}">

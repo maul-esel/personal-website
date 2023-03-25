@@ -36,9 +36,7 @@ keywords: Dominik Klumpp, publications, papers, articles, bibliography, referenc
           {%- assign author = site.data.coauthors[auth] -%}
           <span class="author">
             {%- if author.orcid -%}
-              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}" aria-label="ORCID profile for {{ author.firstname }} {{ author.lastname }}">
-                <img alt="" src="{{ '/images/orcid.svg' | relative_url }}"/>
-              </a>
+              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}" aria-label="ORCID profile for {{ author.firstname }} {{ author.lastname }}"><img alt="" src="{{ '/images/orcid.svg' | relative_url }}"/></a>
             {%- endif -%}
             {%- if author.website -%}
               <a class="author-link" href="{{ author.website }}">{{ author.firstname }} {{ author.lastname }}</a>

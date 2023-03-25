@@ -169,7 +169,8 @@ li {
 
   overflow: hidden;
   img {
-    width: 150%;
+    width: 100%;
+    height: auto;
   }
 
   @include phone { display: none; }
@@ -312,6 +313,7 @@ li {
 
   img {
     width: 1.8em;
+    height: 1.8em;
     margin: 0 .6em -.6em .4em;
 
     background-color: $secondary;
@@ -324,7 +326,7 @@ li {
     text-align: center;
     height: initial;
 
-    img { margin: initial; margin-bottom: -.2em; margin-top: .1em; min-width: 5vw; }
+    img { margin: initial; margin-bottom: -.2em; margin-top: .1em; min-height: 5vw; min-width: 5vw; }
     .badge-label { display: none; }
   }
 }
@@ -522,6 +524,14 @@ figcaption {
 .pub-title, .talk-title {
   font-size: 1.3em;
   font-style: italic;
-}
 
+  @include phone {
+    & + .pub-venue {
+      float: initial;
+      display: block;
+      margin: 0;
+      margin-top: 0.75em;
+    }
+  }
+}
 

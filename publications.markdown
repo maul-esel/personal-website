@@ -1,6 +1,11 @@
 ---
 title: Publications
 permalink: /publications/
+
+description: >-
+  Publications by Dominik Klumpp,
+  along with additional material such as slides, talk recordings, posters etc.
+keywords: Dominik Klumpp, publications, papers, articles, bibliography, references
 ---
 
 [full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }
@@ -9,8 +14,8 @@ permalink: /publications/
 {% for pub in site.publications reversed %}
   <li class="publication" id="pub-{{ pub.pub_id }}">
     <p>
-      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}"></a>
-      <a class="pub-folder" href="#/"></a>
+      <a class="pub-unfolder" href="#pub-{{ pub.pub_id }}" aria-label="show details for publication"></a>
+      <a class="pub-folder" href="#/" aria-label="collapse detailed view"></a>
       <span class="pub-title">{{ pub.title }}</span>
       {%- if pub.workshop or pub.conference -%}
         <span class="pub-venue">
@@ -31,8 +36,8 @@ permalink: /publications/
           {%- assign author = site.data.coauthors[auth] -%}
           <span class="author">
             {%- if author.orcid -%}
-              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}">
-                <img src="{{ site.baseurl }}/images/orcid.svg"/>
+              <a class="author-orcid" href="https://orcid.org/{{author.orcid}}" aria-label="ORCID profile for {{ author.firstname }} {{ author.lastname }}">
+                <img alt="" src="{{ '/images/orcid.svg' | relative_url }}"/>
               </a>
             {%- endif -%}
             {%- if author.website -%}
@@ -48,32 +53,32 @@ permalink: /publications/
  
     <p>
       <span class="pub-additional">
-        <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.svg" />
+        <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | relative_url }}" />
         <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
       </span>
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/slides.svg' | relative_url }}" />
           <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
         </span>
       {%- endif -%}
       {%- if talk and talk.recording -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.svg" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/video.svg' | relative_url }}" />
           <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
         </span>
       {%- endif -%}
       {%- if pub.poster -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/poster.png" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/poster.png' | relative_url }}" />
           <a class="pub-poster" href="{{ pub.poster }}">Poster</a>
         </span>
       {%- endif %}
       {%- if pub.artifact -%}
         <span class="pub-additional">
-          <img class="pub-additional-icon" src="{{ site.baseurl }}/images/archive.svg" />
+          <img alt="" class="pub-additional-icon" src="{{ '/images/archive.svg' | relative_url }}" />
           <a class="pub-poster" href="{{ pub.artifact }}">Artifact</a>
         </span>
       {%- endif %}

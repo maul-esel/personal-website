@@ -1,6 +1,11 @@
 ---
 title: Teaching
 permalink: /teaching/
+
+description: >-
+  Dominik Klumpp's teaching experience:
+  Lectures, seminars, theses and student projects
+keywords: Dominik Klumpp, teaching, lecture, seminar, thesis, project
 ---
 
 ## Lectures

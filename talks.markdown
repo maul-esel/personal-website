@@ -1,6 +1,10 @@
 ---
 title: Talks
 permalink: /talks/
+
+description: >-
+  Talks given by Dominik Klumpp at computer science conferences, workshops and other venues.
+keywords: Dominik Klumpp, talks, recordings, videos, slides
 ---
 
 <ul class="pub-list">
@@ -26,28 +30,28 @@ permalink: /talks/
   <p>{{ talk.summary | markdownify }}</p>
 
   <p>
-  {%- assign paper = site.data.publications[id] -%}
-  {%- if paper -%}
+  {%- assign pub = site.publications | find_exp: "pub", "pub.pub_id == id" %}
+  {%- if pub -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/article.svg" />
-      <a class="pub-publisher" href="{{ paper.publisher_link }}">Paper</a>
+      <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | relative_url }}" />
+      <a class="pub-publisher" href="{{ '/publications/#pub-' | append: id | relative_url }}">Paper</a>
     </span>
   {%- endif -%}
   {%- if talk.slides -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/slides.svg" />
+      <img alt="" class="pub-additional-icon" src="{{ '/images/slides.svg' | relative_url }}" />
       <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
     </span>
   {%- endif -%}
   {%- if talk.recording -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/video.svg" />
+      <img alt="" class="pub-additional-icon" src="{{ '/images/video.svg' | relative_url }}" />
       <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
     </span>
   {%- endif -%}
   {%- if talk.poster -%}
     <span class="pub-additional">
-      <img class="pub-additional-icon" src="{{ site.baseurl }}/images/poster.png" />
+      <img alt="" class="pub-additional-icon" src="{{ '/images/poster.png' | relative_url }}" />
       <a class="pub-poster" href="{{ talk.poster }}">Poster</a>
     </span>
   {%- endif %}

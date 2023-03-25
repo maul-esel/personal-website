@@ -1,14 +1,20 @@
 ---
 layout: home
 title: Dominik Klumpp
+
+description: >-
+  Dominik Klumpp is a PhD candidate in computer science at the University of Freiburg, Germany.
+  His main research focus is on algorithmic verification of concurrent programs,
+  using the concepts of commutativity and partial order reduction.
+keywords: Dominik Klumpp, computer science, programming languages, formal methods, verification, commutativity, partial order reduction
 ---
 
 <div id="banner">
-  <img src="images/dominik.jpg"/>
+  {% include image.html file="dominik.jpg" alt="" width=530 height=380 sizes=28vw srcset="800w: small, 2000w: medium, 4785w: " %}
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>
-    <img class="mail" src="{{ site.baseurl }}/images/mail.png" />
+    <img alt="email address: firstname dot lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail.png' | relative_url }}" />
     
     <p>
       <b>Current Research:</b>
@@ -33,7 +39,7 @@ title: Dominik Klumpp
 <div id="badges">
 {% for badge in site.data.badges %}
   <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
-    <img src="{{ site.baseurl }}/images/{{ badge.icon }}" />
+    <img src="{{ '/images/' | append: badge.icon | relative_url }}" width="28" height="28" alt="" />
     <span class="badge-label">{{ badge.name }}</span>
   </a>
 {% endfor %}
@@ -54,7 +60,7 @@ which has scored top rankings in the _International Competition on Software Veri
 
 {% for talkitem in site.data.talks limit: 4 -%}
 - {% assign talk = talkitem[1] -%}
-  **[{{ talk.date | date_to_string }}]({{ site.baseurl }}/talks#talk-{{talkitem[0]}}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
+  **[{{ talk.date | date_to_string }}]({{ '/talks#talk-' | append: talkitem[0] | relative_url }}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
 {% endfor %}
 
 ## Selected Publications

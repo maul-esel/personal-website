@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; style-src 'self'; style-src-elem 'self'; img-src 'self'; object-src 'self'; child-src 'self'; frame-src 'self'
+            {%- if site.host != '0.0.0.0' %}; upgrade-insecure-requests; block-all-mixed-content{% endif -%}
+            " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary Meta Tags -->
     <title>{{ page.title }}</title>
+    <meta name="title" content="{{ page.title }}">
+    <meta name="author" content="Dominik Klumpp" />
+    {% if page.description -%}
+      <meta name="description" content="{{ page.description }}" />
+    {%- endif %}
+    {% if page.keywords -%}
+      <meta name="keywords" content="{{ page.keywords }}" />
+    {%- endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style/default.css" />
-    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.svg" />
-    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/images/logo.png" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/images/dominik-medium.jpg' | absolute_url }}">
+    {% if page.description -%}
+      <meta property="og:description" content="{{ page.description }}">
+    {%- endif %}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:image" content="{{ '/images/dominik-medium.jpg' | absolute_url }}">
+    {% if page.description -%}
+      <meta property="twitter:description" content="{{ page.description }}">
+    {%- endif %}
+
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | relative_url }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ '/style/default.css' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.svg' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | relative_url }}" />
   </head>
   <body>
     <div id="wrapper">
     {{ content }}
     </div>
-    <a id="pictureofme" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/images/dominik.jpg"/>
+    <a aria-label="back to home" id="pictureofme" href="{{ '' | relative_url }}/">
+      {% include image.html file="dominik_quadratic.jpg" alt="" width=150 height=150 srcset="150w: tiny, 500w: small, 1000w: medium, 3000w: " sizes="8vw" %}
     </a>
     <div id="navigation">
       {% for item in site.data.navigation %}
-        <a class="nav-item" title="{{ item.item }}" href="{{ site.baseurl }}{{ item.link }}">
-          <img class="nav-icon" src="{{ site.baseurl }}/images/{{ item.icon }}" />
+        <a class="nav-item" title="{{ item.item }}" href="{{ item.link | relative_url }}">
+          <img alt="{{ item.item }}" class="nav-icon" src="{{ '/images/' | append: item.icon | relative_url }}" />
           <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
     </div>
 
     <div id="footer">
-      <a href="{{ site.baseurl }}/credits">Credits</a>
+      <a href="{{ '/credits' | relative_url }}">Credits</a>
     </div>
   </body>
 </html>

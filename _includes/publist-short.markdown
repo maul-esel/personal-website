@@ -8,5 +8,5 @@
         <a class="pub-conference" href="{{ pub.conference_link }}">{{ pub.conference }}</a>
       {%- endif -%}
     </span>
-    {% endif %} [{{ pub.title }}]({{ site.baseurl }}/publications/#pub-{{ pub.pub_id }})
+    {% endif %} [{{ pub.title }}]({{ '/publications/#pub-' | append: pub.pub_id | relative_url }})
 {% endfor %}

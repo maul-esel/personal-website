@@ -22,6 +22,37 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
     My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.
     </p>
   </div>
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Person",
+
+  "name": "Dominik Klumpp",
+  "image": "https://dominik-klumpp.net/images/dominik.jpg",
+  "jobTitle": "PhD candidate",
+  "url": "https://dominik-klumpp.net",
+
+  "affiliation" : {
+    "@type": "CollegeOrUniversity",
+    "@id": "https://uni-freiburg.de/",
+    "name": "University of Freiburg",
+    "address": "Germany"
+  },
+  "worksFor": {
+    "@type": "ResearchOrganization",
+    "name": "Chair for Software Engineering",
+    "url": "https://swt.informatik.uni-freiburg.de/",
+    "parentOrganization": { "@id": "https://uni-freiburg.de/" }
+  },
+  "colleague": {
+    "@type": "Person",
+    "familyName": "Podelski",
+    "givenName": "Andreas",
+    "jobTitle": "Professor",
+    "url": "https://swt.informatik.uni-freiburg.de/staff/podelski"
+  }
+}
+  </script>
 </div>
 <div id="badges">
 {% for badge in site.data.badges %}

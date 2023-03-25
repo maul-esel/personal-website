@@ -1,6 +1,7 @@
 ---
 title: Credits
 permalink: /credits/
+sitemap: false
 ---
 
 - <a href="https://iconscout.com/icons/dblp" target="_blank">Dblp Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">IconScout</a>

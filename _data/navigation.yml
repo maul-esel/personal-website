@@ -2,14 +2,14 @@
   link: /
   icon: home.svg
 - item: Publications
-  link: /publications
+  link: /publications/
   icon: article.svg
 - item: Talks
-  link: /talks
+  link: /talks/
   icon: talk.svg
 - item: Teaching
-  link: /teaching
+  link: /teaching/
   icon: teaching.svg
 - item: Curriculum Vitae
-  link: /cv
+  link: /cv/
   icon: cv.png

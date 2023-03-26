@@ -509,7 +509,7 @@ figcaption {
 
 
 .talk-link img {
-  width: 1em;
+  width: 0.8em;
   visibility: hidden;
 }
 li:hover, li:focus {
@@ -523,7 +523,7 @@ li:hover, li:focus {
   font-size: 1.3em;
   font-weight: bold;
 }
-.pub-title, .talk-title {
+.pub-title, .talk-title, .talk-link {
   font-size: 1.3em;
   font-style: italic;
 

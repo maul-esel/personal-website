@@ -64,8 +64,8 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 </div>
 
 My main research focus is on algorithmic verification of concurrent programs.
-I investigate how <span class="highlight">partial order reduction</span>
-and the underlying notion of <span class="highlight">commutativity</span>
+I investigate how <mark>partial order reduction</mark>
+and the underlying notion of <mark>commutativity</mark>
 enable verification algorithms to find simpler correctness proofs for concurrent programs,
 thereby allowing for the verification of more programs,
 and increasing verification efficiency.

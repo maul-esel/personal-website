@@ -40,7 +40,7 @@ body {
   margin: 0;
 }
 
-#wrapper {
+main {
   width: 70%;
   margin: auto {
     bottom: 2.5em;
@@ -86,7 +86,8 @@ li {
   margin-bottom: 0.75em;
 }
 
-.highlight {
+mark {
+  background-color: inherit;
   color: $highlight-color;
   font-weight: bold;
   font-style: italic;

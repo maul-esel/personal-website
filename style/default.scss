@@ -508,6 +508,15 @@ figcaption {
 }
 
 
+.talk-link img {
+  width: 1em;
+  visibility: hidden;
+}
+li:hover, li:focus {
+ .talk-link img {
+    visibility: visible;
+  }
+}
 
 
 .talk-date {

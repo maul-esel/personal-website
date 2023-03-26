@@ -14,6 +14,7 @@ keywords: Dominik Klumpp, talks, recordings, videos, slides
   <li id="talk-{{id}}">
     <p>
       <span class="talk-date">{{ talk.date | date: '%d %B %Y' }}:</span> <span class="talk-title">{{ talk.title }}</span>
+      <a href="#talk-{{id}}" class="talk-link"><img src="{{ '/images/link.svg' | relative_url }}"/></a>
       {%- if talk.workshop or talk.conference -%}
         <span class="pub-venue">
           {% if talk.workshop -%}

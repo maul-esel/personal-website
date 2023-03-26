@@ -57,17 +57,17 @@
     <a aria-label="back to home" id="pictureofme" href="{{ '' | relative_url }}/">
       {% include image.html file="dominik_quadratic.jpg" alt="" width=150 height=150 srcset="150w: tiny, 500w: small, 1000w: medium, 3000w: " sizes="8vw" %}
     </a>
-    <div id="navigation">
+    <nav id="navigation">
       {% for item in site.data.navigation %}
         <a class="nav-item" title="{{ item.item }}" href="{{ item.link | relative_url }}">
           <img alt="{{ item.item }}" class="nav-icon" src="{{ '/images/' | append: item.icon | relative_url }}" />
           <span class="nav-label">{{ item.item }}</span>
         </a>
       {% endfor %}
-    </div>
+    </nav>
 
-    <div id="footer">
+    <footer id="footer">
       <a href="{{ '/credits' | relative_url }}">Credits</a>
-    </div>
+    </footer>
   </body>
 </html>

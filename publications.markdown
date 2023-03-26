@@ -8,7 +8,7 @@ description: >-
 keywords: Dominik Klumpp, publications, papers, articles, bibliography, references
 ---
 
-[full bibliography (BibTeX)](/bibliography.bib){: rel="alternate" target="_blank" }
+[full bibliography (BibTeX)](/resources/bibliography.bib){: rel="alternate" target="_blank" }
 
 <ul class="pub-list">
 {% for pub in site.publications reversed %}

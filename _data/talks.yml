@@ -4,7 +4,7 @@ svcomp23taipan:
   conference: ETAPS
   conference_link: https://etaps.org/2023/
   workshop: SV-COMP
-  workshop_link: sv-comp.sosy-lab.org/2023/
+  workshop_link: https://sv-comp.sosy-lab.org/2023/
   location: Paris, France
   summary: I will be presenting our paper on data race detection (by reduction to reachability) in the Ultimate program analysis framework.
 

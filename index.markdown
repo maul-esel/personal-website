@@ -55,7 +55,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 </div>
 <div id="badges">
 {% for badge in site.data.badges %}
-  <a class="badge" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
+  <a class="badge" rel="me" target="_blank" href="{{ badge.link }}" title="{{ badge.name }}">
     <img src="{{ '/images/' | append: badge.icon | relative_url }}" width="28" height="28" alt="" />
     <span class="badge-label">{{ badge.name }}</span>
   </a>

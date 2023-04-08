@@ -16,3 +16,4 @@ sitemap: false
 - <a href="https://www.flaticon.com/de/kostenlose-icons/poster" target="_blank">Poster Icons erstellt von Pixel perfect - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/resume-and-cv" title="resume and cv icons">Resume and cv icons created by feen - Flaticon</a>
 - <a href="https://iconscout.com/icons/link" target="_blank">Link Icon</a> by <a href="https://iconscout.com/contributors/tanvirulhaq" target="_blank">Md. Tanvirul Haque</a>
+- <a href="https://iconscout.com/icons/mastodon" target="_blank">Mastodon Logo Icon</a> by <a href="https://iconscout.com/contributors/jagathish" target="_blank">Jagathish Saravanan</a>

@@ -77,7 +77,7 @@ which has scored top rankings in the _International Competition on Software Veri
 
 {% for talkitem in site.data.talks limit: 4 -%}
 - {% assign talk = talkitem[1] -%}
-  **[{{ talk.date | date_to_string }}]({{ '/talks#talk-' | append: talkitem[0] | relative_url }}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
+  **[{{ talk.date | date_to_string }}]({{ '/talks/#talk-' | append: talkitem[0] | relative_url }}):** _{{ talk.title }}_ at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
 {% endfor %}
 
 ## Selected Publications

@@ -34,7 +34,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   We use this language to introduce students to a variety of different approaches to program verification,
   from Hoare logic, over predicate transformers and symbolic execution, all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
 * <span class="lecture-title">**Theoretical Computer Science** (dt: Theoretische Informatik)</span>
-  <span class="year-tag">SS23</span>
+  <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2023/info3">SS23</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/info3">SS22</a>
 
   This course introduces students to the foundations of computation.

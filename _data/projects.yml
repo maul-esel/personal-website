@@ -1,9 +1,9 @@
-- name: Dynamic POR for Verification of Concurrent Programs with Loops
-  type: BSc Thesis
-  year: ongoing
 - name: Selecting Preference Orders
   type: MSc Project
   year: ongoing
+- name: Dynamic Partial Order Reduction on Tree-shaped Automata for Verification of Concurrent Programs
+  type: BSc Thesis
+  year: 2023
 - name: Computing Representative Automata for Maximal Causality Reduction
   type: MSc Thesis
   year: 2022

@@ -138,5 +138,4 @@ lastmod_dependencies:
   A-Z icon after "Authors" if order is alphabetical
   include "type" of publication
   add presentation for QA4SASO to research gate & link
-  add theses
 -->

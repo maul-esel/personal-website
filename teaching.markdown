@@ -21,7 +21,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2021-22/cps-dm">WS21/22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2020-21/cps-dm">WS20/21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2019-20/cps-dm">WS19/20</a>
-  
+
   This lecture is based on the book [Principles of Model Checking](https://mitpress.mit.edu/9780262026499/principles-of-model-checking/) by Baier and Katoen,
   and introduces students to formal modeling of cyber-physical, reactive systems as _transition systems_.
   We discuss different modeling formalisms,
@@ -32,7 +32,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2021/program-verification">SS21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2020/program-verification">SS20</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2019/program-verification">SS19</a>
-  
+
   In this lecture, we develop the syntax and formal semantics of a simple imperative programming language.
   We use this language to introduce students to a variety of different approaches to program verification,
   from Hoare logic, over predicate transformers and symbolic execution, all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.

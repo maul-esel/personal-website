@@ -6,6 +6,9 @@ description: >-
   Publications by Dominik Klumpp,
   along with additional material such as slides, talk recordings, posters etc.
 keywords: Dominik Klumpp, publications, papers, articles, bibliography, references
+
+lastmod_dependencies:
+  collections: ['publications']
 ---
 
 [full bibliography (BibTeX)](/resources/bibliography.bib){: rel="alternate" target="_blank" }

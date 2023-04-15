@@ -5,6 +5,9 @@ permalink: /talks/
 description: >-
   Talks given by Dominik Klumpp at computer science conferences, workshops and other venues.
 keywords: Dominik Klumpp, talks, recordings, videos, slides
+
+lastmod_dependencies:
+  data: ['talks']
 ---
 
 <ul class="pub-list">

@@ -6,6 +6,9 @@ description: >-
   Dominik Klumpp's teaching experience:
   Lectures, seminars, theses and student projects
 keywords: Dominik Klumpp, teaching, lecture, seminar, thesis, project
+
+lastmod_dependencies:
+  data: ['projects']
 ---
 
 ## Lectures

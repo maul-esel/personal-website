@@ -10,6 +10,9 @@ $secondary-alternate: #EAEAEA;
 $link-color: darkblue;
 $highlight-color: orange;
 
+$collapse-time: 300ms;
+$fade-time: 50ms;
+
 // ********************************************************
 //  Responsive design
 // ********************************************************
@@ -139,6 +142,7 @@ mark {
 }
 
 %unfolder {
+  padding-left: 0.26em;
   border: {
     left:   0.86em solid $link-color;
     top:    0.6em  solid transparent;
@@ -370,12 +374,18 @@ mark {
   display: none;
 }
 .pub-extra {
-  display: none;
+  max-height: 0;
+  transition: max-height $collapse-time ease-in-out;
+  overflow: hidden;
 }
+
 .publication:target {
   .pub-folder { display: inline-block; }
   .pub-unfolder { display: none; }
-  .pub-extra { display: initial; }
+  .pub-extra {
+    max-height: 100vh;
+    transition: max-height $collapse-time ease-in-out;
+  }
 }
 
 // Venue tag
@@ -445,12 +455,17 @@ figcaption {
     margin-bottom: 0;
     padding: 0.25em 0.5em;
 
+    transition: background-color $fade-time linear;
+    transition-delay: $collapse-time;
+
     &:last-child {
       border: none;
     }
 
     &:target {
       background-color: change-color($highlight-color, $alpha: 0.2);
+      transition: background-color 0s linear;
+      transition-delay: 0s;
     }
   }
 }

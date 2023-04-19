@@ -8,16 +8,6 @@ svcomp23gemcutter:
   location: Paris, France
   summary: I will be presenting the algorithmic verifier GemCutter, which integrates commutativity-based reasoning and partial order abstraction algorithms with a counterexample-guided abstraction refinement verification algorithm based on trace abstraction.
 
-svcomp23taipan:
-  title: Ultimate Taipan and Race Detection in Ultimate
-  date: 2023-04-24
-  conference: ETAPS
-  conference_link: https://etaps.org/2023/
-  workshop: SV-COMP
-  workshop_link: https://sv-comp.sosy-lab.org/2023/
-  location: Paris, France
-  summary: I will be presenting our paper on data race detection (by reduction to reachability) in the Ultimate program analysis framework.
-
 popl23:
   title: Stratified Commutativity in Verification Algorithms for Concurrent Programs
   date: 2023-01-18

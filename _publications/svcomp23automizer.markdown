@@ -1,6 +1,6 @@
 ---
 pub_id: svcomp23automizer
-title:  Ultimate Automizer and the CommuHash Normal Form (to appear)
+title:  Ultimate Automizer and the CommuHash Normal Form
 date:   2023-04-24
 
 authors: [mheizmann, mbarth, ddietsch, lfichtner, jhoenicke, me, mnaouar, tschindler, fschuessele, apodelski]

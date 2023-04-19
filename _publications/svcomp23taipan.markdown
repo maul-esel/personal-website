@@ -1,6 +1,6 @@
 ---
 pub_id: svcomp23taipan
-title:  Ultimate Taipan and Race Detection in Ultimate (to appear)
+title:  Ultimate Taipan and Race Detection in Ultimate
 date:   2023-04-24
 
 authors: [ddietsch, mheizmann, me, fschuessele]

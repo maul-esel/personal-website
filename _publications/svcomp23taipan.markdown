@@ -11,6 +11,7 @@ workshop:        SV-COMP
 workshop_link:   https://sv-comp.sosy-lab.org/2023/
 
 publisher: Springer
+publisher_link: https://doi.org/10.1007/978-3-031-30820-8_40
 
 abstract: >-
   Ultimate Taipan integrates trace abstraction with algebraic program analysis on path programs.

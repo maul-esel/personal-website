@@ -384,6 +384,9 @@ mark {
   .pub-unfolder { display: none; }
   .pub-extra {
     max-height: 100vh;
+    @include phone {
+      max-height: 250vh;
+    }
     transition: max-height $collapse-time ease-in-out;
   }
 }

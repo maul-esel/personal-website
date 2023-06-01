@@ -1,3 +1,13 @@
+cav23witnesses:
+  title: Concurrency Correctness Witnesses with Ghosts
+  date: 2023-07-17
+  conference: CAV
+  conference_link: https://i-cav.org/2023/
+  workshop: VeWit
+  workshop_link: https://vewit.sosy-lab.org/2023/
+  location: Paris, France
+  summary: Manuel Bentele, Frank Schüssele and I will talk about our work on concurrency correctness witnesses based on thread-modular reasoning with ghost variables.
+
 svcomp23gemcutter:
   title: Ultimate GemCutter
   date: 2023-04-24

@@ -62,7 +62,7 @@ lastmod_dependencies:
   {%- if talk.supplemental_material -%}
     <span class="pub-additional">
       <img alt="" class="pub-additional-icon" src="{{ '/images/supplemental_material.svg' | relative_url }}" />
-      <a class="pub-supplemental" href="{{ talk.supplemental_material }}">Poster</a>
+      <a class="pub-supplemental" href="{{ talk.supplemental_material }}">Supplemental Material</a>
     </span>
   {%- endif %}
   </p>

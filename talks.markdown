@@ -59,6 +59,12 @@ lastmod_dependencies:
       <a class="pub-poster" href="{{ talk.poster }}">Poster</a>
     </span>
   {%- endif %}
+  {%- if talk.supplemental_material -%}
+    <span class="pub-additional">
+      <img alt="" class="pub-additional-icon" src="{{ '/images/supplemental_material.svg' | relative_url }}" />
+      <a class="pub-supplemental" href="{{ talk.supplemental_material }}">Poster</a>
+    </span>
+  {%- endif %}
   </p>
   </li>
 {%- endfor %}

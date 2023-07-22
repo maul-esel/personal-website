@@ -6,7 +6,7 @@ cav23witnesses:
   workshop: VeWit
   workshop_link: https://vewit.sosy-lab.org/2023/
   location: Paris, France
-  summary: Manuel Bentele, Frank Schüssele and I will talk about our work on concurrency correctness witnesses based on thread-modular reasoning with ghost variables.
+  summary: Frank Schüssele presented our work on concurrency correctness witnesses based on thread-modular reasoning with ghost variables.
   slides: https://github.com/ultimate-pa/VEWIT2023-ConcurrencyGhosts/blob/main/Slides.pdf
   supplemental_material: https://github.com/ultimate-pa/VEWIT2023-ConcurrencyGhosts/
 

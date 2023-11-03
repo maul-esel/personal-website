@@ -54,9 +54,19 @@ lastmod_dependencies:
  
     <p>
       <span class="pub-additional">
-        <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | relative_url }}" />
-        <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
+        {%- if pub.to_appear -%}
+          (to appear)
+        {%- else -%}
+          <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | relative_url }}" />
+          <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
+        {%- endif -%}
       </span>
+      {%- if pub.extended_version -%}
+        <span class="pub-additional">
+          <img alt="" class="pub-additional-icon" src="{{ '/images/supplemental_material.svg' | relative_url }}" />
+          <a class="pub-extended" href="{{ pub.extended_version_link }}">Extended Version ({{ pub.extended_version }})</a>
+        </span>
+      {%- endif -%}
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}

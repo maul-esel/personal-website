@@ -9,6 +9,7 @@ conference: POPL'24
 conference_link: https://popl24.sigplan.org/
 
 to_appear: true
+selected: true
 
 abstract: >-
   Commutativity has proven to be a powerful tool in reasoning about concurrent programs.

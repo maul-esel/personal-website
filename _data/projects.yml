@@ -1,5 +1,5 @@
-- name: Stratified Reduction with Dynamic Abstractions
-  type: BSc Thesis
+- name: Computing Small Proofs for Concurrent Programs
+  type: BSc Project
   year: ongoing
 - name: Stratified Source Sets
   type: BSc Project
@@ -7,6 +7,9 @@
 - name: Selecting Preference Orders
   type: MSc Project
   year: ongoing
+- name: Stratified Reduction with Dynamic Abstractions
+  type: BSc Thesis
+  year: 2023
 - name: Dynamic Partial Order Reduction on Tree-shaped Automata for Verification of Concurrent Programs
   type: BSc Thesis
   year: 2023

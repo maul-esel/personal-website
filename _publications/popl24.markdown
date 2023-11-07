@@ -8,6 +8,9 @@ authors: [afarzan, me, apodelski]
 conference: POPL'24
 conference_link: https://popl24.sigplan.org/
 
+preprint: arxiv
+preprint_link: https://arxiv.org/abs/2311.02673
+
 to_appear: true
 selected: true
 

@@ -67,6 +67,12 @@ lastmod_dependencies:
           <a class="pub-extended" href="{{ pub.extended_version_link }}">Extended Version ({{ pub.extended_version }})</a>
         </span>
       {%- endif -%}
+      {%- if pub.preprint -%}
+        <span class="pub-additional">
+          <img alt="" class="pub-additional-icon" src="{{ '/images/preprint.svg' | relative_url }}" />
+          <a class="pub-preprint" href="{{ pub.preprint_link }}">Preprint ({{ pub.preprint }})</a>
+        </span>
+      {%- endif -%}
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk and talk.slides -%}

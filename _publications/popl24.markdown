@@ -11,6 +11,8 @@ conference_link: https://popl24.sigplan.org/
 preprint: arxiv
 preprint_link: https://arxiv.org/abs/2311.02673
 
+artifact: https://doi.org/10.5281/zenodo.10119773
+
 to_appear: true
 selected: true
 

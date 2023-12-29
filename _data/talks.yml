@@ -1,3 +1,11 @@
+popl24:
+  title: Commutativity Simplifies Proofs of Parameterized Programs
+  date: 2024-01-17
+  conference: POPL
+  conference_link: https://popl24.sigplan.org/
+  location: London, UK
+  summary: I will present our paper on how commutativity reasoning can simplify proofs of parameterized programs, in the sense that less complex ghost state is needed.
+
 cav23witnesses:
   title: Concurrency Correctness Witnesses with Ghosts
   date: 2023-07-17

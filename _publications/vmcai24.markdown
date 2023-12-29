@@ -8,7 +8,8 @@ authors: [mheizmann, me, lnitzke, fschuessele]
 conference: VMCAI'24
 conference_link: https://popl24.sigplan.org/home/VMCAI-2024
 
-to_appear: true
+publisher: Springer
+publisher_link: https://link.springer.com/chapter/10.1007/978-3-031-50521-8_1
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2311.01302
@@ -30,7 +31,6 @@ bibtex: |-
                  Proceedings},
     series    = {Lecture Notes in Computer Science},
     publisher = {Springer},
-    year      = {2024},
-    note      = {(to appear)}
+    year      = {2024}
   }
 ---

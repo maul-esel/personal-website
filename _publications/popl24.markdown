@@ -8,12 +8,14 @@ authors: [afarzan, me, apodelski]
 conference: POPL'24
 conference_link: https://popl24.sigplan.org/
 
+publisher: ACM
+publisher_link: https://dl.acm.org/doi/10.1145/3632925
+
 preprint: arxiv
 preprint_link: https://arxiv.org/abs/2311.02673
 
 artifact: https://doi.org/10.5281/zenodo.10119773
 
-to_appear: true
 selected: true
 
 abstract: >-
@@ -45,6 +47,6 @@ bibtex: |-
     volume    = {8},
     number    = {{POPL}},
     year      = {2024},
-    note      = {(to appear)}
+    doi       = {10.1145/3632925}
   }
 ---

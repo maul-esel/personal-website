@@ -22,15 +22,18 @@ abstract: >-
   Our approach is implemented in a software model checking tool for C programs that use the pthreads API. 
 
 bibtex: |-
-  @inproceedings{vmcai24:petrification
-    author    = {Matthias Heizmann and Dominik Klumpp and Lars Nitzke and Frank Sch{\"u}essele},
-    editor    = {Rayna Dimitrova and Ori Lahav},
-    title     = {Petrification: Software Model Checking for Programs with Dynamic Thread Management},
-    booktitle = {Verification, Model Checking, and Abstract Interpretation - 25th International
-                 Conference, {VMCAI} 2024, London, United Kingdom, January 15-16, 2024,
-                 Proceedings},
-    series    = {Lecture Notes in Computer Science},
-    publisher = {Springer},
-    year      = {2024}
+  @inproceedings{vmcai24:petrification,
+    author       = {Matthias Heizmann and Dominik Klumpp and Lars Nitzke and Frank Sch{\"{u}}ssele},
+    title        = {Petrification: Software Model Checking for Programs with Dynamic Thread Management},
+    booktitle    = {{VMCAI} {(2)}},
+    series       = {Lecture Notes in Computer Science},
+    volume       = {14500},
+    pages        = {3--25},
+    publisher    = {Springer},
+    year         = {2024},
+    doi          = {10.1007/978-3-031-50521-8\_1}
   }
+
+talk:
+  recording: https://youtu.be/qrJCFuuPH8k?t=29554
 ---

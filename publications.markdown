@@ -75,6 +75,7 @@ lastmod_dependencies:
       {%- endif -%}
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
+      {%- if talk == nil and pub.talk -%}{% assign talk = pub.talk -%}{%- endif -%}
       {%- if talk and talk.slides -%}
         <span class="pub-additional">
           <img alt="" class="pub-additional-icon" src="{{ '/images/slides.svg' | relative_url }}" />

@@ -23,7 +23,7 @@ abstract: >-
 bibtex: |-
   @inproceedings{tacas23:ultimateAutomizer,
     author    = {Matthias Heizmann and Max Barth and Daniel Dietsch and Leonard Fichtner and Jochen Hoenicke and Dominik Klumpp and Mehdi Naouar and Tanja Schindler and Frank Sch{\"{u}}ssele and Andreas Podelski},
-    title     = {Ultimate Automizer and the CommuHash Normal Form - (Competition Contribution)},
+    title     = {Ultimate Automizer and the CommuHash Normal Form (Competition Contribution)},
     booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
                  - 29th International Conference, {TACAS} 2023, Held as Part of the
                  European Joint Conferences on Theory and Practice of Software, {ETAPS}

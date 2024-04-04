@@ -23,7 +23,7 @@ abstract: >-
 bibtex: |-
   @inproceedings{tacas23:ultimateTaipan,
     author    = {Daniel Dietsch and Matthias Heizmann and Dominik Klumpp and Frank Sch{\"{u}}ssele and Andreas Podelski},
-    title     = {Ultimate Taipan and Race Detection in Ultimate - (Competition Contribution)},
+    title     = {Ultimate Taipan and Race Detection in Ultimate (Competition Contribution)},
     booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
                  - 29th International Conference, {TACAS} 2023, Held as Part of the
                  European Joint Conferences on Theory and Practice of Software, {ETAPS}

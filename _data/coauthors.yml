@@ -49,6 +49,10 @@ mbarth:
   firstname: Max
   lastname: Barth
   orcid: 0009-0002-7716-3898
+mbentele:
+  firstname: Manuel
+  lastname: Bentele
+  orcid: 0009-0003-4794-958X
 mebbinghaus:
   firstname: Marcel
   lastname: Ebbinghaus
@@ -73,4 +77,8 @@ wreif:
   lastname: Reif
   website: https://www.uni-augsburg.de/en/fakultaet/fai/isse/prof/swtse/team/reif/
   orcid: 0000-0002-4086-0043
+xinyujiang:
+  firstname: Xinyu
+  lastname: Jiang
+  orcid: 0009-0000-6539-6227
 

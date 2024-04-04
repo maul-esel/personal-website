@@ -1,3 +1,13 @@
+svcomp24gemcutter:
+  title: Ultimate GemCutter
+  date: 2024-04-08
+  conference: ETAPS
+  conference_link: https://etaps.org/2024/
+  workshop: SV-COMP
+  workshop_link: https://sv-comp.sosy-lab.org/2024/
+  location: Luxembourg, Luxembourg
+  summary: I will present the algorithmic verifier GemCutter, which integrates commutativity-based reasoning and partial order abstraction algorithms with a counterexample-guided abstraction refinement verification algorithm based on trace abstraction.
+
 popl24:
   title: Commutativity Simplifies Proofs of Parameterized Programs
   date: 2024-01-17

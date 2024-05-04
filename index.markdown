@@ -73,6 +73,9 @@ I am a co-developer of the [**Ultimate**](https://ultimate-pa.org/) program anal
 To complement my theoretical work on commutativity in program verification, I implement the resulting verification algorithms in the software model checker [**Ultimate GemCutter**](https://ultimate-pa.org/?ui=tool&tool=gemcutter),
 which has scored top rankings in the _International Competition on Software Verification (SV-COMP)_ [2022](https://sv-comp.sosy-lab.org/2022/results/results-verified/), [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/) and [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/).
 
+I am also part of the development team for [**Ultimate Automizer**](https://ultimate-pa.org/?ui=tool&tool=automizer).
+In [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/) and [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/), our team won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP. 
+
 ## Recent & Upcoming Talks
 
 {% for talkitem in site.data.talks limit: 4 -%}

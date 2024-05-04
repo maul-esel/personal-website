@@ -17,6 +17,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
 
 {: .lecture-list}
 * <span class="lecture-title">**Cyber-Physical Systems I: Discrete Models**</span>
+  <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2023-24/cps-dm">WS23/24</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2022-23/cps-dm">WS22/23</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2021-22/cps-dm">WS21/22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/WS2020-21/cps-dm">WS20/21</a>
@@ -28,6 +29,7 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   specifications in the form of linear-time properties,
   and the automata-theoretic approach to linear-time (LTL) model checking.
 * <span class="lecture-title">**Cyber-Physical Systems II: Program Verification**</span>
+  <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2024/program-verification">SS24</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/program-verification">SS22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2021/program-verification">SS21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2020/program-verification">SS20</a>
@@ -36,6 +38,9 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   In this lecture, we develop the syntax and formal semantics of a simple imperative programming language.
   We use this language to introduce students to a variety of different approaches to program verification,
   from Hoare logic, over predicate transformers and symbolic execution, all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
+
+  _In the current semester (summer semester 2024), I am the lecturer for this course._
+
 * <span class="lecture-title">**Theoretical Computer Science** (dt: Theoretische Informatik)</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2023/info3">SS23</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/info3">SS22</a>

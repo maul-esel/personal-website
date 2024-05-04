@@ -35,5 +35,5 @@ bibtex: |-
   }
 
 talk:
-  recording: https://youtu.be/qrJCFuuPH8k?t=29554
+  recording: https://www.youtube.com/watch?v=LXWYbgO0Wg8
 ---

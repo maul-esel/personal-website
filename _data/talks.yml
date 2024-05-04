@@ -18,7 +18,7 @@ popl24:
   location: London, UK
   summary: I presented our paper on how commutativity reasoning can simplify proofs of parameterized programs, in the sense that less complex ghost state is needed.
   slides: https://www.researchgate.net/publication/377467062_Commutativity_Simplifies_Proofs_of_Parameterized_Programs
-  recording: https://www.youtube.com/watch?v=ArzcDPauQGA&t=28661s
+  recording: https://www.youtube.com/watch?v=nHHaMcteNI8
 
 cav23witnesses:
   title: Concurrency Correctness Witnesses with Ghosts

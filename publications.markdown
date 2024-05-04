@@ -11,7 +11,7 @@ lastmod_dependencies:
   collections: ['publications']
 ---
 
-[full bibliography (BibTeX)](/resources/bibliography.bib){: rel="alternate" target="_blank" }
+[![]({{ '/images/download.svg' | relative_url }}){: .button-icon } full bibliography (BibTeX)](/resources/bibliography.bib){: rel="alternate" target="_blank" .button }
 
 <ul class="pub-list">
 {% for pub in site.publications reversed %}

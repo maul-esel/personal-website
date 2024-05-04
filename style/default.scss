@@ -112,6 +112,22 @@ mark {
   }
 }
 
+.button {
+  @extend %button;
+
+  display: inline-block;
+  padding: 0.5em;
+
+  .button-icon {
+    border-radius: 100%;
+    width: 1.5em;
+    vertical-align: middle;
+
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+}
+
 @mixin tag($color) {
   display: inline-block;
 

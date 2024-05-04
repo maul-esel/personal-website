@@ -46,6 +46,7 @@ bibtex: |-
     journal   = {Proc. {ACM} Program. Lang.},
     volume    = {8},
     number    = {{POPL}},
+    pages     = {2485--2513},
     year      = {2024},
     doi       = {10.1145/3632925}
   }

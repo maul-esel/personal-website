@@ -6,7 +6,9 @@ svcomp24gemcutter:
   workshop: SV-COMP
   workshop_link: https://sv-comp.sosy-lab.org/2024/
   location: Luxembourg, Luxembourg
-  summary: I will present the algorithmic verifier GemCutter, which integrates commutativity-based reasoning and partial order abstraction algorithms with a counterexample-guided abstraction refinement verification algorithm based on trace abstraction.
+  summary: I presented the algorithmic verifier GemCutter, which integrates commutativity-based reasoning and partial order abstraction algorithms with a counterexample-guided abstraction refinement verification algorithm based on trace abstraction.
+  poster: https://www.researchgate.net/publication/380324624_Ultimate_GemCutter_Commutativity_in_Concurrent_Program_Verification
+  slides: https://www.researchgate.net/publication/380324637_Ultimate_GemCutter
 
 popl24:
   title: Commutativity Simplifies Proofs of Parameterized Programs

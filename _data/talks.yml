@@ -1,3 +1,20 @@
+ista2024may:
+  title: Commutativity Simplifies Proofs of Concurrent Programs
+  date: 2024-05-14
+  institution: ISTA
+  institution_link: https://ist.ac.at/en/research/henzinger_thomas-group/
+  location: Klosterneuburg, Austria
+  summary: >-
+    Verification of concurrent programs is a hard problem.
+    Beyond the state space explosion known from model checking, a new challenge arises for invariant-based verification of concurrent programs over infinite data domains:
+    the inductive invariants needed to prove correctness of all possible program interleavings are often complex and out of reach for automated invariant inference algorithms.
+    In this talk, I will present several recent works investigating how *commutativity* simplifies such proofs of concurrent programs.
+    The notion of commutativity is based on the observation that some statements can be reordered without affecting the outcome of an execution
+    and it suffices to verify a suitably chosen subset of interleavings to conclude the correctness of an entire concurrent program.
+    I will discuss how commutativity reasoning can extend the theoretical expressiveness of verification approaches,
+    in which cases commutativity makes the difference between finding a proof and never terminating,
+    and how symbolic reasoning (over variables with infinite domain) interacts with commutativity.
+
 svcomp24gemcutter:
   title: Ultimate GemCutter
   date: 2024-04-08

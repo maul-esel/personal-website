@@ -427,6 +427,9 @@ mark {
 .pub-conference {
   @include tag($highlight-color);
 }
+.talk-institution {
+  @include tag(lightgray);
+}
 
 // Author information
 // --------------------------------------------------------

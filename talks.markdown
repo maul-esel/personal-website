@@ -18,12 +18,14 @@ lastmod_dependencies:
     <p>
       <span class="talk-date">{{ talk.date | date: '%d %B %Y' }}:</span> <span class="talk-title">{{ talk.title }}</span>
       <a href="#talk-{{id}}" class="talk-link"><img src="{{ '/images/link.svg' | relative_url }}"/></a>
-      {%- if talk.workshop or talk.conference -%}
+      {%- if talk.workshop or talk.conference or talk.institution -%}
         <span class="pub-venue">
           {% if talk.workshop -%}
             <a class="pub-workshop" href="{{ talk.workshop_link }}">{{ talk.workshop }}</a><span class="colocation-link">@</span><a class="pub-colocation" href="{{ talk.conference_link }}">{{ talk.conference }}</a>
           {%- elsif talk.conference -%}
             <a class="pub-conference" href="{{ talk.conference_link }}">{{ talk.conference }}</a>
+          {%- elsif talk.institution -%}
+            <a class="talk-institution" href="{{ talk.institution_link }}">{{ talk.institution }}</a>
           {%- endif -%}<br/>
         </span>
       {% endif %}

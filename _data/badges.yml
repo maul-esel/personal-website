@@ -13,6 +13,9 @@
 - name: Uni Freiburg
   icon: unifreiburg.png
   link: https://swt.informatik.uni-freiburg.de/staff/klumpp
+- name: LinkedIn
+  icon: linkedin.svg
+  link: https://www.linkedin.com/in/dominik-klumpp-532588171/
 - name: Mastodon
   icon: mastodon.svg
   link: https://types.pl/@DominikKlumpp

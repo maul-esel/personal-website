@@ -92,3 +92,10 @@ In [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/) and [2024
 
 {% assign selected_pubs = site.publications | reverse | where: "selected", true | map: "pub_id" %}
 {% include publist-short.markdown publications=selected_pubs %}
+
+## Alpine Verification Meeting (AVM'24)
+
+In 2024, I was an organizer of the **[Alpine Verification Meeting](https://avm2024.informatik.uni-freiburg.de/) (AVM'24)**,
+an informal meeting on formal verification.
+For three days, we welcomed 67 attendees from the verification community in Freiburg to give talks, exchange ideas and get to know each other.
+{: .gold-highlight}

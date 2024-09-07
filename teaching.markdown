@@ -13,7 +13,24 @@ lastmod_dependencies:
 
 ## Lectures
 
-I co-organise several lectures offered by the Chair for Software Engineering.
+In the summer semester 2024, I was the lecturer for the course **Cyber-Physical Systems II: Program Verification**.
+<a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2024/program-verification">SS24</a>
+
+In this course, designed in 2019 by Matthias Heizmann, Tanja Schindler and me,
+we develop the syntax and formal semantics of a simple imperative programming language.
+We use this language to introduce students to a variety of different approaches to program verification,
+from Hoare logic, over predicate transformers and symbolic execution, abstract interpretation _(\*new in 2024\*)_,
+all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
+
+16 students attended this elective course and participated in the oral exams.
+In an inofficial ranking calculated by the dean of studies based on anonymous student evaluation forms,
+the course was **ranked first among all computer science courses** offered at the Technical Faculty in this semester.
+{: .gold-highlight}
+
+---
+
+
+I also co-organise several lectures offered by the Chair for Software Engineering.
 
 {: .lecture-list}
 * <span class="lecture-title">**Cyber-Physical Systems I: Discrete Models**</span>
@@ -29,7 +46,6 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   specifications in the form of linear-time properties,
   and the automata-theoretic approach to linear-time (LTL) model checking.
 * <span class="lecture-title">**Cyber-Physical Systems II: Program Verification**</span>
-  <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2024/program-verification">SS24</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2022/program-verification">SS22</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2021/program-verification">SS21</a>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2020/program-verification">SS20</a>
@@ -38,8 +54,6 @@ I co-organise several lectures offered by the Chair for Software Engineering.
   In this lecture, we develop the syntax and formal semantics of a simple imperative programming language.
   We use this language to introduce students to a variety of different approaches to program verification,
   from Hoare logic, over predicate transformers and symbolic execution, all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
-
-  _In the current semester (summer semester 2024), I am the lecturer for this course._
 
 * <span class="lecture-title">**Theoretical Computer Science** (dt: Theoretische Informatik)</span>
   <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2023/info3">SS23</a>

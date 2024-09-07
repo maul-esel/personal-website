@@ -499,6 +499,15 @@ figcaption {
 //  Teaching page
 // ********************************************************
 
+.gold-highlight {
+  border-left: double $highlight-color 1em;
+  background-color: change-color($highlight-color, $alpha: 0.2);
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-clip: padding-box;
+}
+
 .year-tag {
   @include tag(lightblue);
 

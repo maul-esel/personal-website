@@ -23,7 +23,7 @@ from Hoare logic, over predicate transformers and symbolic execution, abstract i
 all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
 
 16 students attended this elective course and participated in the oral exams.
-In an inofficial ranking calculated by the dean of studies based on anonymous student evaluation forms,
+In a ranking calculated by the dean of studies based on anonymous student evaluation forms,
 the course was **ranked first among all computer science courses** offered at the Technical Faculty in this semester.
 {: .gold-highlight}
 

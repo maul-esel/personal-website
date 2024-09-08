@@ -97,5 +97,5 @@ In [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/) and [2024
 
 In 2024, I was an organizer of the **[Alpine Verification Meeting](https://avm2024.informatik.uni-freiburg.de/) (AVM'24)**,
 an informal meeting on formal verification.
-For three days, we welcomed 67 attendees from the verification community in Freiburg to give talks, exchange ideas and get to know each other.
+For three days, we welcomed 67 attendees from the verification community in Freiburg to present recent and ongoing work, exchange ideas and get to know each other.
 {: .gold-highlight}

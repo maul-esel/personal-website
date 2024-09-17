@@ -53,14 +53,16 @@ lastmod_dependencies:
     </p>
  
     <p>
+      {% if pub.publisher or pub.to_appear %}
       <span class="pub-additional">
         {%- if pub.to_appear -%}
           (to appear)
-        {%- else -%}
+        {%- elsif pub.publisher -%}
           <img alt="" class="pub-additional-icon" src="{{ '/images/article.svg' | relative_url }}" />
           <a class="pub-publisher" href="{{ pub.publisher_link }}">{{ pub.publisher }}</a>
         {%- endif -%}
       </span>
+      {% endif %}
       {%- if pub.extended_version -%}
         <span class="pub-additional">
           <img alt="" class="pub-additional-icon" src="{{ '/images/supplemental_material.svg' | relative_url }}" />

@@ -22,7 +22,7 @@ We use this language to introduce students to a variety of different approaches 
 from Hoare logic, over predicate transformers and symbolic execution, abstract interpretation _(\*new in 2024\*)_,
 all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
 
-16 students attended this elective course and participated in the oral exams.
+15 students attended this elective course and participated in the oral exams.
 In a ranking calculated by the dean of studies based on anonymous student evaluation forms,
 the course was **ranked first among all computer science courses** offered at the Technical Faculty in this semester.
 {: .gold-highlight}

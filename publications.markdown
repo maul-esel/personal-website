@@ -63,10 +63,10 @@ lastmod_dependencies:
         {%- endif -%}
       </span>
       {% endif %}
-      {%- if pub.extended_version -%}
+      {%- if pub.extended_version or pub.extended_version_link -%}
         <span class="pub-additional">
           <img alt="" class="pub-additional-icon" src="{{ '/images/supplemental_material.svg' | relative_url }}" />
-          <a class="pub-extended" href="{{ pub.extended_version_link }}">Extended Version ({{ pub.extended_version }})</a>
+          <a class="pub-extended" href="{{ pub.extended_version_link }}">Extended Version {% if pub.extended_version %}({{ pub.extended_version }}){% endif %}</a>
         </span>
       {%- endif -%}
       {%- if pub.preprint -%}

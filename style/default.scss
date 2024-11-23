@@ -588,6 +588,8 @@ li:hover, li:focus {
   font-style: italic;
 
   @include phone {
+    max-width: 90% !important;
+
     & + .pub-venue {
       float: initial;
       display: block;
@@ -595,5 +597,11 @@ li:hover, li:focus {
       margin-top: 0.75em;
     }
   }
+}
+
+.pub-title {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 85%;
 }
 

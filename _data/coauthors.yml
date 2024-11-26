@@ -30,6 +30,10 @@ fschuessele:
   lastname: Schüssele
   website: https://swt.informatik.uni-freiburg.de/staff/schuessele
   orcid: 0000-0002-5656-306X
+jerhard:
+  firstname: Julian
+  lastname: Erhard
+  orcid: 0000-0002-1729-3925
 jribeiro:
   firstname: Jandson
   lastname: S. Ribeiro
@@ -40,6 +44,10 @@ hponsar:
   lastname: Ponsar
   website: https://www.uni-augsburg.de/en/fakultaet/fai/isse/prof/swtse/team/ponsar/
   orcid: 0000-0001-6376-9683
+hseidl:
+  firstname: Helmut
+  lastname: Seidl
+  orcid: 0000-0002-2135-1593
 jhoenicke:
   firstname: Jochen
   lastname: Hoenicke
@@ -57,10 +65,13 @@ mbarth:
 mbentele:
   firstname: Manuel
   lastname: Bentele
+  website: https://swt.informatik.uni-freiburg.de/staff/bentele
   orcid: 0009-0003-4794-958X
 mebbinghaus:
   firstname: Marcel
   lastname: Ebbinghaus
+  website: https://swt.informatik.uni-freiburg.de/staff/ebbinghaus
+  orcid: 0009-0004-9216-1801
 mheizmann:
   firstname: Matthias
   lastname: Heizmann
@@ -70,13 +81,29 @@ mnaouar:
   firstname: Mehdi
   lastname: Naouar
   orcid: 0009-0002-1557-2223
+mschwarz:
+  firstname: Michael
+  lastname: Schwarz
+  orcid: 0000-0002-9828-0308
 plenzen:
   firstname: Philip
   lastname: Lenzen
+ssaan:
+  firstname: Simmo
+  lastname: Saan
+  orcid: 0000-0003-4553-1350
+stilscher:
+  firstname: Sarah
+  lastname: Tilscher
+  orcid: 0009-0009-9644-7475
 tschindler:
   firstname: Tanja
   lastname: Schindler
   orcid: 0000-0002-7462-8445
+vvojdani:
+  firstname: Vesal
+  lastname: Vojdani
+  orcid: 0000-0003-4336-7980
 wreif:
   firstname: Wolfgang
   lastname: Reif

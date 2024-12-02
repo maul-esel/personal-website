@@ -15,6 +15,8 @@ to_appear: true
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2411.16612
 
+artifact: https://zenodo.org/records/13863579
+
 abstract: >-
   Static analyzers are typically complex tools and thus prone to contain bugs themselves.
   To increase the trust in the verdict of such tools, witnesses encode key reasoning steps underlying the verdict in an exchangeable format,

@@ -18,15 +18,14 @@ abstract: >-
   We use Büchi automata to construct such functions as well as to represent and reason about LTL knowledge.
 
 bibtex: |-
-  @misc{arxiv24:effectiveAGMContraction,
-    author        = {Dominik Klumpp and Jandson S. Ribeiro},
-    title         = {The Challenges of Effective AGM Belief Contraction},
-    year          = {2024},
-    eprint        = {2409.09171},
-    archivePrefix = {arXiv},
-    primaryClass  = {cs.LO},
-    url           = {https://arxiv.org/abs/2409.09171},
-    doi           = {10.48550/arXiv.2409.09171}
+  @article{arxiv24:effectiveAGMContraction,
+    author       = {Dominik Klumpp and Jandson S. Ribeiro},
+    title        = {The Challenges of Effective {AGM} Belief Contraction},
+    journal      = {CoRR},
+    volume       = {abs/2409.09171},
+    year         = {2024},
+    url          = {https://doi.org/10.48550/arXiv.2409.09171},
+    doi          = {10.48550/ARXIV.2409.09171}
   }
 ---
 

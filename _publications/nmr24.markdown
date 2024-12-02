@@ -25,11 +25,19 @@ abstract: >-
 bibtex: |-
   @inproceedings{nmr24:AGMBeyondFinitary,
     author       = {Dominik Klumpp and Jandson S. Ribeiro},
-    title        = {Walking the Tightrope between Expressiveness and Uncomputability: AGM Contraction beyond the Finitary Realm},
-    booktitle    = {22nd International Workshop on Nonmonotonic Reasoning (NMR 2024)},
-    series       = {CEUR Workshop Proceedings},
+    editor       = {Nina Gierasimczuk and Jesse Heyninck},
+    title        = {Walking the Tightrope between Expressiveness and Uncomputability:
+                    {AGM} Contraction beyond the Finitary Realm},
+    booktitle    = {Proceedings of the 22nd International Workshop on Nonmonotonic Reasoning
+                    {(NMR} 2024) co-located with 21st International Conference on Principles
+                    of Knowledge Representation and Reasoning {(KR} 2024), Hanoi, Vietnam,
+                    November 2-4, 2024},
+    series       = {{CEUR} Workshop Proceedings},
+    volume       = {3835},
+    pages        = {34--43},
+    publisher    = {CEUR-WS.org},
     year         = {2024},
-    url          = {https://ceur-ws.org/Vol-3835/}
+    url          = {https://ceur-ws.org/Vol-3835/paper4.pdf}
   }
 ---
 

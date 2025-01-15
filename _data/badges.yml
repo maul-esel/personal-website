@@ -19,6 +19,3 @@
 - name: Mastodon
   icon: mastodon.svg
   link: https://types.pl/@DominikKlumpp
-- name: Twitter
-  icon: twitter.svg
-  link: https://twitter.com/klumppdo

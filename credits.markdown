@@ -8,7 +8,6 @@ sitemap: false
 - <a href="https://iconscout.com/icons/google" target="_blank">Google Logo Icon</a> by <a href="https://iconscout.com/contributors/jagathish" target="_blank">Jagathish Saravanan</a>
 - <a href="https://iconscout.com/icons/orcid" target="_blank">Orcid Logo Icon</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://iconscout.com/icons/researchgate" target="_blank">Researchgate Icon</a> on <a href="https://iconscout.com">IconScout</a>
-- <a href="https://iconscout.com/icons/twitter" target="_blank">Twitter Logo Icon</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">IconScout Store</a>
 - <a href="https://iconscout.com/icons/paper" target="_blank">Paper Icon</a> on <a href="https://iconscout.com">IconScout</a>
 - <a href="https://iconscout.com/icons/box" target="_blank">Box Icon</a> by <a href="https://iconscout.com/contributors/mcgandhi61" target="_blank">Mohit Gandhi</a>
 - <a href="https://iconscout.com/icons/presentation-board" target="_blank">Presentation board Icon</a> on <a href="https://iconscout.com">IconScout</a>

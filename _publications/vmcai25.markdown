@@ -8,9 +8,8 @@ authors: [jerhard, mbentele, mheizmann, me, ssaan, fschuessele, mschwarz, hseidl
 conference: VMCAI'25
 conference_link: https://conf.researchr.org/home/VMCAI-2025
 
-#publisher: Springer
-#publisher_link: https://link.springer.com/chapter/10.1007/978-3-031-50521-8_1
-to_appear: true
+publisher: Springer
+publisher_link: https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2411.16612
@@ -37,10 +36,10 @@ bibtex: |-
     title        = {Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts},
     booktitle    = {{VMCAI}},
     series       = {Lecture Notes in Computer Science},
-    volume       = {---},
-    pages        = {---},
+    volume       = {15529},
+    pages        = {74--100},
     publisher    = {Springer},
     year         = {2025},
-    note         = {(to appear)}
+    doi          = {10.1007/978-3-031-82700-6_4}
   }
 ---

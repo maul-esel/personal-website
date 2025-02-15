@@ -31,15 +31,17 @@ abstract: >-
 
 bibtex: |-
   @inproceedings{vmcai25:ghost-witnesses,
-    author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp and Simmo Saan
-                    and Frank Sch{\"{u}}ssele and Michael Schwarz and Helmut Seidl and Sarah Tilscher and Vesal Vojdani},
-    title        = {Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts},
-    booktitle    = {{VMCAI}},
+    author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp
+                    and Simmo Saan and Frank Sch{\"{u}}ssele and Michael Schwarz and Helmut Seidl
+                    and Sarah Tilscher and Vesal Vojdani},
+    title        = {Correctness Witnesses for Concurrent Programs:
+                    Bridging the Semantic Divide with Ghosts},
+    booktitle    = {{VMCAI} {(1)}},
     series       = {Lecture Notes in Computer Science},
     volume       = {15529},
     pages        = {74--100},
     publisher    = {Springer},
     year         = {2025},
-    doi          = {10.1007/978-3-031-82700-6_4}
+    doi          = {10.1007/978-3-031-82700-6\_4}
   }
 ---

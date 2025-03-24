@@ -1,3 +1,20 @@
+mpisws2025mar:
+  title: How Commutativity Simplifies Proofs of Concurrent Programs
+  date: 2025-03-24
+  institution: MPI-SWS
+  institution_link: https://mpi-sws.org
+  location: Kaiserslautern, Germany
+  summary: >-
+    To verify concurrent programs with unbounded loops, algorithmic verifiers must infer inductive invariants
+    that show correctness for all infinitely many possible executions of the program.
+    Due to the many possible interleavings of the program's threads, such invariants are often complex (requiring non-linear arithmetic, quantifiers, or reasoning with ghost variables)
+    and out-of-reach for most invariant inference algorithms.
+    In this talk, I present a series of works investigating how the notion of commutativity simplifies proofs of concurrent programs and thereby empowers algorithic verification.
+    The idea of commutativity is based on the observation that some program statements can be reordered without affecting the outcome of an execution,
+    and hence it suffices to verify a suitably-chosen subset of interleavings (rather than all interleavings) to conclude correctness of an entire concurrent program.
+    We will see how commutativity-based combinatorial algorithms interact with symbolic reasoning over variables with infinite domains,
+    and how commutativity can both extend the theoretical expressiveness and contribute to the practical success of verification approaches.
+
 irif2025feb:
   title: How Commutativity Simplifies Proofs of Concurrent Programs
   date: 2025-02-03

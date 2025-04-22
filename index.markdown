@@ -81,11 +81,14 @@ Our team has won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP for th
 {% for talkitem in site.data.talks limit: 4 -%}
 - {% assign talk = talkitem[1] -%}
   **[{{ talk.date | date_to_string }}]({{ '/talks/#talk-' | append: talkitem[0] | relative_url }}):** _{{ talk.title }}_
-  {% if talk.conference -%}
-    at [{{ talk.conference }}]({{ talk.conference_link }}) ({{ talk.location }})
+  at {% if talk.workshop -%}
+    [{{ talk.workshop }}]({{ talk.workshop_link }})
+    {%- if talk.conference -%} /[{{ talk.conference }}]({{ talk.conference_link }}) {%- endif %}
+  {%- elsif talk.conference -%}
+    [{{ talk.conference }}]({{ talk.conference_link }})
   {%- elsif talk.institution -%}
-    at [{{ talk.institution }}]({{ talk.institution_link }}) ({{ talk.location }})
-  {%- endif %}
+    [{{ talk.institution }}]({{ talk.institution_link }})
+  {%- endif %} ({{ talk.location }})
 {% endfor %}
 
 ## Selected Publications

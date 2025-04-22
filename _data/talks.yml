@@ -1,3 +1,21 @@
+vds2025:
+  title: Finding Commutativity for Algorithmic Verification of Concurrent Programs
+  date: 2025-05-19
+  conference: NETYS
+  conference_link: https://netys.net/
+  workshop: VDS
+  workshop_link: https://netys.net/wds2025/VDS25.html
+  location: Rabat, Morocco
+  summary: >-
+    The benefits of commutativity-based reduction in the verification of concurrent programs are well-established:
+    By focusing on a representative subset of program interleavings, soundly selected based on a given commutativity relation between statements,
+    the verification can succeed with simpler invariants and can avoid combinatorial explosion.
+    Yet, there are many possible commutativity relations.
+    In this talk, we focus on the setting of fully-automated algorithmic verification, and explore strategies to derive commutativity relations that are sound by construction.
+    As the resulting commutativity relations are in general incomparable,
+    we further discuss the potential of combining multiple commutativity relations,
+    and the challenges for algorithmic realizations of such combinations.
+
 mpisws2025mar:
   title: How Commutativity Simplifies Proofs of Concurrent Programs
   date: 2025-03-24

@@ -15,7 +15,7 @@ to_appear: true
 #preprint: arxiv
 #preprint_link: https://arxiv.org/abs/2311.02673
 
-#artifact: https://doi.org/10.5281/zenodo.10119773
+artifact: https://doi.org/10.5281/zenodo.15198876
 
 selected: true
 

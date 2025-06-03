@@ -14,11 +14,13 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>
-    <img alt="email address: firstname dot lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail.png' | relative_url }}" />
+    <h3>PostDoc Researcher, &Eacute;cole Polytechnique</h3>
+    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.png' | relative_url }}" /><br/>
+    <img alt="email address: firstname dot lastname at inria dot fr" class="mail" src="{{ '/images/mail_inria.png' | relative_url }}" />
     
     <p>
-    I work at the <a href="https://swt.informatik.uni-freiburg.de/">Chair for Software Engineering</a>.<br/>
-    My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.
+    My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.<br/>
+    I work at <a href="https://www.lix.polytechnique.fr/">LIX</a> with <a href="https://www.lix.polytechnique.fr/~cenea/">Prof. Constantin Enea</a>.
     </p>
   </div>
   <script type="application/ld+json">

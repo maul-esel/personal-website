@@ -24,7 +24,7 @@ all the way to CEGAR-based verification algorithms such as predicate abstraction
 
 15 students attended this elective course and participated in the oral exams.
 In a ranking calculated by the dean of studies based on anonymous student evaluation forms,
-the course was **ranked first among all computer science courses** offered at the Technical Faculty in this semester.
+the course was [**ranked first among all computer science courses**](https://www.tf.uni-freiburg.de/de/lehre/lehre/lehrpreise) offered at the Technical Faculty in this semester.
 {: .gold-highlight}
 
 ---

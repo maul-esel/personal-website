@@ -91,8 +91,10 @@ I have supervised a number of student projects revolving around program analysis
 Such projects typically involve a theoretical component (e.g. design / modification and correctness proof of some algorithm)
 and an implementation and evaluation component in the context of the program analysis and automata theory framework [Ultimate](https://ultimate.informatik.uni-freiburg.de/).
 
+{% comment %}
 If you are interested in a project or thesis, send me an email.
 You can find a list of possible topic areas [in the Ultimate wiki](https://github.com/ultimate-pa/ultimate/wiki/Available-Project-Topics).
+{% endcomment %}
 
 <ul class="project-list">
 {%- for project in site.data.projects -%}

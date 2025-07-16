@@ -101,9 +101,9 @@ Our team has won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP for th
 ## Teaching Award (summer semester 2024)
 
 I was the lecturer for the course _Cyber-Physical Systems II: Program Verification_ in the summer semester 2024.
-The lecture received the [**Teaching Award of the Faculty of Enginering**](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teaching/quality-management-1)
+The lecture received the [**Teaching Award of the Faculty of Enginering**](https://news.vm.uni-freiburg.de/en/newsarchive/graduation-ceremonies-2025-of-the-faculty-of-engineering)
 for the best Computer Science lecture in that semester,
-based on a ranking calculated from student evaluations.
+based on a [ranking](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teaching/quality-management-1) calculated from student evaluations.
 {: .gold-highlight}
 
 ## Alpine Verification Meeting (AVM'24)

@@ -51,6 +51,7 @@ hseidl:
 jhoenicke:
   firstname: Jochen
   lastname: Hoenicke
+  website: https://jhoenicke.de/
   orcid: 0000-0002-6314-1041
 lfichtner:
   firstname: Leonard
@@ -61,6 +62,7 @@ lnitzke:
 mbarth:
   firstname: Max
   lastname: Barth
+  website: https://www.sosy-lab.org/people/barth/
   orcid: 0009-0002-7716-3898
 mbentele:
   firstname: Manuel
@@ -88,6 +90,7 @@ mnaouar:
 mschwarz:
   firstname: Michael
   lastname: Schwarz
+  website: https://michael-schwarz.github.io/
   orcid: 0000-0002-9828-0308
 plenzen:
   firstname: Philip
@@ -95,6 +98,7 @@ plenzen:
 ssaan:
   firstname: Simmo
   lastname: Saan
+  website: https://sim642.eu/
   orcid: 0000-0003-4553-1350
 stilscher:
   firstname: Sarah

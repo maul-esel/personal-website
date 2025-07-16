@@ -98,6 +98,13 @@ Our team has won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP for th
 {% assign selected_pubs = site.publications | reverse | where: "selected", true | map: "pub_id" %}
 {% include publist-short.markdown publications=selected_pubs %}
 
+## Teaching Award (summer semester 2024)
+
+I was the lecturer for the course _Cyber-Physical Systems II: Program Verification_ in the summer semester 2024.
+The lecture received the [**Teaching Award of the Faculty of Enginering**](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teaching/quality-management-1)
+for the best Computer Science lecture in that semester,
+based on a ranking calculated from student evaluations.
+
 ## Alpine Verification Meeting (AVM'24)
 
 In 2024, I was an organizer of the **[Alpine Verification Meeting](https://avm2024.informatik.uni-freiburg.de/) (AVM'24)**,

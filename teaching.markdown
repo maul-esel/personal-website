@@ -23,7 +23,7 @@ from Hoare logic, over predicate transformers and symbolic execution, abstract i
 all the way to CEGAR-based verification algorithms such as predicate abstraction and trace abstraction.
 
 15 students attended this elective course and participated in the oral exams.
-The lecture received the [**Teaching Award of the Faculty of Enginering**](https://news.vm.uni-freiburg.de/en/newsarchive/graduation-ceremonies-2025-of-the-faculty-of-engineering)
+The lecture received the [**Teaching Award of the Faculty of Engineering**](https://news.vm.uni-freiburg.de/en/newsarchive/graduation-ceremonies-2025-of-the-faculty-of-engineering)
 for the best Computer Science lecture in the summer semester 2024,
 based on a [ranking](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teaching/quality-management-1) calculated from student evaluations.
 {: .gold-highlight}

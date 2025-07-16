@@ -104,6 +104,7 @@ I was the lecturer for the course _Cyber-Physical Systems II: Program Verificati
 The lecture received the [**Teaching Award of the Faculty of Enginering**](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teaching/quality-management-1)
 for the best Computer Science lecture in that semester,
 based on a ranking calculated from student evaluations.
+{: .gold-highlight}
 
 ## Alpine Verification Meeting (AVM'24)
 

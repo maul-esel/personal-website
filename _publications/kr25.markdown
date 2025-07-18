@@ -36,7 +36,9 @@ bibtex: |-
     booktitle    = {Proceedings of the 22nd International Conference on Principles of
                     Knowledge Representation and Reasoning, {KR} 2025, Melbourne, Australia.
                     November 11-17, 2025},
-    year         = {2025}
+    year         = {2025},
+    doi          = {---},
+    note         = {(to appear)}
   }
 ---
 

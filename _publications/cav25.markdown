@@ -9,8 +9,7 @@ conference: CAV'25
 conference_link: https://conferences.i-cav.org/2025/
 
 publisher: Springer
-#publisher_link: https://dl.acm.org/doi/10.1145/3632925
-to_appear: true
+publisher_link: https://doi.org/10.1007/978-3-031-98682-6_18
 
 #preprint: arxiv
 #preprint_link: https://arxiv.org/abs/2311.02673
@@ -39,11 +38,10 @@ bibtex: |-
     booktitle    = {Computer Aided Verification - 37th International Conference,
                     {CAV} 2025, Zagreb, Croatia, July 21-25, 2025, Proceedings},
     series       = {Lecture Notes in Computer Science},
-    volume       = {---},
-    pages        = {---},
+    volume       = {15933},
+    pages        = {347--369},
     publisher    = {Springer},
     year         = {2025},
-    doi          = {---},
-    note         = {(to appear)}
+    doi          = {10.1007/978-3-031-98682-6_18}
   }
 ---

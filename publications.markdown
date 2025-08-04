@@ -144,7 +144,7 @@ lastmod_dependencies:
     {% endfor -%}
   ],
   "url": "{{ pub.publisher_link }}",
-  "abstract": "{{ pub.abstract | jsonify }}"
+  "abstract": {{ pub.abstract | jsonify }}
 }
     </script>
   </li>

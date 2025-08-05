@@ -21,7 +21,7 @@ bibtex: |-
   @inproceedings{vmcai21:petriNetUnfoldings,
     author    = {Daniel Dietsch and Matthias Heizmann and Dominik Klumpp and Mehdi Naouar and Andreas Podelski and Claus Sch{\"{a}}tzle},
     editor    = {Fritz Henglein and Sharon Shoham and Yakir Vizel},
-    title     = {Verification of Concurrent Programs Using Petri Net Unfoldings},
+    title     = {Verification of Concurrent Programs Using {Petri} Net Unfoldings},
     booktitle = {Verification, Model Checking, and Abstract Interpretation - 22nd International
                  Conference, {VMCAI} 2021, Copenhagen, Denmark, January 17-19, 2021,
                  Proceedings},

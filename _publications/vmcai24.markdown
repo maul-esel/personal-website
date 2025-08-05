@@ -24,7 +24,7 @@ abstract: >-
 bibtex: |-
   @inproceedings{vmcai24:petrification,
     author       = {Matthias Heizmann and Dominik Klumpp and Lars Nitzke and Frank Sch{\"{u}}ssele},
-    title        = {Petrification: Software Model Checking for Programs with Dynamic Thread Management},
+    title        = {{Petrification}: Software Model Checking for Programs with Dynamic Thread Management},
     booktitle    = {{VMCAI} {(2)}},
     series       = {Lecture Notes in Computer Science},
     volume       = {14500},

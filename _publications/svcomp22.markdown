@@ -25,7 +25,7 @@ bibtex: |-
   @inproceedings{tacas22:ultimateGemCutter,
     author    = {Dominik Klumpp and Daniel Dietsch and Matthias Heizmann and Frank Sch{\"{u}}ssele and Marcel Ebbinghaus and Azadeh Farzan and Andreas Podelski},
     editor    = {Dana Fisman and Grigore Rosu},
-    title     = {Ultimate GemCutter and the Axes of Generalization (Competition Contribution)},
+    title     = {{Ultimate} {GemCutter} and the Axes of Generalization (Competition Contribution)},
     booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
                  - 28th International Conference, {TACAS} 2022, Held as Part of the
                  European Joint Conferences on Theory and Practice of Software, {ETAPS}

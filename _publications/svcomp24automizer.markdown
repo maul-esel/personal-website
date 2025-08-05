@@ -23,7 +23,7 @@ abstract: >-
 bibtex: |-
   @inproceedings{tacas24:ultimateAutomizer,
     author    = {Frank Sch{\"{u}}ssele and Manuel Bentele and Daniel Dietsch and Matthias Heizmann and Xinyu Jiang and Dominik Klumpp and Andreas Podelski},
-    title     = {Ultimate Automizer and the Abstraction of Bitwise Operations (Competition Contribution)},
+    title     = {{Ultimate} {Automizer} and the Abstraction of Bitwise Operations (Competition Contribution)},
     booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
                  - 30th International Conference, {TACAS} 2024, Held as Part of the
                  European Joint Conferences on Theory and Practice of Software, {ETAPS}

@@ -35,13 +35,13 @@ bibtex: |-
     author       = {Marcel Ebbinghaus and Dominik Klumpp and Andreas Podelski},
     editor       = {Ruzica Piskac and Zvonimir Rakamaric},
     title        = {Counterexample-Guided Commutativity},
-    booktitle    = {Computer Aided Verification - 37th International Conference,
-                    {CAV} 2025, Zagreb, Croatia, July 21-25, 2025, Proceedings},
+    booktitle    = {Computer Aided Verification - 37th International Conference, {CAV}
+                    2025, Zagreb, Croatia, July 23-25, 2025, Proceedings, Part {III}},
     series       = {Lecture Notes in Computer Science},
     volume       = {15933},
     pages        = {347--369},
     publisher    = {Springer},
     year         = {2025},
-    doi          = {10.1007/978-3-031-98682-6_18}
+    doi          = {10.1007/978-3-031-98682-6\_18},
   }
 ---

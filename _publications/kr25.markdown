@@ -14,7 +14,8 @@ conference_link: https://kr.org/KR2025/
 # publisher_link:  https://ceur-ws.org/Vol-3835/
 to_appear: true
 
-# extended_version_link: /publications/nmr24/extended.pdf
+extended_version: arXiv
+extended_version_link: https://arxiv.org/abs/2409.09171
 
 abstract: >-
   Despite significant efforts towards extending the AGM paradigm of belief change beyond finitary logics,
@@ -24,11 +25,11 @@ abstract: >-
   Drastically, we also show that the current de facto standard strategies to control computability,
   which rely on restricting the space of epistemic states, fail: uncomputability remains in all non-finitary cases.
   Motivated by this disruptive result, we propose new approaches to controlling computability beyond the finitary realm.
-  Using Linear Temporal Logic (LTL) as a case study, we identify an infinite class of computable AGM contraction functions that are computable by design.
+  Using Linear Temporal Logic (LTL) as a case study, we identify an infinite class of fully-rational AGM contraction functions that are computable by design.
   We use Büchi automata to construct such functions, and to represent and reason about LTL beliefs.
 
 bibtex: |-
-  @inproceedings{kr25:EffectiveAGMContraction,
+  @inproceedings{kr25:effectiveAGMContraction,
     author       = {Dominik Klumpp and Jandson S. Ribeiro},
     editor       = {Renata Wassermann and Torsten Schaub},
     title        = {Effective {AGM} Belief Contraction:

@@ -82,12 +82,20 @@ lastmod_dependencies:
         <span class="pub-additional">
           <img alt="" class="pub-additional-icon" src="{{ '/images/slides.svg' | relative_url }}" />
           <a class="pub-slides" href="{{ talk.slides }}">Slides</a>
+          {% if talk.speaker -%}
+            {%- assign speaker = site.data.coauthors[talk.speaker] -%}
+            <span title="{{ speaker.firstname }} {{ speaker.lastname }}">({{speaker.firstname | split: '' | first}}. {{speaker.lastname}})</span>
+          {%- endif -%}
         </span>
       {%- endif -%}
       {%- if talk and talk.recording -%}
         <span class="pub-additional">
           <img alt="" class="pub-additional-icon" src="{{ '/images/video.svg' | relative_url }}" />
           <a class="pub-recording" href="{{ talk.recording }}">Recording</a>
+          {% if talk.speaker -%}
+            {%- assign speaker = site.data.coauthors[talk.speaker] -%}
+            <span title="{{ speaker.firstname }} {{ speaker.lastname }}">({{speaker.firstname | split: '' | first}}. {{speaker.lastname}})</span>
+          {%- endif -%}
         </span>
       {%- endif -%}
       {%- if pub.poster -%}

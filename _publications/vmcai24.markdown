@@ -36,4 +36,5 @@ bibtex: |-
 
 talk:
   recording: https://www.youtube.com/watch?v=LXWYbgO0Wg8
+  speaker:   fschuessele
 ---

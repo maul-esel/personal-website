@@ -44,4 +44,9 @@ bibtex: |-
     year         = {2025},
     doi          = {10.1007/978-3-031-98682-6\_18},
   }
+
+
+talk:
+  speaker: mebbinghaus
+  slides: https://swt.informatik.uni-freiburg.de/staff/ebbinghaus/slides/cav25.pdf
 ---

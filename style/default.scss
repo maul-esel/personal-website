@@ -80,7 +80,7 @@ $fade-time: 50ms;
   & + label[for='darkmode-checkbox'] {
     position: absolute;
     right: 0.5em;
-    top: 0;
+    top: 0.75em;
     text-align: right;
 
     &::after {
@@ -109,6 +109,9 @@ $fade-time: 50ms;
       text-decoration: underline;
     }
   }
+}
+form:has(#darkmode-checkbox) {
+  height: 0;
 }
 
 // ********************************************************

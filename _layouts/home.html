@@ -51,11 +51,6 @@
     <link rel="icon" type="image/svg+xml"  href="{{ '/images/logo.png' | relative_url }}" />
   </head>
   <body>
-    <form autocomplete="on">
-      <input type="checkbox" id="darkmode-checkbox" />
-      <label for="darkmode-checkbox"></label>
-    </form>
-
     <main id="wrapper">
     {{ content }}
     </main>
@@ -74,5 +69,10 @@
     <footer id="footer">
       <a href="{{ '/credits/' | relative_url }}">Credits</a>
     </footer>
+
+    <form autocomplete="on">
+      <input type="checkbox" id="darkmode-checkbox" />
+      <label for="darkmode-checkbox"></label>
+    </form>
   </body>
 </html>

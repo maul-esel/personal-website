@@ -10,7 +10,20 @@ $secondary-alternate: #EAEAEA;
 $link-color: darkblue;
 $highlight-color: orange;
 
-:root {
+$collapse-time: 300ms;
+$fade-time: 50ms;
+
+@mixin filter($value) {
+  -webkit-filter: $value;
+  filter: $value;
+}
+
+
+// ********************************************************
+//  Dark mode vs light mode
+// ********************************************************
+
+@mixin lightmode-colors {
   --col-primary: #{$primary};
   --col-primary-highlight: #{$primary-highlight};
 
@@ -24,24 +37,77 @@ $highlight-color: orange;
 
   --col-highlight-secondary: lightblue;
 }
+@mixin darkmode-colors {
+  --col-primary: white;
+  --col-primary-highlight: #EAEAEA;
 
-$collapse-time: 300ms;
-$fade-time: 50ms;
+  --col-secondary: #565656;
+  --col-secondary-alternate: #757575;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --col-primary: white;
-    --col-primary-highlight: #EAEAEA;
+  --col-link: lightblue;
 
-    --col-secondary: #565656;
-    --col-secondary-alternate: #757575;
+  --col-highlight: orange;
+  --col-highlight-alternate: #{change-color(orange, $alpha: 0.2)};
 
-    --col-link: lightblue;
+  --col-highlight-secondary: lightblue;
+}
 
-    --col-highlight: orange;
-    --col-highlight-alternate: #{change-color(orange, $alpha: 0.2)};
+@mixin if-dark-mode {
+  $darkmode-aux-selector: #{if(&, '&', '')};
+  @media (prefers-color-scheme: dark) {
+    @at-root :root:not(:has(#darkmode-checkbox:checked)) #{$darkmode-aux-selector} {
+      @content;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    @at-root :root:has(#darkmode-checkbox:checked) #{$darkmode-aux-selector} {
+      @content;
+    }
+  }
+}
 
-    --col-highlight-secondary: lightblue;
+:root {
+  @include lightmode-colors;
+}
+@include if-dark-mode {
+  @include darkmode-colors;
+}
+
+
+#darkmode-checkbox {
+  visibility: hidden;
+
+  & + label[for='darkmode-checkbox'] {
+    position: absolute;
+    right: 0.5em;
+    top: 0;
+    text-align: right;
+
+    &::after {
+      display: block;
+      content: "";
+      color: var(--col-primary);
+
+      height: 1em;
+      width: 1em;
+      margin:0.5em;
+
+      background: url(/images/moon.svg) no-repeat 0 0;
+      background-size: 100%;
+      background-color: transparent;
+
+      @include if-dark-mode {
+        background-image: url(/images/sun.svg);
+
+        // the sun is smaller on the SVG, so no additional margin needed
+        margin: 0;
+        height: 2em;
+        width: 2em;
+      }
+    }
+    &:hover::after, &:focus::after {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -155,12 +221,9 @@ mark {
     width: 1.5em;
     vertical-align: middle;
 
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-
-    @media (prefers-color-scheme: dark) {
-      -webkit-filter: none;
-      filter: none;
+    @include filter(invert(100%));
+    @include if-dark-mode {
+      @include filter(none);
     }
   }
 }
@@ -176,7 +239,7 @@ mark {
 
   background-color: $color;
 
-  @media (prefers-color-scheme: dark) {
+  @include if-dark-mode {
     color: $link-color;
   }
 }
@@ -349,9 +412,8 @@ mark {
       height: 1.3em;
       margin-bottom: -.4em;
 
-      @media (prefers-color-scheme: dark) {
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
+      @include if-dark-mode {
+        @include filter(invert(100%));
       }
     }
 
@@ -368,10 +430,10 @@ mark {
     top: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
 
-    @media (prefers-color-scheme: dark) {
-      background: linear-gradient(to right, #565656FF, #CCCCCCFF 20%, #FFFFFF00 26%, #FFFFFF00 70%, #565656FF); // TODO
+    background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+    @include if-dark-mode {
+      background: linear-gradient(to right, #565656FF, #CCCCCCFF 20%, #FFFFFF00 26%, #FFFFFF00 70%, #565656FF);
     }
 
     @include phone { display: none; }
@@ -425,9 +487,8 @@ mark {
   height: 1.5em;
   vertical-align: -30%;
 
-  @media (prefers-color-scheme: dark) {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+  @include if-dark-mode {
+    @include filter(invert(100%));
   }
 }
 

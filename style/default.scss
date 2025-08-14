@@ -10,8 +10,40 @@ $secondary-alternate: #EAEAEA;
 $link-color: darkblue;
 $highlight-color: orange;
 
+:root {
+  --col-primary: #{$primary};
+  --col-primary-highlight: #{$primary-highlight};
+
+  --col-secondary: #{$secondary};
+  --col-secondary-alternate: #{$secondary-alternate};
+
+  --col-link: #{$link-color};
+
+  --col-highlight: #{$highlight-color};
+  --col-highlight-alternate: #{change-color($highlight-color, $alpha: 0.2)};
+
+  --col-highlight-secondary: lightblue;
+}
+
 $collapse-time: 300ms;
 $fade-time: 50ms;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --col-primary: white;
+    --col-primary-highlight: #EAEAEA;
+
+    --col-secondary: #565656;
+    --col-secondary-alternate: #757575;
+
+    --col-link: lightblue;
+
+    --col-highlight: orange;
+    --col-highlight-alternate: #{change-color(orange, $alpha: 0.2)};
+
+    --col-highlight-secondary: lightblue;
+  }
+}
 
 // ********************************************************
 //  Responsive design
@@ -36,9 +68,9 @@ html {
 }
 
 body {
-  background-color: $secondary-alternate;
+  background-color: var(--col-secondary-alternate);
   font-family: sans-serif;
-  color: $primary;
+  color: var(--col-primary);
   padding: 0;
   margin: 0;
 }
@@ -50,7 +82,7 @@ main {
   }
   padding: 2%;
 
-  background-color: $secondary;
+  background-color: var(--col-secondary);
 
   @include phone {
     display: block;
@@ -77,7 +109,7 @@ footer {
 // ********************************************************
 
 a {
-  color: $link-color;
+  color: var(--col-link);
   text-decoration: none;
 
   &:hover, &:focus {
@@ -91,7 +123,7 @@ li {
 
 mark {
   background-color: inherit;
-  color: $highlight-color;
+  color: var(--col-highlight);
   font-weight: bold;
   font-style: italic;
 }
@@ -99,15 +131,15 @@ mark {
 %button {
   font-weight: bold;
 
-  background-color: $primary;
-  color: $secondary;
+  background-color: var(--col-primary);
+  color: var(--col-secondary);
 
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 
   &:hover, &:focus {
-    background-color: $primary-highlight;
+    background-color: var(--col-primary-highlight);
     text-decoration: none;
   }
 }
@@ -125,6 +157,11 @@ mark {
 
     -webkit-filter: invert(100%);
     filter: invert(100%);
+
+    @media (prefers-color-scheme: dark) {
+      -webkit-filter: none;
+      filter: none;
+    }
   }
 }
 
@@ -138,6 +175,10 @@ mark {
   margin-top: -0.3em;
 
   background-color: $color;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-color;
+  }
 }
 
 %folder, %unfolder {
@@ -151,7 +192,7 @@ mark {
 %folder {
   margin-bottom: 0.1em;
   border: {
-    top:   0.86em solid $link-color;
+    top:   0.86em solid var(--col-link);
     left:  0.6em  solid transparent;
     right: 0.6em  solid transparent;
   }
@@ -160,7 +201,7 @@ mark {
 %unfolder {
   padding-left: 0.26em;
   border: {
-    left:   0.86em solid $link-color;
+    left:   0.86em solid var(--col-link);
     top:    0.6em  solid transparent;
     bottom: 0.6em  solid transparent;
   }
@@ -195,7 +236,7 @@ mark {
   &::before {
     content: '';
     display: block;
-    background-color: $primary;
+    background-color: var(--col-primary);
 
     position: fixed;
     top: 5vw;
@@ -225,8 +266,8 @@ mark {
 
     text-align: center;
 
-    background-color: $secondary-alternate;
-    border-top: solid $primary 1px;
+    background-color: var(--col-secondary-alternate);
+    border-top: solid var(--col-primary) 1px;
 
     padding: 0;
     padding-top: 0.2em;
@@ -279,8 +320,8 @@ mark {
 
   font-size: 1.1em;
 
-  border-top: solid $primary 2px;
-  border-bottom: solid $primary 2px;
+  border-top: solid var(--col-primary) 2px;
+  border-bottom: solid var(--col-primary) 2px;
 
   position: relative;
 
@@ -307,6 +348,11 @@ mark {
     .mail {
       height: 1.3em;
       margin-bottom: -.4em;
+
+      @media (prefers-color-scheme: dark) {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
     }
 
     @include phone {
@@ -323,6 +369,10 @@ mark {
     width: 50%;
     height: 100%;
     background: linear-gradient(to right, #FFFFFFFF, #CCCCCCFF 23%, #FFFFFF00 26%, #FFFFFF00 70%, #FFFFFFFF);
+
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(to right, #565656FF, #CCCCCCFF 20%, #FFFFFF00 26%, #FFFFFF00 70%, #565656FF); // TODO
+    }
 
     @include phone { display: none; }
   }
@@ -351,8 +401,8 @@ mark {
     height: 1.8em;
     margin: 0 .6em -.6em .4em;
 
-    background-color: $secondary;
-    border: solid $secondary 1px {
+    background-color: white;
+    border: solid var(--col-secondary) 1px {
       radius: 100%;
     }
   }
@@ -374,6 +424,11 @@ mark {
 .pub-additional-icon {
   height: 1.5em;
   vertical-align: -30%;
+
+  @media (prefers-color-scheme: dark) {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
 }
 
 .pub-additional {
@@ -414,19 +469,20 @@ mark {
   float: right;
 }
 .pub-workshop {
-  @include tag($highlight-color);
+  @include tag(var(--col-highlight));
   padding-right: 0.3em;
 }
 .colocation-link {
   @include tag(lightgray);
+  color: $primary;
   padding: 0.32em;
 }
 .pub-colocation {
-  @include tag(lightblue);
+  @include tag(var(--col-highlight-secondary));
   padding-left: 0.3em;
 }
 .pub-conference {
-  @include tag($highlight-color);
+  @include tag(var(--col-highlight));
 }
 .talk-institution {
   @include tag(lightgray);
@@ -458,9 +514,9 @@ figure {
   margin-left: 0;
 }
 figure > pre {
-  border: solid $primary 1px;
+  border: solid var(--col-primary) 1px;
   padding: 0.5em;
-  background-color: $secondary-alternate;
+  background-color: var(--col-secondary-alternate);
   overflow: scroll;
 }
 figcaption {
@@ -474,7 +530,7 @@ figcaption {
   padding-left: 0;
 
   li {
-    border-bottom: solid $primary 2px;
+    border-bottom: solid var(--col-primary) 2px;
     margin-bottom: 0;
     padding: 0.25em 0.5em;
 
@@ -486,7 +542,7 @@ figcaption {
     }
 
     &:target {
-      background-color: change-color($highlight-color, $alpha: 0.2);
+      background-color: var(--col-highlight-alternate);
       transition: background-color 0s linear;
       transition-delay: 0s;
     }
@@ -501,8 +557,8 @@ figcaption {
 // ********************************************************
 
 .gold-highlight {
-  border-left: double $highlight-color 1em;
-  background-color: change-color($highlight-color, $alpha: 0.2);
+  border-left: double var(--col-highlight) 1em;
+  background-color: var(--col-highlight-alternate);
   padding-left: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -510,7 +566,7 @@ figcaption {
 }
 
 .year-tag {
-  @include tag(lightblue);
+  @include tag(var(--col-highlight-secondary));
 
   float: right;
   margin-left: 2px;
@@ -548,7 +604,7 @@ figcaption {
 }
 
 .project-type {
-  @include tag($highlight-color);
+  @include tag(var(--col-highlight));
 
   width: 7em;
   margin-right: 1em;
@@ -562,7 +618,7 @@ figcaption {
 }
 
 .project-year {
-  @include tag(lightblue);
+  @include tag(var(--col-highlight-secondary));
   float: right;
 
   @include phone { float: initial; }

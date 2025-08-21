@@ -598,28 +598,41 @@ figcaption {
     margin-bottom: 0;
     padding: 0.25em 0.5em;
 
-    transition: background-color $fade-time linear;
-    transition-delay: $collapse-time;
-
     &:last-child {
       border: none;
     }
 
+    transition: background-color $fade-time $collapse-time linear, border-width $collapse-time 0s linear;
+
+    // Dark mode uses borders to highlight.
+    // They are already set up here, but with 0 width.
+    // The :target pseudo-class only adjusts the widths.
+    // This allows to transition the border-width (see above) seamlessly.
+    @include if-dark-mode {
+      border-right: solid var(--col-highlight) 0px;
+      border-left: double var(--col-highlight) 0px;
+      &:first-child {
+        border-top: solid var(--col-highlight) 0px;
+      }
+      &:last-child {
+        border-bottom: solid var(--col-highlight) 0px;
+      }
+    }
+
     &:target {
       background-color: var(--col-highlight-alternate);
-      transition: background-color 0s linear;
-      transition-delay: 0s;
+      transition: background-color $fade-time 0s linear, border-width $collapse-time 0s linear;
 
       @include if-dark-mode {
         background-color: inherit;
-        border-right: solid var(--col-highlight) 0.1em;
-        border-left: double var(--col-highlight) 1em;
+        border-right-width: 0.1em;
+        border-left-width: 1em;
 
         &:first-child {
-          border-top: solid var(--col-highlight) 0.1em;
+          border-top-width: 0.1em;
         }
         &:last-child {
-          border-bottom: solid var(--col-highlight) 0.1em;
+          border-bottom-width: 0.1em;
         }
       }
     }

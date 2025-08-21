@@ -47,7 +47,7 @@ $fade-time: 50ms;
   --col-link: lightblue;
 
   --col-highlight: orange;
-  --col-highlight-alternate: #{change-color(orange, $alpha: 0.2)};
+  //--col-highlight-alternate: #{change-color(orange, $alpha: 0.2)}; // not used
 
   --col-highlight-secondary: lightblue;
 }
@@ -609,6 +609,19 @@ figcaption {
       background-color: var(--col-highlight-alternate);
       transition: background-color 0s linear;
       transition-delay: 0s;
+
+      @include if-dark-mode {
+        background-color: inherit;
+        border-right: solid var(--col-highlight) 0.1em;
+        border-left: double var(--col-highlight) 1em;
+
+        &:first-child {
+          border-top: solid var(--col-highlight) 0.1em;
+        }
+        &:last-child {
+          border-bottom: solid var(--col-highlight) 0.1em;
+        }
+      }
     }
   }
 }
@@ -627,6 +640,13 @@ figcaption {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background-clip: padding-box;
+
+  @include if-dark-mode {
+    background-color: inherit;
+    border-bottom: solid var(--col-highlight) 0.1em;
+    border-top: solid var(--col-highlight) 0.1em;
+    border-right: solid var(--col-highlight) 0.1em;
+  }
 }
 
 .year-tag {

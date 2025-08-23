@@ -66,6 +66,18 @@ $fade-time: 50ms;
   }
 }
 
+@mixin invert-if-dark-mode {
+  @include if-dark-mode {
+    @include filter(invert(100%));
+  }
+}
+@mixin invert-if-light-mode {
+  @include filter(invert(100%));
+  @include if-dark-mode {
+    @include filter(none);
+  }
+}
+
 :root {
   @include lightmode-colors;
 }
@@ -224,10 +236,7 @@ mark {
     width: 1.5em;
     vertical-align: middle;
 
-    @include filter(invert(100%));
-    @include if-dark-mode {
-      @include filter(none);
-    }
+    @include invert-if-light-mode;
   }
 }
 
@@ -414,10 +423,7 @@ mark {
     .mail {
       height: 1.3em;
       margin-bottom: -.4em;
-
-      @include if-dark-mode {
-        @include filter(invert(100%));
-      }
+      @include invert-if-dark-mode;
     }
 
     @include phone {
@@ -489,10 +495,7 @@ mark {
 .pub-additional-icon {
   height: 1.5em;
   vertical-align: -30%;
-
-  @include if-dark-mode {
-    @include filter(invert(100%));
-  }
+  @include invert-if-dark-mode;
 }
 
 .pub-additional {
@@ -729,6 +732,7 @@ figcaption {
 li:hover, li:focus {
  .talk-link img {
     visibility: visible;
+    @include invert-if-dark-mode;
   }
 }
 

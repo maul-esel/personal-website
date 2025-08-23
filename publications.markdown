@@ -11,6 +11,7 @@ lastmod_dependencies:
   collections: ['publications']
 ---
 
+[![]({{ '/images/download.svg' | relative_url }}){: .button-icon } list of publications (PDF)](/resources/publications.pdf){: rel="alternate" target="_blank" .button }
 [![]({{ '/images/download.svg' | relative_url }}){: .button-icon } full bibliography (BibTeX)](/resources/bibliography.bib){: rel="alternate" target="_blank" .button }
 
 <ul class="pub-list">

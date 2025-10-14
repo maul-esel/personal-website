@@ -421,9 +421,11 @@ mark {
     top: 0;
 
     .mail {
-      height: 1.3em;
+      height: 1.15em;
       margin-bottom: -.4em;
-      @include invert-if-dark-mode;
+      @include if-dark-mode {
+        @include filter(invert(1) brightness(3));
+      }
     }
 
     @include phone {

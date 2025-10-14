@@ -15,8 +15,8 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
     <h1>Dominik Klumpp</h1>
     <h3>PhD Candidate, University of Freiburg</h3>
     <h3>PostDoc Researcher, &Eacute;cole Polytechnique</h3>
-    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.png' | relative_url }}" /><br/>
-    <img alt="email address: firstname dot lastname at inria dot fr" class="mail" src="{{ '/images/mail_inria.png' | relative_url }}" />
+    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.svg' | relative_url }}" /><br/>
+    <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" />
     
     <p>
     My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.<br/>

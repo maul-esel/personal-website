@@ -11,9 +11,6 @@ conference_link: https://conferences.i-cav.org/2025/
 publisher: Springer
 publisher_link: https://doi.org/10.1007/978-3-031-98682-6_18
 
-#preprint: arxiv
-#preprint_link: https://arxiv.org/abs/2311.02673
-
 artifact: https://doi.org/10.5281/zenodo.15198876
 
 selected: true

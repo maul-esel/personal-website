@@ -11,7 +11,7 @@ conference_link: https://popl24.sigplan.org/
 publisher: ACM
 publisher_link: https://dl.acm.org/doi/10.1145/3632925
 
-preprint: arxiv
+preprint: arXiv
 preprint_link: https://arxiv.org/abs/2311.02673
 
 artifact: https://doi.org/10.5281/zenodo.10119773

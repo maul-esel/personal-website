@@ -5,7 +5,7 @@ date:   2025-01-22
 
 authors: [mheizmann, me, mlrosenfeld, fschuessele]
 
-preprint: arxiv
+preprint: arXiv
 preprint_link: https://arxiv.org/abs/2501.12313
 
 abstract: >-

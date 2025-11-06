@@ -39,6 +39,7 @@ bibtex: |-
     number    = {{POPL}},
     pages     = {--},
     year      = {2026},
-    doi       = {TBA}
+    doi       = {TBA},
+    note      = {(to appear)}
   }
 ---

@@ -24,7 +24,7 @@ bibtex: |-
   @inproceedings{movep20:POR4TAR,
     author       = {Dominik Klumpp},
     title        = {Partial Order Reduction for Trace Abstraction Refinement},
-    booktitle    = {14th Summer School on Modelling and Verification of Parallel Processes, {MOVEP} 2020, June 22-26, 2020}
+    booktitle    = {14th Summer School on Modelling and Verification of Parallel Processes, {MOVEP} 2020, June 22-26, 2020},
     howpublished = {\url{http://projects-verimag.imag.fr/movep2020/student-talks/}},
     year         = {2020}
   }

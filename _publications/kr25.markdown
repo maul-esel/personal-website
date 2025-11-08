@@ -10,9 +10,8 @@ selected: true
 conference:      KR'25
 conference_link: https://kr.org/KR2025/
 
-# publisher:       CEUR
-# publisher_link:  https://ceur-ws.org/Vol-3835/
-to_appear: true
+publisher:       KR Proceedings
+publisher_link:  https://doi.org/10.24963/kr.2025/42
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2409.09171
@@ -38,8 +37,7 @@ bibtex: |-
                     Knowledge Representation and Reasoning, {KR} 2025, Melbourne, Australia.
                     November 11-17, 2025},
     year         = {2025},
-    doi          = {---},
-    note         = {(to appear)}
+    doi          = {10.24963/kr.2025/42}
   }
 ---
 

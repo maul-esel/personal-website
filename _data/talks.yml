@@ -8,8 +8,7 @@ phd-defense:
   summary: >-
     I successfully defended my PhD thesis on algorithmic, fully-automated verification of concurrent programs.
 
-    <p>My PhD thesis is concerned with the algorithmic, fully-automated verification of concurrent programs.
-    Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
+    <p>Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
     Yet, verification algorithms often struggle to find correctness proofs that cover all the many possible schedulings (*interleavings*) of a concurrent program.
     We investigate how*commutativity reasoning* can be tightly integrated into verification algorithms, increasing the space of programs that can be successfully verified,
     and improving the verification performance.

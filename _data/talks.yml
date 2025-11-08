@@ -4,6 +4,7 @@ phd-defense:
   institution: University of Freiburg
   institution_link: https://www.tf.uni-freiburg.de/
   location: Freiburg, Germany
+  slides: https://www.researchgate.net/publication/397412234_From_Commutativity_to_Proofs_and_Back_Again_Reduction_and_Verification_of_Concurrent_Programs_Thesis_Defense
   summary: >-
     I successfully defended my PhD thesis on algorithmic, fully-automated verification of concurrent programs.
 

@@ -1,3 +1,37 @@
+phd-defense:
+  title: "From Commutativity to Proofs and Back Again: Reduction and Verification of Concurrent Programs"
+  date: 2025-11-03
+  institution: University of Freiburg
+  institution_link: https://www.tf.uni-freiburg.de/
+  location: Freiburg, Germany
+  summary: >-
+    I successfully defended my PhD thesis on algorithmic, fully-automated verification of concurrent programs.
+
+    <p>My PhD thesis is concerned with the algorithmic, fully-automated verification of concurrent programs.
+    Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
+    Yet, verification algorithms often struggle to find correctness proofs that cover all the many possible schedulings (*interleavings*) of a concurrent program.
+    We investigate how*commutativity reasoning* can be tightly integrated into verification algorithms, increasing the space of programs that can be successfully verified,
+    and improving the verification performance.
+    The notion of commutativity (of statements from different threads) allows the verification to group interleavings into equivalence classes,
+    and to verify only a subset of interleavings containing at least one representative per equivalence class (a *reduction*).
+    We show that, given a program, there is a large space of possible reductions that a verification algorithm could verify.
+    Each reduction can be described by fixing
+    (i) a particular notion of commutativity (and consequently, the resulting equivalence)
+    and (ii) a mechanism that decides which representatives to choose from each equivalence class.
+    We present a verification approach that is parametric in both a notion of commutativity (or, in fact, multiple notions)
+    and a choice mechanism for representatives.
+    We investigate how the choice of these two parameters affects the verification power and the efficiency of the verification.
+    In addition to the theoretical analysis, we implement our verification approach in a state-of-the-art algorithmic verifier and evaluate its practical potential.
+
+cosynus-tcs2025:
+  title: "From Commutativity to Proofs and Back Again: Reduction and Verification of Concurrent Programs"
+  date: 2025-10-21
+  institution: LIX
+  institution_link: https://lix.polytechnique.fr
+  location: Palaiseau, France
+  summary: >-
+    I presented the results of my PhD thesis at the [Theoretical Cosynus Seminar](https://www.lix.polytechnique.fr/proofs-algorithms/tcs/).
+
 vds2025:
   title: Finding Commutativity for Algorithmic Verification of Concurrent Programs
   date: 2025-05-20

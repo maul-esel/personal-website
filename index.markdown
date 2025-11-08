@@ -13,14 +13,14 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
   {% include image.html file="dominik.jpg" alt="Dominik Klumpp" title="Dominik Klumpp" width=530 height=380 sizes=28vw srcset="800w: small, 2000w: medium, 4785w: " %}
   <div id="main-info">
     <h1>Dominik Klumpp</h1>
-    <h3>PhD Candidate, University of Freiburg</h3>
     <h3>PostDoc Researcher, &Eacute;cole Polytechnique</h3>
-    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.svg' | relative_url }}" /><br/>
-    <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" />
+    <h3>PhD Candidate, University of Freiburg <sup class="position-note">(successfully defended)</sup></h3>
+    <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" /><br/>
+    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.svg' | relative_url }}" />
     
     <p>
-    My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.<br/>
-    I work at <a href="https://www.lix.polytechnique.fr/">LIX</a> with <a href="https://www.lix.polytechnique.fr/~cenea/">Prof. Constantin Enea</a>.
+    I work at <a href="https://www.lix.polytechnique.fr/">LIX</a> with <a href="https://www.lix.polytechnique.fr/~cenea/">Prof. Constantin Enea</a>.<br/>
+    My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.
     </p>
   </div>
   <script type="application/ld+json">

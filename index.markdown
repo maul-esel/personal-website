@@ -4,7 +4,7 @@ title: Dominik Klumpp | Personal Homepage
 omit_title_suffix: true
 
 description: >-
-  Dominik Klumpp is a computer science PhD candidate in Freiburg (Germany),
+  Dominik Klumpp is a PostDoc researcher in computer science at LIX / &Eacute;cole Polytechnique in Paris (France),
   working on commutativity and partial order reduction in verification of concurrent programs.
 keywords: Dominik Klumpp, computer science, programming languages, formal methods, verification, commutativity, partial order reduction
 ---
@@ -30,20 +30,20 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 
   "name": "Dominik Klumpp",
   "image": "https://dominik-klumpp.net/images/dominik.jpg",
-  "jobTitle": "PhD candidate",
+  "jobTitle": "PostDoc researcher",
   "url": "https://dominik-klumpp.net",
 
   "affiliation" : {
     "@type": "CollegeOrUniversity",
-    "@id": "https://uni-freiburg.de/",
-    "name": "University of Freiburg",
-    "address": "Germany"
+    "@id": "https://www.polytechnique.edu/",
+    "name": "&Eacute;cole polytechnique",
+    "address": "France"
   },
   "worksFor": {
     "@type": "ResearchOrganization",
-    "name": "Chair for Software Engineering",
-    "url": "https://swt.informatik.uni-freiburg.de/",
-    "parentOrganization": { "@id": "https://uni-freiburg.de/" }
+    "name": "LIX (Laboratoire d'informatique de l'&Eacute;cole polytechnique)",
+    "url": "https://www.lix.polytechnique.fr/",
+    "parentOrganization": { "@id": "https://www.polytechnique.edu/" }
   },
   "colleague": {
     "@type": "Person",
@@ -51,6 +51,13 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
     "givenName": "Andreas",
     "jobTitle": "Professor",
     "url": "https://swt.informatik.uni-freiburg.de/staff/podelski"
+  },
+  "colleague": {
+    "@type": "Person",
+    "familyName": "Enea",
+    "givenName": "Constantin",
+    "jobTitle": "Professor",
+    "url": "https://www.lix.polytechnique.fr/~cenea/"
   }
 }
   </script>

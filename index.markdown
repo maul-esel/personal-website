@@ -25,39 +25,63 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
   </div>
   <script type="application/ld+json">
 {
-  "@context": "http://schema.org/",
-  "@type": "Person",
+  "@context"     : "https://schema.org",
+  "@type"        : "ProfilePage",
+  "dateCreated"  : "2023-03-08T00:00:00-00:00",
+  "dateModified" : "{{ site.time | date_to_xmlschema }}",
+  "mainEntity"   : {
+    "@type"       : "Person",
+    "@id"         : "https://dominik-klumpp.net",
+    "name"        : "Dominik Klumpp",
+    "familyName"  : "Klumpp",
+    "givenName"   : "Dominik",
+    "description" : "{{ page.description }}",
+    "image"       : "https://dominik-klumpp.net/images/dominik.jpg",
+    "jobTitle"    : "PostDoc researcher",
+    "url"         : "https://dominik-klumpp.net",
 
-  "name": "Dominik Klumpp",
-  "image": "https://dominik-klumpp.net/images/dominik.jpg",
-  "jobTitle": "PostDoc researcher",
-  "url": "https://dominik-klumpp.net",
-
-  "affiliation" : {
-    "@type": "CollegeOrUniversity",
-    "@id": "https://www.polytechnique.edu/",
-    "name": "&Eacute;cole polytechnique",
-    "address": "France"
-  },
-  "worksFor": {
-    "@type": "ResearchOrganization",
-    "name": "LIX (Laboratoire d'informatique de l'&Eacute;cole polytechnique)",
-    "url": "https://www.lix.polytechnique.fr/",
-    "parentOrganization": { "@id": "https://www.polytechnique.edu/" }
-  },
-  "colleague": {
-    "@type": "Person",
-    "familyName": "Podelski",
-    "givenName": "Andreas",
-    "jobTitle": "Professor",
-    "url": "https://swt.informatik.uni-freiburg.de/staff/podelski"
-  },
-  "colleague": {
-    "@type": "Person",
-    "familyName": "Enea",
-    "givenName": "Constantin",
-    "jobTitle": "Professor",
-    "url": "https://www.lix.polytechnique.fr/~cenea/"
+    "worksFor"    : {
+      "@type"   : "CollegeOrUniversity",
+      "@id"     : "https://www.polytechnique.edu/",
+      "name"    : "&Eacute;cole polytechnique",
+      "address" : "Palaiseau, France",
+      "url"     : "https://www.polytechnique.edu/"
+    },
+    "affiliation" : {
+      "@type"              : "ResearchOrganization",
+      "@id"                : "https://www.lix.polytechnique.fr",
+      "name"               : "LIX (Laboratoire d'informatique de l'&Eacute;cole polytechnique)",
+      "url"                : "https://www.lix.polytechnique.fr",
+      "address"            : "Palaiseau, France",
+      "parentOrganization" : { "@id": "https://www.polytechnique.edu" }
+    },
+    "alumniOf": {
+      "@type"   : "CollegeOrUniversity",
+      "@id"     : "https://uni-freiburg.de",
+      "name"    : "University of Freiburg",
+      "url"     : "https://uni-freiburg.de",
+      "address" : "Freiburg im Breisgau, Germany"
+    },
+    "colleagues": [
+      {
+        "@type"       : "Person",
+        "familyName"  : "Podelski",
+        "givenName"   : "Andreas",
+        "jobTitle"    : "Professor",
+        "url"         : "https://swt.informatik.uni-freiburg.de/staff/podelski",
+        "affiliation" : { "@id": "https://uni-freiburg.de" }
+      },
+      {
+        "@type"       : "Person",
+        "familyName"  : "Enea",
+        "givenName"   : "Constantin",
+        "jobTitle"    : "Professor",
+        "url"         : "https://www.lix.polytechnique.fr/~cenea/",
+        "worksFor"    : { "@id": "https://www.polytechnique.edu" },
+        "affiliation" : { "@id": "https://www.lix.polytechnique.fr" }
+      }
+    ],
+    "award": "Teaching Award of the Faculty of Engineering at the University of Freiburg, for the 'Best Lecture in Computer Science', summer semester 2024"
   }
 }
   </script>

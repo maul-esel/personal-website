@@ -131,29 +131,29 @@ lastmod_dependencies:
 
     <script type="application/ld+json">
 {
-  "@context": "http://schema.org/",
-  "@type": "ScholarlyArticle",
-  "headline": "{{ pub.title }}",
-  "datePublished": "{{ pub.date }}",
-  "author": [
-    {%- for auth in pub.authors -%}
+  "@context"      : "https://schema.org/",
+  "@type"         : "ScholarlyArticle",
+  "headline"      : "{{ pub.title }}",
+  "datePublished" : "{{ pub.date }}",
+  "author"        : [
+    {% for auth in pub.authors -%}
     {
-      "@type": "Person",
+      "@type" : "Person",
       {% if auth == 'me' -%}
-        "url": "https://dominik-klumpp.net",
-        "name": "Dominik Klumpp"
+      "url"   : "https://dominik-klumpp.net",
+      "name"  : "Dominik Klumpp"
       {%- else -%}
         {%- assign author = site.data.coauthors[auth] -%}
-        {%- if author.website -%}
-        "url": "{{ author.website }}",
-        {% endif -%}
-        "name": "{{ author.firstname }} {{ author.lastname }}"
+      {%- if author.website -%}
+      "url"   : "{{ author.website }}",
+      {% endif -%}
+      "name"  : "{{ author.firstname }} {{ author.lastname }}"
       {%- endif %}
     }{% unless forloop.last %}, {% endunless %}
     {% endfor -%}
   ],
-  "url": "{{ pub.publisher_link }}",
-  "abstract": {{ pub.abstract | jsonify }}
+  "url"           : "{{ pub.publisher_link }}",
+  "abstract"      : {{ pub.abstract | jsonify }}
 }
     </script>
   </li>

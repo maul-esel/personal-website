@@ -9,7 +9,7 @@ conference: POPL'26
 conference_link: https://popl26.sigplan.org/
 
 publisher: ACM
-#publisher_link: https://dl.acm.org/doi/10.1145/3632925
+#publisher_link: https://dl.acm.org/doi/10.1145/3776684
 to_appear: true
 
 #preprint: arxiv
@@ -35,11 +35,11 @@ bibtex: |-
     author    = {Frank Sch\"ussele and Matthias Zumkeller and Miriam Lagunes-Rochin and Dominik Klumpp},
     title     = {The Ghosts of Empires: Extracting Modularity from Interleaving-Based Proofs},
     journal   = {Proc. {ACM} Program. Lang.},
-    volume    = {--},
+    volume    = {10},
     number    = {{POPL}},
     pages     = {--},
     year      = {2026},
-    doi       = {TBA},
+    doi       = {10.1145/3776684},
     note      = {(to appear)}
   }
 ---

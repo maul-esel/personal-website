@@ -10,7 +10,7 @@ phd-defense:
 
     <p>Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
     Yet, verification algorithms often struggle to find correctness proofs that cover all the many possible schedulings (*interleavings*) of a concurrent program.
-    We investigate how*commutativity reasoning* can be tightly integrated into verification algorithms, increasing the space of programs that can be successfully verified,
+    We investigate how *commutativity reasoning* can be tightly integrated into verification algorithms, increasing the space of programs that can be successfully verified,
     and improving the verification performance.
     The notion of commutativity (of statements from different threads) allows the verification to group interleavings into equivalence classes,
     and to verify only a subset of interleavings containing at least one representative per equivalence class (a *reduction*).

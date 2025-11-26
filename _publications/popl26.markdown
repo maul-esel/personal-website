@@ -12,8 +12,8 @@ publisher: ACM
 #publisher_link: https://dl.acm.org/doi/10.1145/3776684
 to_appear: true
 
-#preprint: arxiv
-#preprint_link: https://arxiv.org/abs/2311.02673
+extended_version: arXiv
+extended_version_link: https://arxiv.org/abs/2511.20369
 
 artifact: https://doi.org/10.5281/zenodo.17347697
 

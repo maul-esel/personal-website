@@ -39,5 +39,9 @@ bibtex: |-
     year         = {2025},
     doi          = {10.24963/kr.2025/42}
   }
+
+talk:
+  speaker: jribeiro
+  slides: https://www.researchgate.net/publication/398918539_Effective_AGM_Belief_Contraction_A_Journey_beyond_the_Finitary_Realm
 ---
 

@@ -10,9 +10,6 @@
 - name: ResearchGate
   icon: researchgate.svg
   link: https://www.researchgate.net/profile/Dominik-Klumpp-3
-- name: Uni Freiburg
-  icon: unifreiburg.png
-  link: https://swt.informatik.uni-freiburg.de/staff/klumpp
 - name: LinkedIn
   icon: linkedin.svg
   link: https://www.linkedin.com/in/dominik-klumpp-532588171/

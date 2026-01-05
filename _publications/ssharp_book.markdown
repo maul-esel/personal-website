@@ -5,8 +5,8 @@ date:   2017-12-05
 
 authors: [beberhardinger, hponsar, me, wreif]
 
-publisher:      dpunkt.verlag
-publisher_link: https://dpunkt.de/produkt/test-analyse-und-verifikation-von-software-gestern-heute-morgen/
+publisher:      Gesellschaft für Informatik
+publisher_link: https://fg-tav.gi.de/publikationen/fachbuecher/tav-buch-3
 
 abstract: >-
   A major challenge of testing self-organization mechanisms is to cover the large state space

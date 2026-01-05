@@ -5,10 +5,10 @@ phd-defense:
   institution_link: https://www.tf.uni-freiburg.de/
   location: Freiburg, Germany
   slides: https://www.researchgate.net/publication/397412234_From_Commutativity_to_Proofs_and_Back_Again_Reduction_and_Verification_of_Concurrent_Programs_Thesis_Defense
-  summary: >-
+  summary: |-
     I successfully defended my PhD thesis on algorithmic, fully-automated verification of concurrent programs.
 
-    <p>Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
+    Algorithmic verification can prove the absence of, or identify, concurrency bugs that are easily missed by programmers and unlikely to be found by testing.
     Yet, verification algorithms often struggle to find correctness proofs that cover all the many possible schedulings (*interleavings*) of a concurrent program.
     We investigate how *commutativity reasoning* can be tightly integrated into verification algorithms, increasing the space of programs that can be successfully verified,
     and improving the verification performance.
@@ -40,7 +40,7 @@ vds2025:
   workshop: VDS
   workshop_link: https://netys.net/wds2025/VDS25.html
   location: Rabat, Morocco
-  summary: >-
+  summary: |-
     The benefits of commutativity-based reduction in the verification of concurrent programs are well-established:
     By focusing on a representative subset of program interleavings, soundly selected based on a given commutativity relation between statements,
     the verification can succeed with simpler invariants and can avoid combinatorial explosion.
@@ -56,7 +56,7 @@ mpisws2025mar:
   institution: MPI-SWS
   institution_link: https://mpi-sws.org
   location: Kaiserslautern, Germany
-  summary: >-
+  summary: |-
     To verify concurrent programs with unbounded loops, algorithmic verifiers must infer inductive invariants
     that show correctness for all infinitely many possible executions of the program.
     Due to the many possible interleavings of the program's threads, such invariants are often complex (requiring non-linear arithmetic, quantifiers, or reasoning with ghost variables)
@@ -73,7 +73,7 @@ irif2025feb:
   institution: IRIF
   institution_link: https://www.irif.fr
   location: Paris, France
-  summary: >-
+  summary: |-
     Verification of concurrent programs over infinite data domains is challenging:
     Algorithmic verifiers must infer inductive invariants that show correctness for all possible interleavings of program statements.
     Such invariants are often complex (requiring non-linear arithmetic, quantifiers, or reasoning with ghost variables) and out-of-reach for most invariant inference algorithms.
@@ -89,7 +89,7 @@ ista2024may:
   institution: ISTA
   institution_link: https://ist.ac.at/en/research/henzinger_thomas-group/
   location: Klosterneuburg, Austria
-  summary: >-
+  summary: |-
     Verification of concurrent programs is a hard problem.
     Beyond the state space explosion known from model checking, a new challenge arises for invariant-based verification of concurrent programs over infinite data domains:
     the inductive invariants needed to prove correctness of all possible program interleavings are often complex and out of reach for automated invariant inference algorithms.

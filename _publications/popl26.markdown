@@ -9,8 +9,7 @@ conference: POPL'26
 conference_link: https://popl26.sigplan.org/
 
 publisher: ACM
-#publisher_link: https://dl.acm.org/doi/10.1145/3776684
-to_appear: true
+publisher_link: https://dl.acm.org/doi/10.1145/3776684
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2511.20369
@@ -37,9 +36,8 @@ bibtex: |-
     journal   = {Proc. {ACM} Program. Lang.},
     volume    = {10},
     number    = {{POPL}},
-    pages     = {--},
+    pages     = {1212--1240},
     year      = {2026},
-    doi       = {10.1145/3776684},
-    note      = {(to appear)}
+    doi       = {10.1145/3776684}
   }
 ---

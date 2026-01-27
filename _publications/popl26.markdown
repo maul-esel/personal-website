@@ -40,4 +40,8 @@ bibtex: |-
     year      = {2026},
     doi       = {10.1145/3776684}
   }
+
+talk:
+  recording: https://www.youtube.com/watch?v=xAmmIP6ouUk
+  speaker:   fschuessele
 ---

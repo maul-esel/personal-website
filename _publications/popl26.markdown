@@ -43,5 +43,6 @@ bibtex: |-
 
 talk:
   recording: https://www.youtube.com/watch?v=xAmmIP6ouUk
+  slides:    https://swt.informatik.uni-freiburg.de/staff/schuessele/resources/popl26-slides.pdf
   speaker:   fschuessele
 ---

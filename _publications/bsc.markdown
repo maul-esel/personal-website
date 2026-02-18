@@ -1,12 +1,14 @@
 ---
 pub_id: bsc
-title: Optimising Runtime Safety Analysis Efficiency for Self-Organising Systems (BSc thesis)
+title: Optimising Runtime Safety Analysis Efficiency for Self-Organising Systems
 date: 2016-09-28
 
 authors: [me]
 
 publisher: University of Augsburg
 publisher_link: https://nc.informatik.uni-freiburg.de/index.php/s/xDRe8b6Z9SSZisD
+
+thesis_type: Bachelor
 
 abstract: >-
   One key advantage of many self-organising resource-flow systems is their high tolerance for component faults:

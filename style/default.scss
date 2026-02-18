@@ -504,6 +504,11 @@ mark {
   @include invert-if-dark-mode;
 }
 
+.pub-thesis-icon {
+  height: 1.5em;
+  vertical-align: -30%;
+}
+
 .pub-additional {
   margin-right: 1%;
   display: inline-block;
@@ -556,6 +561,9 @@ mark {
 }
 .pub-conference {
   @include tag(var(--col-highlight));
+}
+.pub-thesis {
+  @include tag(gold);
 }
 .talk-institution {
   @include tag(lightgray);

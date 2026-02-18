@@ -29,6 +29,10 @@ lastmod_dependencies:
             <a class="pub-conference" href="{{ pub.conference_link }}">{{ pub.conference }}</a>
           {%- endif -%}<br/>
         </span>
+      {% elsif pub.thesis_type %}
+        <span class="pub-venue">
+          <span class="pub-thesis"><img alt="" class="pub-thesis-icon" src="{{ '/images/thesis.svg' | relative_url }}" /> {{ pub.thesis_type }} thesis</span>
+        </span>
       {% endif %}
     </p>
     <p class="pub-authorline">

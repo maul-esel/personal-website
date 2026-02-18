@@ -1,6 +1,6 @@
 ---
 pub_id: msc
-title: Automated Control Flow Reconstruction from Assembler Programs (MSc thesis)
+title: Automated Control Flow Reconstruction from Assembler Programs
 date: 2018-12-12
 
 talk: avm19
@@ -9,6 +9,8 @@ authors: [me]
 
 publisher: University of Augsburg
 publisher_link: https://www.researchgate.net/publication/329701188_Automated_Control_Flow_Reconstruction_from_Assembler_Programs
+
+thesis_type: Master
 
 abstract: >-
   As software permeates more and more aspects of daily life and becomes a central component of critical systems around the world,

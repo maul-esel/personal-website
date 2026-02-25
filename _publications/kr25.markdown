@@ -30,15 +30,16 @@ abstract: >-
 bibtex: |-
   @inproceedings{kr25:effectiveAGMContraction,
     author       = {Dominik Klumpp and Jandson S. Ribeiro},
-    editor       = {Renata Wassermann and Torsten Schaub},
+    editor       = {Magdalena Ortiz and Renata Wassermann and Torsten Schaub},
     title        = {Effective {AGM} Belief Contraction:
-                    A Journey beyond the Finitary Realm},
+                    A Journey Beyond the Finitary Realm},
     booktitle    = {Proceedings of the 22nd International Conference on Principles of
-                    Knowledge Representation and Reasoning, {KR} 2025, Melbourne, Australia.
-                    November 11-17, 2025},
+                    Knowledge Representation and Reasoning, {KR} 2025, Melbourne, Australia,
+                    November 1-17, 2025},
     year         = {2025},
-    doi          = {10.24963/kr.2025/42}
+    doi          = {10.24963/KR.2025/42}
   }
+
 
 talk:
   speaker: jribeiro

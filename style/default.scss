@@ -424,11 +424,9 @@ mark {
       font-size: 0.5em;
 
       .title-note {
-        &::after {
-          font-size: 0.7em;
-          display: inline-block;
-          content: '\1f6c8';
-          vertical-align: +15%;
+        width: 1em;
+        @include if-dark-mode {
+          @include filter(invert(1));
         }
       }
     }
@@ -516,7 +514,7 @@ mark {
 
   &::before {
     display: inline;
-    content: "\2BA9";
+    content: "\27A4";
     font-weight: bold;
     font-size: 1.4em;
   }

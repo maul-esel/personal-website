@@ -12,7 +12,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 <div id="banner">
   {% include image.html file="dominik.jpg" alt="Dominik Klumpp" title="Dominik Klumpp" width=530 height=380 sizes=28vw srcset="800w: small, 2000w: medium, 4785w: " %}
   <div id="main-info">
-    <h1>Dominik Klumpp, <span class="title">Dr. rer. nat. <span class="title-note" title="Doktor rerum naturalium: German doctorate in the natural sciences"></span></span></h1>
+    <h1>Dominik Klumpp, <span class="title">Dr. rer. nat. <img alt="info:" class="title-note" src="{{ '/images/info.svg' | relative_url }}" title="Doktor rerum naturalium: German doctorate in the natural sciences"/></span></h1>
     <h3>PostDoc Researcher, &Eacute;cole Polytechnique, France</h3>
     <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" />
 

@@ -100,19 +100,43 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 {% endfor %}
 </div>
 
-My main research focus is on algorithmic verification of concurrent programs.
-I investigate how <mark>partial order reduction</mark>
+## Research Topics
+
+In my PhD research,
+I investigated how <mark>partial order reduction</mark>
 and the underlying notion of <mark>commutativity</mark>
 enable verification algorithms to find simpler correctness proofs for concurrent programs,
 thereby allowing for the verification of more programs,
 and increasing verification efficiency.
 
-I am a co-developer of the [**Ultimate**](https://ultimate-pa.org/) program analysis and automata theory framework.
-To complement my theoretical work on commutativity in program verification, I implement the resulting verification algorithms in the software model checker [**Ultimate GemCutter**](https://ultimate-pa.org/?ui=tool&tool=gemcutter),
-which has scored top rankings in [SV-COMP](https://sv-comp.sosy-lab.org/), the _International Competition on Software Verification_ ([2022](https://sv-comp.sosy-lab.org/2022/results/results-verified/), [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/), [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/), [2025](https://sv-comp.sosy-lab.org/2025/results/results-verified/)).
+{%- assign por_references = "dissertation,svcomp22,pldi22,popl23,popl24,cav25" | split: ',' -%}
+{% include reflist.markdown references=por_references %}
 
-I am also part of the development team for [**Ultimate Automizer**](https://ultimate-pa.org/?ui=tool&tool=automizer).
-Our team has won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP for three years in a row ([2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/), [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/), and [2025](https://sv-comp.sosy-lab.org/2023/results/results-verified/)).
+
+I am also interested in proof formalisms and <mark>correctness certificates for concurrent programs</mark>,
+ how compact certificates for verified programs can increase confidence in verification results and soundness of verification tools through <mark>independent validation</mark>,
+and enable interoperability between <mark>automated and deductive</mark> verification approaches.
+
+{%- assign proof_references = "vmcai25,popl26" | split: ',' -%}
+{% include reflist.markdown references=proof_references %}
+
+
+When verification uncovers bugs,
+it raises the question of <mark>program repair</mark>.
+As program specifications are often formalised in <mark>temporal logics</mark>,
+I investigate how to <mark>implement rational change</mark> of temporal behaviours,
+informed by the <mark>belief change</mark> paradigm of <mark>symbolic artificial intelligence</mark>.
+
+{%- assign ltl_references = "nmr24,kr25" | split: ',' -%}
+{% include reflist.markdown references=ltl_references %}
+
+
+## Tools
+To complement my theoretical work on commutativity in program verification, I implement the resulting verification algorithms in the software model checker [**Ultimate GemCutter**](https://ultimate-pa.org/?ui=tool&tool=gemcutter).
+GemCutter has scored top rankings in [SV-COMP](https://sv-comp.sosy-lab.org/), the _International Competition on Software Verification_ ([2022](https://sv-comp.sosy-lab.org/2022/results/results-verified/), [2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/), [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/), [2025](https://sv-comp.sosy-lab.org/2025/results/results-verified/)).
+
+I am a co-developer of the [**Ultimate**](https://ultimate-pa.org/) program analysis and automata theory framework.
+Our algorithmic verifier [**Ultimate Automizer**](https://ultimate-pa.org/?ui=tool&tool=automizer) has won 1<sup>st</sup> place in the _Overall_ ranking of SV-COMP for four years in a row ([2023](https://sv-comp.sosy-lab.org/2023/results/results-verified/), [2024](https://sv-comp.sosy-lab.org/2024/results/results-verified/), [2025](https://sv-comp.sosy-lab.org/2023/results/results-verified/), [2026](https://sv-comp.sosy-lab.org/2026/results/results-verified/)).
 
 ## Recent & Upcoming Talks
 

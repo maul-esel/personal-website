@@ -506,6 +506,26 @@ mark {
   }
 }
 
+.reflist {
+  display: block;
+  width: 100%;
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+
+  &::before {
+    display: inline;
+    content: "\2BA9";
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  & + * {
+    clear: both;
+  }
+}
+
 
 // ********************************************************
 //  Publication list

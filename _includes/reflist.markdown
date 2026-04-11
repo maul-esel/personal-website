@@ -10,6 +10,6 @@
   {%- else -%}
     {%- assign venue = '' -%}
   {%- endif %}
-  <a href="{{ '/publications/#pub-' | append: pub.pub_id | relative_url }}" title="{{pub.title}}{{ venue }}">[{{venue}}]</a>
+  <a href="{{ '/publications/#pub-' | append: pub.pub_id | relative_url }}" title="{{pub.title}}">[{{venue}}]</a>
 {%- endfor %}
 </span>

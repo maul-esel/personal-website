@@ -9,6 +9,7 @@ publisher: University of Freiburg
 publisher_link: https://freidok.uni-freiburg.de/data/277289
 
 thesis_type: PhD
+selected: true
 
 abstract: >-
   This thesis is concerned with the algorithmic, fully-automated verification of concurrent programs.

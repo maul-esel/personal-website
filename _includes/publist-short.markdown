@@ -8,5 +8,9 @@
         <a class="pub-conference" href="{{ pub.conference_link }}">{{ pub.conference }}</a>
       {%- endif -%}
     </span>
+    {% elsif pub.thesis_type %}
+      <span class="pub-venue">
+        <span class="pub-thesis"><img alt="" class="pub-thesis-icon" src="{{ '/images/thesis.svg' | relative_url }}" /> {{ pub.thesis_type }} thesis</span>
+      </span>
     {% endif %} [{{ pub.title }}]({{ '/publications/#pub-' | append: pub.pub_id | relative_url }}) {% if pub.to_appear -%} <em>(to appear)</em> {%- endif %}
 {% endfor %}

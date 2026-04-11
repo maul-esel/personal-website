@@ -420,6 +420,19 @@ mark {
     left: 55%;
     top: 0;
 
+    .title {
+      font-size: 0.5em;
+
+      .title-note {
+        &::after {
+          font-size: 0.7em;
+          display: inline-block;
+          content: '\1f6c8';
+          vertical-align: +15%;
+        }
+      }
+    }
+
     .position-note {
       font-size: 0.5em;
     }

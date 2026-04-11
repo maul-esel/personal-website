@@ -12,15 +12,19 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
 <div id="banner">
   {% include image.html file="dominik.jpg" alt="Dominik Klumpp" title="Dominik Klumpp" width=530 height=380 sizes=28vw srcset="800w: small, 2000w: medium, 4785w: " %}
   <div id="main-info">
-    <h1>Dominik Klumpp</h1>
-    <h3>PostDoc Researcher, &Eacute;cole Polytechnique</h3>
-    <h3>PhD Candidate, University of Freiburg <sup class="position-note">(successfully defended)</sup></h3>
-    <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" /><br/>
-    <img alt="email address: lastname at informatik dot uni-freiburg dot de" class="mail" src="{{ '/images/mail_ufr.svg' | relative_url }}" />
+    <h1>Dominik Klumpp, <span class="title">Dr. rer. nat. <span class="title-note" title="Doktor rerum naturalium: German doctorate in the natural sciences"></span></span></h1>
+    <h3>PostDoc Researcher, &Eacute;cole Polytechnique, France</h3>
+    <img alt="email address: lastname at lix dot polytechnique dot fr"       class="mail" src="{{ '/images/mail_lix.svg' | relative_url }}" />
+
+    <p>
+    I am interested in the construction and verification of provably correct software systems.
+    </p>
+    <p>
+    My main research focus is on the algorithmic and deductive verification of concurrent programs.
+    </p>
     
     <p>
-    I work at <a href="https://www.lix.polytechnique.fr/">LIX</a> with <a href="https://www.lix.polytechnique.fr/~cenea/">Prof. Constantin Enea</a>.<br/>
-    My PhD advisor is <a href="https://swt.informatik.uni-freiburg.de/staff/podelski">Prof. Andreas Podelski</a>.
+    I work at <a href="https://www.lix.polytechnique.fr/">LIX</a> with <a href="https://www.lix.polytechnique.fr/~cenea/">Prof. Constantin Enea</a>.
     </p>
   </div>
   <script type="application/ld+json">
@@ -30,24 +34,25 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
   "dateCreated"  : "2023-03-08T00:00:00-00:00",
   "dateModified" : "{{ site.time | date_to_xmlschema }}",
   "mainEntity"   : {
-    "@type"       : "Person",
-    "@id"         : "https://dominik-klumpp.net",
-    "name"        : "Dominik Klumpp",
-    "familyName"  : "Klumpp",
-    "givenName"   : "Dominik",
-    "description" : "{{ page.description }}",
-    "image"       : "https://dominik-klumpp.net/images/dominik.jpg",
-    "jobTitle"    : "PostDoc researcher",
-    "url"         : "https://dominik-klumpp.net",
+    "@type"           : "Person",
+    "@id"             : "https://dominik-klumpp.net",
+    "name"            : "Dominik Klumpp",
+    "familyName"      : "Klumpp",
+    "givenName"       : "Dominik",
+    "honorificPrefix" : "Dr.",
+    "description"     : "{{ page.description }}",
+    "image"           : "https://dominik-klumpp.net/images/dominik.jpg",
+    "jobTitle"        : "PostDoc researcher",
+    "url"             : "https://dominik-klumpp.net",
 
-    "worksFor"    : {
+    "worksFor"        : {
       "@type"   : "CollegeOrUniversity",
       "@id"     : "https://www.polytechnique.edu/",
       "name"    : "&Eacute;cole polytechnique",
       "address" : "Palaiseau, France",
       "url"     : "https://www.polytechnique.edu/"
     },
-    "affiliation" : {
+    "affiliation"     : {
       "@type"              : "ResearchOrganization",
       "@id"                : "https://www.lix.polytechnique.fr",
       "name"               : "LIX (Laboratoire d'informatique de l'&Eacute;cole polytechnique)",
@@ -55,14 +60,14 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
       "address"            : "Palaiseau, France",
       "parentOrganization" : { "@id": "https://www.polytechnique.edu" }
     },
-    "alumniOf": {
+    "alumniOf"        : {
       "@type"   : "CollegeOrUniversity",
       "@id"     : "https://uni-freiburg.de",
       "name"    : "University of Freiburg",
       "url"     : "https://uni-freiburg.de",
       "address" : "Freiburg im Breisgau, Germany"
     },
-    "colleagues": [
+    "colleagues"      : [
       {
         "@type"       : "Person",
         "familyName"  : "Podelski",
@@ -81,7 +86,7 @@ keywords: Dominik Klumpp, computer science, programming languages, formal method
         "affiliation" : { "@id": "https://www.lix.polytechnique.fr" }
       }
     ],
-    "award": "Teaching Award of the Faculty of Engineering at the University of Freiburg, for the 'Best Lecture in Computer Science', summer semester 2024"
+    "award"           : "Teaching Award of the Faculty of Engineering at the University of Freiburg, for the 'Best Lecture in Computer Science', summer semester 2024"
   }
 }
   </script>

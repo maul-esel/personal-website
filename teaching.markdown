@@ -13,7 +13,7 @@ lastmod_dependencies:
 
 ## Lectures
 
-In the summer semester 2024, I was the lecturer for the course **Cyber-Physical Systems II: Program Verification**.
+In the summer semester 2024, I was the lecturer for the course **Cyber-Physical Systems II: Program Verification** at the University of Freiburg.
 <a class="year-tag" href="https://swt.informatik.uni-freiburg.de/teaching/SS2024/program-verification">SS24</a>
 
 In this course, designed in 2019 by Matthias Heizmann, Tanja Schindler and me,
@@ -31,7 +31,7 @@ based on a [ranking](https://www.tf.uni-freiburg.de/en/studies-and-teaching/teac
 ---
 
 
-I also co-organise several lectures offered by the Chair for Software Engineering.
+I also co-organised several lectures offered by the Chair for Software Engineering in Freiburg.
 
 {: .lecture-list}
 * <span class="lecture-title">**Cyber-Physical Systems I: Discrete Models**</span>
@@ -66,7 +66,7 @@ I also co-organise several lectures offered by the Chair for Software Engineerin
 
 ## Seminars
 
-I frequently supervise students in the different seminars offered by the Chair for Software Engineering.
+I supervised students in the different seminars offered by the Chair for Software Engineering.
 
 {: .seminar-list}
 * <span class="seminar-title">**Classical Articles of Program Analysis** (dt: _Klassische Artikel der Programmanalyse_, BSc Proseminar)</span>
@@ -89,7 +89,8 @@ The talks are either given throughout the semester, or as a "block seminar" in 1
 
 I have supervised a number of student projects revolving around program analysis and automata theory.
 Such projects typically involve a theoretical component (e.g. design / modification and correctness proof of some algorithm)
-and an implementation and evaluation component in the context of the program analysis and automata theory framework [Ultimate](https://ultimate.informatik.uni-freiburg.de/).
+and an implementation and evaluation component,
+e.g. in the context of the program analysis and automata theory framework [Ultimate](https://ultimate.informatik.uni-freiburg.de/).
 
 {% comment %}
 If you are interested in a project or thesis, send me an email.

@@ -114,7 +114,7 @@ and increasing verification efficiency.
 
 
 I am also interested in proof formalisms and <mark>correctness certificates for concurrent programs</mark>,
- how compact certificates for verified programs can increase confidence in verification results and soundness of verification tools through <mark>independent validation</mark>,
+how compact, modular certificates for verified programs <mark>increase confidence</mark> in verification results and verification tools through <mark>independent validation</mark>,
 and enable interoperability between <mark>automated and deductive</mark> verification approaches.
 
 {%- assign proof_references = "vmcai25,popl26" | split: ',' -%}

@@ -3,8 +3,6 @@ pub_id: popl23
 title:  Stratified Commutativity in Verification Algorithms for Concurrent Programs
 date:   2023-01-11
 
-selected: true
-
 authors:      [afarzan, me, apodelski]
 author_order: alphabetical
 

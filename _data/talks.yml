@@ -1,3 +1,17 @@
+cosynus-tcs2026:
+  title: Effective Belief Contraction in Temporal Logics
+  date: 2026-05-20
+  institution: LIX
+  institution_link: https://lix.polytechnique.fr
+  location: Palaiseau, France
+  summary: |-
+    In symbolic AI, the field of Belief Change studies how rational agents alter their beliefs when faced with new information. While this question has primarily been considered for beliefs expressed in classical propositional logic, we are concerned with more expressive *temporal* logics, such as LTL (linear temporal logic). In particular, we study the computational aspects of *belief contraction*, the process of relinquishing an obsolete belief (without losing unrelated information). Our goal is to understand the theoretical limitations on effective belief change operators over such logics, with an eye towards future applications in analysis and repair of systems specified in LTL. In this talk, I present the results of our recent [KR'25 paper](/publications/#pub-kr25) and another work currently under submission.
+
+    First, we show that in a wide class of expressive non-finitary logics (such as LTL), most rational belief contraction operators are in fact uncomputable. Drastically, the de facto standard strategies to control computability (limiting the belief states) also fail: uncomputability persists in all non-finitary cases. Motivated by this result, we propose new approaches to controlling computability beyond the finitary realm. In particular for LTL, we identify classes of rational contraction operators that are computable by design. These operators are based on Büchi automata representing *epistemic preference relations*.
+
+    Then, we study the computational aspects of such epistemic preference relations further. These relations have to satisfy certain innocuous conditions; and constructing such relations is usually assumed to be a trivial process. However, in the case of LTL and relations represented as Büchi automata, we show that this is a challenging task: the core condition, which guarantees the success of contraction, is in fact undecidable. Towards achieving effective LTL belief contraction, we propose several concrete constructions of novel preference relations that satisfy the required conditions by design.
+
+
 phd-defense:
   title: "From Commutativity to Proofs and Back Again: Reduction and Verification of Concurrent Programs"
   date: 2025-11-03

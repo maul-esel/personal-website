@@ -117,7 +117,7 @@ I am also interested in proof formalisms and <mark>correctness certificates for 
 how compact, modular certificates for verified programs <mark>increase confidence</mark> in verification results and verification tools through <mark>independent validation</mark>,
 and enable interoperability between <mark>automated and deductive</mark> verification approaches.
 
-{%- assign proof_references = "vmcai25,popl26" | split: ',' -%}
+{%- assign proof_references = "vmcai25,popl26,cav26" | split: ',' -%}
 {% include reflist.markdown references=proof_references %}
 
 

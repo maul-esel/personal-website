@@ -12,7 +12,8 @@ conference_link: https://conferences.i-cav.org/2026/
 #publisher_link: https://doi.org/10.1007/978-3-031-98682-6_18
 to_appear: true
 
-#artifact: https://doi.org/10.5281/zenodo.15198876
+extended_version: arXiv
+extended_version_link: https://arxiv.org/abs/2605.13780
 
 selected: true
 
@@ -35,6 +36,7 @@ bibtex: |-
                     2026, Lisbon, Portugal, July 26-29, 2026, Proceedings},
     series       = {Lecture Notes in Computer Science},
     publisher    = {Springer},
-    year         = {2026}
+    year         = {2026},
+    note         = {(to appear)}
   }
 ---

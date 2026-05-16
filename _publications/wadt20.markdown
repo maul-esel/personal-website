@@ -3,8 +3,6 @@ pub_id: wadt20
 title:  "𝕂 and KIV: Towards Deductive Verification for Arbitrary Programming Languages"
 date:   2021-04-11
 
-selected: true
-
 authors: [me, plenzen]
 
 conference:      ETAPS'20

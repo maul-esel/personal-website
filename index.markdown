@@ -158,6 +158,12 @@ Our algorithmic verifier [**Ultimate Automizer**](https://ultimate-pa.org/?ui=to
 {% assign selected_pubs = site.publications | reverse | where: "selected", true | map: "pub_id" %}
 {% include publist-short.markdown publications=selected_pubs %}
 
+## Workshop on Verification of Distributed Systems (VDS'26)
+
+I am co-organising the **[Workshop on Verification of Distributed Systems](https://netys.net/wds2026/VDS26.html) (VDS'26)**,
+the fifth instance of an annual workshop bringing together researchers and practitioners from the fields of databases, cloud computing, parallel programming, concurrency, programming languages, and verification.
+{: .gold-highlight}
+
 ## Teaching Award (summer semester 2024)
 
 I was the lecturer for the course _Cyber-Physical Systems II: Program Verification_ in the summer semester 2024.

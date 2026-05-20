@@ -127,7 +127,7 @@ As program specifications are often formalised in <mark>temporal logics</mark>,
 I investigate how to <mark>implement rational change</mark> of temporal behaviours,
 informed by the <mark>belief change</mark> paradigm of <mark>symbolic artificial intelligence</mark>.
 
-{%- assign ltl_references = "nmr24,kr25" | split: ',' -%}
+{%- assign ltl_references = "nmr24,kr25,nmr26" | split: ',' -%}
 {% include reflist.markdown references=ltl_references %}
 
 

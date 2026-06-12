@@ -1,3 +1,20 @@
+vds2026:
+  title: On the Complexity of Checking Soundness of Natural Reductions
+  date: 2026-06-10
+  conference: NETYS
+  conference_link: https://netys.net/
+  workshop: VDS
+  workshop_link: https://netys.net/wds2026/VDS26.html
+  location: Agadir, Morocco
+  summary: |-
+    The verification of reductions, representative subsets of interleavings, simplifies correctness proofs of parameterized concurrent programs.
+    We introduce an expressive class of syntactic reductions, which we call natural reductions.
+    Natural reductions are specified by introducing atomic blocks and global rendezvous points in the parameterized program’s thread template.
+    We study the problem of deciding whether a given natural reduction is sound wrt. a given (semi-)commutativity relation.
+    In the case that there is no synchronization between threads, we present a sound and complete polynomial-time algorithm.
+    In the case where synchronization is considered, we provide a general lower bound for the problem (parametric in the synchronization mechanism),
+    and show that the problem is coNP-hard already for a simple mechanism like locking.
+
 cosynus-tcs2026:
   title: Effective Belief Contraction in Temporal Logics
   date: 2026-05-20

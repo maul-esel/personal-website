@@ -14,7 +14,8 @@ workshop_link:   https://nmr.krportal.org/2026/
 #publisher_link:  https://ceur-ws.org/Vol-3835/
 to_appear: true
 
-#extended_version_link: /publications/nmr24/extended.pdf
+extended_version: arXiv
+extended_version_link: https://arxiv.org/abs/2606.16957
 
 abstract: >-
   We study the computational aspects of epistemic preference relations in non-classical logics,

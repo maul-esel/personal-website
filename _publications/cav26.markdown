@@ -8,9 +8,8 @@ authors: [cenea, afarzan, me]
 conference: CAV'26
 conference_link: https://conferences.i-cav.org/2026/
 
-#publisher: Springer
-#publisher_link: https://doi.org/10.1007/978-3-031-98682-6_18
-to_appear: true
+publisher: Springer
+publisher_link: https://doi.org/10.1007/978-3-032-32519-8_2
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2605.13780

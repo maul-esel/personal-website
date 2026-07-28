@@ -158,6 +158,12 @@ Our algorithmic verifier [**Ultimate Automizer**](https://ultimate-pa.org/?ui=to
 {% assign selected_pubs = site.publications | reverse | where: "selected", true | map: "pub_id" %}
 {% include publist-short.markdown publications=selected_pubs %}
 
+## International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI'27)
+
+I am PC co-chair for the **[28th International Conference on Verification, Model Checking, and Abstract Interpretation](https://conf.researchr.org/home/VMCAI-2027) (VMCAI'27)**,
+which will be co-located with [POPL'27](https://popl27.sigplan.org/) in Mexico City, and run from 11th to 12th January 2027.
+{: .gold-highlight}
+
 ## Workshop on Verification of Distributed Systems (VDS'26)
 
 I co-organised the **[Workshop on Verification of Distributed Systems](https://netys.net/wds2026/VDS26.html) (VDS'26)**,

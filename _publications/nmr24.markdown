@@ -1,7 +1,7 @@
 ---
 pub_id: nmr24
 title:  "Walking the Tightrope between Expressiveness and Uncomputability: AGM Contraction beyond the Finitary Realm"
-date:   2024-11-02
+date:   2024-10-22
 
 authors: [me, jribeiro]
 

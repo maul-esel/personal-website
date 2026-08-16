@@ -1,7 +1,7 @@
 ---
 pub_id: nmr26
 title:  "Constructive Preference Relations: Navigating Undecidability in Rational LTL Contraction"
-date:   2026-07-17
+date:   2026-08-16
 
 authors: [hgaisser, me, jribeiro]
 
@@ -10,9 +10,8 @@ conference_link: https://kr.org/KR2026/
 workshop:        NMR
 workshop_link:   https://nmr.krportal.org/2026/
 
-#publisher:       CEUR
-#publisher_link:  https://ceur-ws.org/Vol-3835/
-to_appear: true
+publisher:       CEUR
+publisher_link:  https://ceur-ws.org/Vol-4239/
 
 extended_version: arXiv
 extended_version_link: https://arxiv.org/abs/2606.16957
@@ -42,9 +41,10 @@ bibtex: |-
                     of Knowledge Representation and Reasoning {(KR} 2026), Lisbon, Portugal,
                     July 17-19, 2026},
     series       = {{CEUR} Workshop Proceedings},
+    volume       = {4239},
     publisher    = {CEUR-WS.org},
     year         = {2026},
-    note         = {(to appear)}
+    url          = {https://ceur-ws.org/Vol-4239/paper-Gaiser-1.pdf}
   }
 ---
 

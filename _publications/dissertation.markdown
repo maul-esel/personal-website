@@ -44,13 +44,14 @@ abstract: >-
   Specifically, we identify a particular kind of proof simplification: the proofs can get away with fewer, and less complex, ghost state information.
 
 bibtex: |-
-  @thesis{diss:commutativityToProofsAndBack,
+  @phdthesis{diss:commutativityToProofsAndBack,
     type    = {PhD thesis},
     author  = {Dominik Klumpp},
     title   = {From Commutativity to Proofs and Back Again: Reduction and Verification of Concurrent Programs},
     school  = {University of Freiburg},
     year    = {2026},
     month   = feb,
-    address = {Freiburg, Germany}
+    address = {Freiburg, Germany},
+    url     = {https://freidok.uni-freiburg.de/data/277289}
   }
 ---

@@ -80,6 +80,12 @@ lastmod_dependencies:
           <a class="pub-preprint" href="{{ pub.preprint_link }}">Preprint ({{ pub.preprint }})</a>
         </span>
       {%- endif -%}
+      {%- if pub.errata -%}
+        <span class="pub-additional">
+          <img alt="" class="pub-additional-icon" src="{{ '/images/errata.svg' | relative_url }}" />
+          <a class="pub-errata" href="{{ '/publications/' | append: pub.pub_id | append: '/errata.pdf' | relative_url }}">Errata</a>
+        </span>
+      {%- endif -%}
       {%- assign talk = site.data.talks[pub.pub_id] -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = site.data.talks[pub.talk] -%}{%- endif -%}
       {%- if talk == nil and pub.talk -%}{% assign talk = pub.talk -%}{%- endif -%}

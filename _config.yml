@@ -51,3 +51,12 @@ defaults:
 exclude:
   - images/logo-inkscape.svg
   - serve.sh
+  - publications/*/errata.aux
+  - publications/*/errata.bbl
+  - publications/*/errata.bib
+  - publications/*/errata.blg
+  - publications/*/errata.log
+  - publications/*/errata.out
+  - publications/*/errata.synctex.gz
+  - publications/*/errata.tex
+

@@ -22,3 +22,4 @@ sitemap: false
 - <a href="https://www.svgrepo.com/svg/525081/sun-2" target="_blank">Sun icon</a> by <a href="https://www.svgrepo.com/author/Solar%20Icons/" target="_blank">Solar Icons</a>
 - <a href="https://www.svgrepo.com/svg/381213/dark-mode-night-moon" target="_blank">Moon icon</a> by <a href="https://www.svgrepo.com/author/nickylimyeanfen/" target="_blank">nickylimyeanfen</a>
 - <a href="https://www.svgrepo.com/svg/509372/info" target="_blank">Info icon</a> by <a href="https://www.svgrepo.com/author/afnizarnur/" target="_blank">afnizarnur</a>
+- <a href="https://www.svgrepo.com/svg/389763/eraser" target="_blank">Eraser icon</a> by <a href="https://www.svgrepo.com/collection/gui-glyphs-icons/" target="_blank">Gui Glyphs Icons</a>

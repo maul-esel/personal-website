@@ -12,6 +12,8 @@ conference_link: https://popl23.sigplan.org/
 publisher:      ACM
 publisher_link: https://dl.acm.org/doi/10.1145/3571242
 
+errata:         true
+
 abstract: >-
   The importance of exploiting _commutativity relations_ in verification algorithms for concurrent programs is well-known.
   They can help simplify the proof and improve the time and space efficiency.

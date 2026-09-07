@@ -1,0 +1,50 @@
+\documentclass[oneside]{article}
+
+\usepackage{bibentry}
+\nobibliography*
+
+\usepackage{geometry}
+
+\usepackage[colorlinks,urlcolor=blue,linkcolor=blue,citecolor=blue]{hyperref}
+
+\begin{filecontents}{\jobname.bib}
+@techreport{stratification-undecidable,
+    title       = {Undecidability of Stratification of Commutativity Relations},
+    author      = {Farzan, Azadeh},
+    institution = {University of Toronto},
+    year        = {2026},
+    note        = {Available at \url{https://www.cs.toronto.edu/~azadeh/resources/papers/popl23-errata.pdf}}
+}
+\end{filecontents}
+
+%opening
+\title{Errata for the POPL'23 paper\\ \em``Stratified Commutativity in Verification Algorithms for Concurrent Programs''}
+\author{Dominik Klumpp}
+
+\begin{document}
+\maketitle
+
+\section*{Publication}
+\bibentry{popl23:stratifiedCommutativity}
+
+\section*{Errata}
+
+\begin{itemize}
+\item Section~6 of the paper presents an algorithm that checks whether a given proof covers every interleaving of a concurrent program, modulo \emph{stratified commutativity}.
+  It is claimed (Theorem~6.12) that the algorithm precisely decides the premise of the so-called \emph{decidable $n$-stratified proof rule} -- inclusion~(4) in the paper.
+
+  In fact, only one implication direction holds (\emph{soundness}):
+  if the algorithm claims the inclusion holds, then it does indeed hold.
+  The algorithm is however not complete.
+
+  Section~4.4 of my thesis~\cite{diss:commutativityToProofsAndBack} presents a corrected picture,
+  and also clarifies that the algorithm nevertheless generalizes the proof rules based on a single commutativity relation (Theorem~4.36).
+%
+  The question of whether the premise of the so-called \emph{decidable $n$-stratified proof rule} is indeed (precisely) decidable has since been answered in the negative~\cite{stratification-undecidable}.
+\end{itemize}
+
+
+\bibliographystyle{acm}
+\bibliography{\jobname,../../_site/resources/bibliography}
+
+\end{document}

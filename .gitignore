@@ -3,3 +3,12 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+publications/*/errata.aux
+publications/*/errata.bbl
+publications/*/errata.bib
+publications/*/errata.blg
+publications/*/errata.log
+publications/*/errata.out
+publications/*/errata.synctex.gz
+
